@@ -1,0 +1,8 @@
+streamlit
+sentence-transformers
+chromadb
+anthropic
+beautifulsoup4
+requests
+pandas
+numpy
