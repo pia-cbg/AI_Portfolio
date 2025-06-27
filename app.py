@@ -5,6 +5,7 @@ import streamlit as st
 import time
 import datetime
 from datetime import datetime, timedelta
+import hashlib
 
 # 페이지 설정
 st.set_page_config(
@@ -12,6 +13,29 @@ st.set_page_config(
     page_icon="🎵",
     layout="wide"
 )
+
+# 비밀번호 설정 및 검증 함수
+def check_password():
+    """비밀번호를 검증하는 함수"""
+    if 'password_correct' not in st.session_state:
+        st.session_state.password_correct = False
+
+    if st.session_state.get('password_correct', False):
+        return True
+
+    # 입력한 비밀번호를 해시화하여 비교
+    password = st.text_input("비밀번호를 입력하세요:", type="password")
+    if password:
+        # 비밀번호 "9108"의 SHA-256 해시값
+        correct_password_hash = "83854a7560a4eb24671d5ad83c3ade669f0e0243f48c17060dbca6346339f649"  # "9108"의 해시값
+        if hashlib.sha256(password.encode()).hexdigest() == correct_password_hash:
+            st.session_state.password_correct = True
+            st.rerun()
+        else:
+            st.error("비밀번호가 틀렸습니다.")
+            return False
+
+    return False
 
 # 이제 다른 임포트 진행
 import sys
