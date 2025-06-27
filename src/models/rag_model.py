@@ -28,7 +28,6 @@ class MusicRAGModel:
             response = self.client.messages.create(
                 model=self.model_name,
                 max_tokens=1000,
-                temperature=0.7,
                 system="당신은 음악 이론 전문가입니다. 주어진 컨텍스트를 바탕으로 정확하고 이해하기 쉬운 답변을 제공해주세요.",
                 messages=[
                     {"role": "user", "content": prompt}
