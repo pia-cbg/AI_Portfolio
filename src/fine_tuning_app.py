@@ -37,14 +37,22 @@ class FineTuningCLI:
             print("\n🤖 모델 응답:")
             print(response['answer'])
             
+            # 참고자료 출력
+            print("\n📚 참고자료:")
+            for i, source in enumerate(response['sources'], 1):
+                print(f"\n참고자료 {i}:")
+                print(f"제목: {source.get('title', '제목 없음')}")
+                print(f"유사도: {source.get('score', '알 수 없음')}")
+                print(f"내용 미리보기: {source.get('content', '').split('.')[:2]}...")
+            
             # 평가 프로세스
-            evaluation_data = self.get_evaluation(query, response['answer'])
+            evaluation_data = self.get_evaluation(query, response['answer'], response['sources'])
             
             # 평가 데이터 저장 및 처리
             self.fine_tuning_processor.save_evaluation(evaluation_data)
             self.fine_tuning_model.process_evaluation(evaluation_data)
     
-    def get_evaluation(self, query: str, response: str) -> Dict:
+    def get_evaluation(self, query: str, response: str, sources: list):
         """사용자로부터 평가 입력받기"""
         print("\n📊 응답 평가")
         
@@ -66,6 +74,7 @@ class FineTuningCLI:
         return {
             'query': query,
             'response': response,
+            'sources': sources,
             'accuracy': accuracy,
             'completeness': completeness,
             'clarity': clarity,
