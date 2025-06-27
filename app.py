@@ -2,6 +2,14 @@
 음악 이론 RAG 시스템 - Streamlit 웹 인터페이스
 """
 import streamlit as st
+
+# 페이지 설정
+st.set_page_config(
+    page_title="🎼 음악 이론 Q&A",
+    page_icon="🎵",
+    layout="wide"
+)
+
 import sys
 import os
 
@@ -11,13 +19,6 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 # 메인 모듈 임포트
 from src.main import initialize_system
 from src.utils.music_utils import extract_musical_terms
-
-# 페이지 설정
-st.set_page_config(
-    page_title="🎼 음악 이론 Q&A",
-    page_icon="🎵",
-    layout="wide"
-)
 
 # 시스템 초기화 (캐싱)
 @st.cache_resource
