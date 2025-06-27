@@ -70,7 +70,7 @@
             "description": "곡이 어떤 음을 중심으로 만들어졌는지를 알려주는 것입니다. 조표라고도 하며, 곡의 전체적인 색깔과 느낌을 결정합니다.",
             "sharp_keys": {
                 "description": "샾이 붙는 조성들입니다. 샾의 순서는 파-도-솔-레-라-미-시 순으로 정해져 있습니다.",
-                "calculation_method": "샾 조성을 찾는 방법은 간단합니다. 마지막에 붙은 샾의 온음 위가 그 조의 으뜸음입니다. 예를 들어 샾이 2개 붙어있다면 파, 도에 붙은 것이고, 마지막 샾인 도의 온음 위인 레(D)가 으뜸음이므로 D Major key입니다.",
+                "calculation_method": "샾 조성을 찾는 방법은 간단합니다. 마지막에 붙은 샾의 온음 위가 그 조의 으뜸음입니다. 예를 들어 샾이 2개 붙어있다면 파, 도에 붙은 것이고, 마지막 샾인 도의 온음 위인 레(D)가 으뜸음이므로 D Major key입니다."
             },
             "flat_keys": {
                 "description": "플랫이 붙는 조성들입니다. 플랫의 순서는 시-미-라-레-솔-도-파 순으로 정해져 있습니다.",
@@ -141,11 +141,11 @@
                 "interval_classification": {
                 "perfect_intervals": {
                     "degrees": [1, 4, 5, 8],
-                    "examples": "C-C(1도), C-F(4도), C-G(5도), C-C(8도)",
+                    "examples": "C-C(1도), C-F(4도), C-G(5도), C-C(8도)"
                 },
                 "major_intervals": {
                     "degrees": [2, 3, 6, 7],
-                    "examples": "C-D(2도), C-E(3도), C-A(6도), C-B(7도)",
+                    "examples": "C-D(2도), C-E(3도), C-A(6도), C-B(7도)"
                 }
                 }
             },
@@ -166,10 +166,10 @@
                     "alternative": "C-F → C♭-F (증4도)"
                 },
                 "augmented_5th": {
-                    "from_perfect": "C-G (완전5도) → C-G# (증5도)",
+                    "from_perfect": "C-G (완전5도) → C-G# (증5도)"
                 },
                 "augmented_2nd": {
-                    "from_major": "C-D (장2도) → C-D# (증2도, 3반음)",
+                    "from_major": "C-D (장2도) → C-D# (증2도, 3반음)"
                 }
                 }
             },
@@ -334,7 +334,7 @@
             "description": "메이저 트라이어드에 단7도를 추가한 화음으로, 가장 중요하고 기능적인 세븐스 코드입니다. 강한 해결 욕구를 가지고 있어서 다른 코드로 이끌어가는 역할을 합니다.",
             "construction": "메이저 코드에서 8음의 온음아래(b7)를 추가합니다. 예를 들어 G7은 G-B-D-F입니다.",
             "sound_character": "메이저의 3음과, 마이너요소의 b7음이 결합하여 독특한 사운드를 만들어 냅니다.",
-            "usage": "모든 장르에서 사용되지만 특히 재즈, 블루스, 클래식에서 핵심적인 역할을 합니다. V7 - I 진행은 서양음악의 가장 기본적인 해결 패턴입니다.",
+            "usage": "모든 장르에서 사용되지만 특히 재즈, 블루스, 클래식에서 핵심적인 역할을 합니다. V7 - I 진행은 서양음악의 가장 기본적인 해결 패턴입니다."
         },
         "minor_major_seventh": {
             "symbol": "mM7 또는 m(maj7) 또는 -△7",
@@ -343,7 +343,7 @@
             "description": "마이너 트라이어드에 장7도를 추가한 특별한 화음입니다. 마이너의 어두움과 장7도의 밝음이 만나 독특하고 신비로운 색깔을 만듭니다.",
             "construction": "마이너 코드에서 8음의 반음아래(7)를 추가합니다. 예를 들어 AmM7은 A-C-E-G#입니다.",
             "sound_character": "매우 독특하고 긴장감이 있습니다. 슬프면서도 희망적인, 복잡한 감정을 표현합니다. 영화음악에서 미스터리한 장면에 자주 사용됩니다.",
-            "usage": "재즈, 현대음악, 영화음악에서 특별한 색깔을 내고 싶을 때 사용합니다. 일반적이지 않기 때문에 신중하게 사용해야 합니다.",
+            "usage": "재즈, 현대음악, 영화음악에서 특별한 색깔을 내고 싶을 때 사용합니다. 일반적이지 않기 때문에 신중하게 사용해야 합니다."
         },
         "half_diminished": {
             "symbol": "m7♭5 또는 ø7",
@@ -600,7 +600,7 @@
             "listen_to_function": "각 코드의 기능을 귀로 들으면서 확인하는 습관을 기르세요",
             "strong_progressions": "코드 진행이 약하다고 느껴지면 강진행의 원리를 적용해보세요"
             }
-        },
+        
         },
         "5_3_secondary_dominants": {
             "title": "세컨더리 도미넌트 (Secondary Dominants)",
@@ -974,7 +974,7 @@
                     "analysis": {
                     "F#m7_B7": "Related ii-minor: E Major의 ii-V",
                     "Em7_A7": "Related ii-minor: D Major의 ii-V", 
-                    "Dm7_G7": "Related ii-minor: C Major의 ii-V",
+                    "Dm7_G7": "Related ii-minor: C Major의 ii-V"
                     }
                 }
                 },
@@ -993,4 +993,5 @@
     }
     }
     }
-}  
+}
+}
