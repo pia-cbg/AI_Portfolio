@@ -1,139 +1,188 @@
 import os
-from typing import List, Dict, Tuple, Any
-import anthropic
+import sys
+import json
+from typing import Dict, List
 from dotenv import load_dotenv
+import anthropic
 
-# 환경 변수 로드
-load_dotenv()
-
-class MusicRAGModel:
+class RAGModel:
     def __init__(self, retriever):
+        """
+        RAG 모델 초기화
+        
+        :param retriever: 벡터 검색기
+        """
+        # 프로젝트 루트 경로 설정 (절대 경로 사용)
+        project_root = '/Users/cbg/github/AI_Portfolio'
+        
+        # utils 폴더 경로 추가
+        sys.path.insert(0, project_root)
+        
+        # 절대 경로로 .env 파일 로드
+        env_path = os.path.join(project_root, '.env')
+        load_dotenv(dotenv_path=env_path)
+        
+        # 직접 API 키 출력해보기 (실제 키는 노출되지 않게 길이만)
+        self.api_key = os.getenv('ANTHROPIC_API_KEY')
+        print(f"🔑 API 키 확인:")
+        print(f"   - .env 경로: {env_path}")
+        print(f"   - .env 파일 존재: {os.path.exists(env_path)}")
+        print(f"   - API 키 길이: {len(self.api_key) if self.api_key else 0}")
+        
+        # API 키가 없으면 직접 입력 요청 (테스트용)
+        if not self.api_key:
+            print("⚠️ API 키를 찾을 수 없습니다. 테스트를 위해 직접 입력하시겠습니까? (y/n)")
+            choice = input()
+            if choice.lower() == 'y':
+                self.api_key = input("API 키 입력: ").strip()
+                print(f"API 키 길이: {len(self.api_key)}")
+        
+        # 모델 이름 설정
+        self.model_name = os.getenv('ANTHROPIC_MODEL', 'claude-3-haiku-20240307')
+        
+        # 검색기 설정
         self.retriever = retriever
-        self.client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
-        self.model_name = "claude-3-haiku-20240307"  # 또는 "claude-3-opus-20240229", "claude-3-sonnet-20240229"
-    
-    def generate_answer(self, query: str, top_k: int = 3) -> str:
-        """RAG를 사용하여 답변을 생성합니다."""
-        # 1. 관련 문서 검색
-        search_results = self.retriever.search(query, top_k=top_k)
         
-        # 2. 검색된 컨텍스트 준비
-        context = self._prepare_context(search_results)
-        
-        # 3. 프롬프트 생성
-        prompt = self._create_prompt(query, context)
-        
-        # 4. Claude API로 답변 생성
+        # utils 모듈 임포트
         try:
+            from utils.music_utils import extract_musical_terms, format_chord_name
+            self.extract_musical_terms = extract_musical_terms
+            self.format_chord_name = format_chord_name
+            print("✅ utils.music_utils 모듈 로드 성공")
+        except ImportError as e:
+            print(f"❌ utils.music_utils 모듈 로드 실패: {e}")
+            # 기본 함수 정의
+            self.extract_musical_terms = lambda text: []
+        
+        # Anthropic 클라이언트 초기화
+        self.client = self._initialize_client()
+        
+        # 시스템 프롬프트 준비
+        self.system_prompt = self._prepare_system_prompt()
+    
+    def _initialize_client(self):
+        """Anthropic API 클라이언트 초기화"""
+        try:
+            if not self.api_key:
+                print("❌ API 키가 설정되지 않았습니다.")
+                return None
+            
+            # 키 공백 제거 및 디버깅
+            clean_key = self.api_key.strip()
+            
+            # API 키 마스킹하여 출력
+            masked_key = clean_key[:4] + '*' * (len(clean_key) - 8) + clean_key[-4:]
+            print(f"   - 마스킹된 API 키: {masked_key}")
+            
+            # 클라이언트 생성
+            client = anthropic.Anthropic(api_key=clean_key)
+            
+            print("✅ Anthropic 클라이언트 초기화 성공")
+            return client
+        except Exception as e:
+            print(f"❌ Anthropic 클라이언트 초기화 실패: {e}")
+            return None
+    
+    def _prepare_system_prompt(self) -> str:
+        """시스템 프롬프트 준비"""
+        return """
+당신은 음악 이론 전문가 AI 어시스턴트입니다. 다음 가이드라인을 준수하세요:
+
+1. 답변은 명확하고 전문적이어야 합니다.
+2. 음악 이론적 관점에서 정확하고 심도있는 설명을 제공하세요.
+3. 복잡한 개념은 쉽게 풀어서 설명하되, 전문성을 잃지 마세요.
+4. 필요한 경우 실제 음악 예시나 실무적 적용 사례를 포함하세요.
+5. 학습자의 이해 수준을 고려하여 적절한 깊이로 설명하세요.
+
+제공된 참고자료를 바탕으로 답변하되, 자신의 음악 이론 지식도 활용하세요.
+        """
+    
+    def get_conversation_response(self, query: str) -> Dict:
+        """대화형 응답 생성"""
+        try:
+            # 클라이언트 확인
+            if self.client is None:
+                return {
+                    'answer': "API 클라이언트가 초기화되지 않았습니다. API 키를 확인해주세요.",
+                    'sources': [],
+                    'model': self.model_name,
+                    'musical_terms': []
+                }
+            
+            # 음악 용어 추출
+            musical_terms = self.extract_musical_terms(query)
+            
+            # 벡터 검색
+            sources = []
+            if self.retriever is not None:
+                try:
+                    sources = self.retriever.search(query, top_k=3)
+                    print(f"✅ 검색 성공: {len(sources)}개 결과")
+                except Exception as search_error:
+                    print(f"⚠️ 검색 중 오류: {search_error}")
+                    sources = []
+            
+            # 소스 텍스트 생성
+            sources_text = self._generate_sources_text(sources)
+            
+            # 프롬프트 구성
+            full_prompt = (
+                f"질문: {query}\n\n"
+                f"추출된 음악 용어: {', '.join(musical_terms) if musical_terms else '없음'}\n\n"
+                f"{sources_text}\n\n"
+                "위 정보를 바탕으로 질문에 대해 상세하고 전문적으로 답변해주세요."
+            )
+            
+            print("🚀 Anthropic API 호출 중...")
+            
+            # API 호출
             response = self.client.messages.create(
                 model=self.model_name,
                 max_tokens=1000,
-                system="당신은 음악 이론 전문가입니다. 주어진 컨텍스트를 바탕으로 정확하고 이해하기 쉬운 답변을 제공해주세요.",
+                system=self.system_prompt,
                 messages=[
-                    {"role": "user", "content": prompt}
+                    {"role": "user", "content": full_prompt}
                 ]
             )
             
-            answer = response.content[0].text
-            return answer
+            print("✅ API 응답 받음")
             
+            return {
+                'answer': response.content[0].text,
+                'sources': sources,
+                'model': self.model_name,
+                'musical_terms': musical_terms
+            }
+        
+        except anthropic.APIError as e:
+            print(f"❌ Anthropic API 오류: {e}")
+            return {
+                'answer': f"API 오류가 발생했습니다: {e}",
+                'sources': [],
+                'model': self.model_name,
+                'musical_terms': []
+            }
+        
         except Exception as e:
-            return f"답변 생성 중 오류가 발생했습니다: {str(e)}"
+            print(f"❌ 예상치 못한 오류: {e}")
+            import traceback
+            traceback.print_exc()
+            return {
+                'answer': f"오류가 발생했습니다: {e}",
+                'sources': [],
+                'model': self.model_name,
+                'musical_terms': []
+            }
     
-    def _prepare_context(self, search_results: List[Tuple[Dict, float]]) -> str:
-        """검색 결과를 컨텍스트로 변환합니다."""
-        if not search_results:
-            return "관련 정보를 찾을 수 없습니다."
+    def _generate_sources_text(self, sources: List[Dict]) -> str:
+        """검색된 소스를 텍스트로 변환"""
+        if not sources:
+            return "참고할 수 있는 소스가 없습니다."
         
-        context_parts = []
-        for i, (chunk, score) in enumerate(search_results, 1):
-            title = chunk.get("metadata", {}).get("title", "")
-            content = chunk.get("content", "")
-            
-            context_parts.append(f"""
-참고자료 {i}: {title}
-{content}
-""")
+        sources_text = "참고 자료:\n"
+        for idx, source in enumerate(sources, 1):
+            sources_text += f"{idx}. {source.get('title', '제목 없음')}\n"
+            sources_text += f"   내용: {source.get('content', '내용 없음')[:200]}...\n"
+            sources_text += f"   유사도: {source.get('score', 0):.3f}\n\n"
         
-        return "\n".join(context_parts)
-    
-    def _create_prompt(self, query: str, context: str) -> str:
-        """프롬프트를 생성합니다."""
-        return f"""
-다음은 음악 이론에 관한 질문입니다:
-{query}
-
-아래 참고자료를 바탕으로 답변해주세요:
-{context}
-
-답변 시 다음 사항을 고려해주세요:
-1. 음악 이론 초보자도 이해할 수 있도록 쉽게 설명해주세요
-2. 구체적인 예시를 포함해주세요 (코드명, 스케일 등)
-3. 참고자료의 내용을 바탕으로 정확한 정보를 제공해주세요
-4. 한국어로 친근하게 답변해주세요
-5. 중요: 참고자료에서 사용한 용어와 표현을 그대로 사용하세요. 다른 유사한 용어로 대체하지 마세요.
-
-답변:
-"""
-
-    def get_conversation_response(self, query: str) -> Dict[str, Any]:
-        """대화형 응답을 생성합니다."""
-        # 검색 결과도 함께 반환
-        search_results = self.retriever.search(query, top_k=3)
-        answer = self.generate_answer(query)
-        
-        return {
-            "query": query,
-            "answer": answer,
-            "sources": [
-                {
-                    "title": chunk.get("metadata", {}).get("title", ""),
-                    "content": chunk.get("content", "")[:200] + "..." if len(chunk.get("content", "")) > 200 else chunk.get("content", ""),
-                    "score": float(score)
-                }
-                for chunk, score in search_results
-            ]
-        }
-
-if __name__ == "__main__":
-    # 테스트용 코드
-    import os
-    import sys
-    import numpy as np
-    import pickle
-    
-    # 현재 스크립트 경로를 기반으로 프로젝트 루트 경로 설정
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(os.path.dirname(script_dir))
-    sys.path.append(project_root)
-    
-    from src.models.retriever import MusicKnowledgeRetriever
-    
-    # 임베딩 및 청크 로드 경로
-    embeddings_path = os.path.join(project_root, "data/processed/embeddings/embeddings.npy")
-    chunks_path = os.path.join(project_root, "data/processed/embeddings/chunks.pkl")
-    
-    if os.path.exists(embeddings_path) and os.path.exists(chunks_path):
-        # 저장된 임베딩과 청크 로드
-        embeddings = np.load(embeddings_path)
-        with open(chunks_path, 'rb') as f:
-            chunks = pickle.load(f)
-        
-        # 검색기 초기화
-        retriever = MusicKnowledgeRetriever()
-        retriever.build_index(embeddings, chunks)
-        
-        # RAG 모델 초기화
-        rag_model = MusicRAGModel(retriever)
-        
-        # 테스트 질문
-        test_query = "세컨더리 도미넌트가 뭐야?"
-        response = rag_model.get_conversation_response(test_query)
-        
-        print(f"\n질문: {response['query']}")
-        print(f"\n답변: {response['answer']}")
-        print("\n참고자료:")
-        for i, source in enumerate(response['sources'], 1):
-            print(f"  {i}. {source['title']} (유사도: {source['score']:.3f})")
-    else:
-        print("임베딩 파일이 없습니다. 먼저 임베딩을 생성해주세요.")
+        return sources_text

@@ -5,14 +5,17 @@ import os
 import sys
 from typing import Optional
 
-# 상대 경로 임포트를 위한 경로 설정
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# 프로젝트 루트 경로 추가
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, project_root)
 
-# 모듈 임포트
-from data_processing.json_loader import MusicTheoryDataLoader
-from data_processing.embedding_generator import EmbeddingGenerator
-from models.retriever import MusicKnowledgeRetriever
-from models.rag_model import MusicRAGModel
+# 올바른 경로로 모듈 임포트
+from src.data_processing.json_loader import MusicTheoryDataLoader
+from src.data_processing.embedding_generator import EmbeddingGenerator
+from src.models.retriever import VectorRetriever
+from src.models.rag_model import RAGModel
+
+# utils 폴더의 music_utils 사용
 from utils.music_utils import extract_musical_terms, format_chord_name
 
 def initialize_system():
@@ -41,12 +44,20 @@ def initialize_system():
     
     # 3. 검색기 초기화
     print("3. 검색기 초기화...")
-    retriever = MusicKnowledgeRetriever()
-    retriever.build_index(embedder.embeddings, embedder.chunks)
+    retriever = VectorRetriever()
+    
+    # 검색기가 자체적으로 임베딩을 로드하도록 설정
+    if not retriever.load_embeddings():
+        print("❌ 검색기 임베딩 로드 실패!")
+        return None
+    
+    if not retriever.build_index():
+        print("❌ 검색기 인덱스 구축 실패!")
+        return None
     
     # 4. RAG 모델 초기화
     print("4. RAG 모델 초기화...")
-    rag_model = MusicRAGModel(retriever)
+    rag_model = RAGModel(retriever)
     
     print("✅ 시스템 초기화 완료!")
     return rag_model
@@ -107,9 +118,10 @@ def main():
             print(response['answer'])
             
             # 참고자료 출력
-            print(f"\n📚 참고자료:")
-            for i, source in enumerate(response['sources'], 1):
-                print(f"  {i}. {source['title']} (유사도: {source['score']:.3f})")
+            if response['sources']:
+                print(f"\n📚 참고자료:")
+                for i, source in enumerate(response['sources'], 1):
+                    print(f"  {i}. {source.get('title', '제목 없음')} (유사도: {source.get('score', 0):.3f})")
             
         except KeyboardInterrupt:
             print("\n\n👋 시스템을 종료합니다. 감사합니다!")
