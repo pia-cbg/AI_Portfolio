@@ -1,0 +1,158 @@
+{
+  "start_time": "2025-06-30T19:31:58.913886",
+  "evaluations": [
+    {
+      "question_id": 5,
+      "question": "Sub는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:19.412868",
+      "status": "rejected"
+    },
+    {
+      "question_id": 6,
+      "question": "단음정이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:26.882042",
+      "status": "accepted"
+    },
+    {
+      "question_id": 7,
+      "question": "V 7이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:31.638543",
+      "status": "accepted"
+    },
+    {
+      "question_id": 8,
+      "question": "마이너요소를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:35.474746",
+      "status": "accepted"
+    },
+    {
+      "question_id": 9,
+      "question": "도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:39.078105",
+      "status": "accepted"
+    },
+    {
+      "question_id": 10,
+      "question": "쉼표를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T19:32:42.887496",
+      "status": "accepted"
+    }
+  ],
+  "improved_questions": [
+    {
+      "original": "단음정이 핵심 구성 요소는 뭐야?",
+      "improved": "단음정이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "V 7이 핵심 구성 요소는 뭐야?",
+      "improved": "V 7이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "마이너요소를 이해하고 싶어",
+      "improved": "마이너요소를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "도미넌트 개념이 궁금해",
+      "improved": "도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "쉼표를 배우는 이유는?",
+      "improved": "쉼표를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    }
+  ],
+  "end_time": "2025-06-30T19:32:42.888577"
+}

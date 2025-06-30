@@ -8,7 +8,8 @@ from sentence_transformers import SentenceTransformer
 class VectorRetriever:
     def __init__(
         self, 
-        embedding_path: str = 'data/embeddings/music_embeddings.pkl',
+        embedding_path: str = 'data/embeddings/music_theory_embeddings.pkl',
+        metadata_file: str = 'data/embeddings/embeddings_metadata.json',
         index_path: str = 'data/embeddings/faiss_index.idx'
     ):
         """벡터 기반 검색기 초기화"""
@@ -28,7 +29,7 @@ class VectorRetriever:
         self.model_name = None
         
         print(f"   ✅ VectorRetriever 초기화 완료")
-        print(f"   - self: {self}")
+        # print(f"   - self: {self}")
     
     def load_embeddings(self):
         """저장된 임베딩 로드"""

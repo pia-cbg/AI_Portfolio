@@ -2974,5 +2974,315 @@
     "feedback": "",
     "correction": "",
     "timestamp": "2025-06-30T18:29:34.497408"
+  },
+  {
+    "question": "chords는 음악에서 어떻게 활용돼?",
+    "answer": "Chords는 음악에서 다음과 같이 활용됩니다:\n\n1. 스릴러 영화 음악이나 긴장감을 표현하고 싶을 때, 또는 코드 진행에서 부드러운 연결을 위해 사용됩니다. [참고자료 1]\n\n2. 코드의 역할에 따라 다음과 같이 사용됩니다:\n- IM7 코드: 안정과 휴식을 주는 토닉으로, 곡의 시작점이나 해결점으로 사용됩니다. [참고자료 2]\n- IVM7 코드: 확장과 서정적 분위기를 만들 때 사용되는 서브도미넌트 코드입니다. [참고자료 2] \n- V7 코드: 긴장감을 만들고 I 코드로 돌아가려는 강한 욕구를 생성하는 도미넌트 코드입니다. [참고자료 2]\n\n3. 재즈, 펑크, 소울, R&B 등에서 매우 자주 사용되며, 특히 ii-V-I 진행에서 ii 역할을 자주 합니다. [참고자료 3]\n\n4. 발라드, 재즈, 보사노바, R&B 등에서 곡의 마지막 코드나 안정감을 주고 싶을 때 효과적입니다. [참고자료 4]\n\n5. 재즈, 현대음악, 영화음악에서 특별한 색깔을 내고 싶을 때 사용되지만, 일반적이지 않기 때문에 신중하게 사용해야 합니다. [참고자료 5]",
+    "sources": [
+      {
+        "chunk_id": "051dc86b",
+        "title": "Usage",
+        "content": "스릴러 영화 음악이나 긴장감을 표현하고 싶을 때, 또는 코드 진행에서 부드러운 연결을 위해 사용됩니다.",
+        "context": "music_education_system > curriculum > triads > diminished_chord > usage",
+        "metadata": {},
+        "score": 0.8550506830215454,
+        "rank": 1
+      },
+      {
+        "chunk_id": "23c5b4cf",
+        "title": "Chord Roles",
+        "content": "{\"IM7\": \"Tonic - 안정과 휴식. 곡의 시작점이나 해결점으로 사용. 가장 편안하고 안정적인 느낌\", \"IVM7\": \"Sub-Dominant - 확장과 서정. 감정적 전개나 서정적 분위기를 만들 때 사용. '어딘가로 가고 싶은' 느낌\", \"V7\": \"Dominant - 긴장과 해결 욕구. 긴장감을 만들고 I로 돌아가려는 강한 욕구를 생성\"}",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > composition_process > step_1_basic_framework > chord_roles",
+        "metadata": {},
+        "score": 0.8491640686988831,
+        "rank": 2
+      },
+      {
+        "chunk_id": "4ce5d943",
+        "title": "Usage",
+        "content": "재즈, 펑크, 소울, R&B에서 매우 자주 사용됩니다. 특히 ii-V-I 진행에서 ii 역할을 자주 합니다.",
+        "context": "music_education_system > curriculum > seventh_chords > minor_seventh > usage",
+        "metadata": {},
+        "score": 0.8486310243606567,
+        "rank": 3
+      },
+      {
+        "chunk_id": "7f2655ca",
+        "title": "Usage",
+        "content": "발라드, 재즈, 보사노바, R&B 등에서 자주 사용됩니다. 특히 곡의 마지막 코드나 안정감을 주고 싶을 때 효과적입니다.",
+        "context": "music_education_system > curriculum > seventh_chords > major_seventh > usage",
+        "metadata": {},
+        "score": 0.8466813564300537,
+        "rank": 4
+      },
+      {
+        "chunk_id": "29054869",
+        "title": "Usage",
+        "content": "재즈, 현대음악, 영화음악에서 특별한 색깔을 내고 싶을 때 사용합니다. 일반적이지 않기 때문에 신중하게 사용해야 합니다.",
+        "context": "music_education_system > curriculum > seventh_chords > minor_major_seventh > usage",
+        "metadata": {},
+        "score": 0.8445374965667725,
+        "rank": 5
+      }
+    ],
+    "scores": {
+      "source_accuracy": 6,
+      "source_citation": 7,
+      "no_hallucination": 6,
+      "clarity": 7,
+      "completeness": 6
+    },
+    "avg_score": 6.4,
+    "feedback": "",
+    "correction": "",
+    "timestamp": "2025-06-30T18:50:19.838564"
+  },
+  {
+    "question": "단음정이 핵심 구성 요소는 뭐야?",
+    "answer": "단음정의 핵심 구성 요소는 다음과 같습니다:\n\n1. 단음정은 장음정을 반음 좁힘으로써 만들어집니다. [참고자료 1]\n2. 예를 들어 C-E(장3도)를 C-E♭로 바꾸면 단3도가 됩니다. [참고자료 1]\n3. 모든 음정은 반음의 개수와 음의 이름을 고려하여 결정됩니다. [참고자료 2]\n4. 장음계의 기본 음정에서 #(샾)을 하거나 ♭(플랫)을 하면 단음정이 됩니다. [참고자료 3]\n\n현재 제공된 참고자료만으로는 단음정의 핵심 구성 요소에 대한 더 자세한 설명을 하기 어려운 것 같습니다. 앞으로 관련 자료를 더 찾아보겠습니다.(😊)",
+    "sources": [
+      {
+        "chunk_id": "f6ff92bf",
+        "title": "Minor Intervals",
+        "content": "장음정을 반음 좁히면 단음정이 됩니다. C-E(장3도)를 C-E♭로 바꾸면 단3도가 됩니다.",
+        "context": "music_education_system > curriculum > basic_music_theory > intervals > altered_intervals > minor_intervals",
+        "metadata": {},
+        "score": 0.825472354888916,
+        "rank": 1
+      },
+      {
+        "chunk_id": "66779876",
+        "title": "Intervals",
+        "content": "{\"title\": \"음정 (Interval)\", \"description\": \"음정은 두 음 사이의 거리를 나타내는 개념입니다. 화성과 선율을 이해하는 데 필수적인 기초 이론으로, 코드와 스케일의 구조를 파악하는 핵심 도구입니다.\", \"basic_concept\": {\"definition\": \"음정은 두 음 사이의 높낮이 차이를 측정하는 단위입니다. 반음의 개수와 음의 이름을 함께 고려하여 정확한 음정을 결정합니다.\", \"importance\": \"모든 화음, 스케일, 멜로디의 구조는 음정의 조합으로 이루어져 있습니다. 음정을 이해하면 음악 이론의 모든 영역을 체계적으로 파악할 수 있습니다.\"}, \"major_scale_foundation\": {\"concept\": \"음정에 대한 이해는 메이저 스케일을 알면 매우 쉬운 원리로 접근할 수 있습니다. 메이저 스케일이 모든 음정의 기준점이 되기 때문입니다.\", \"scale_pattern\": \"메이저 스케일의 1-2-3-4-5-6-7-8도 중에서 1도, 4도, 5도, 8도는 완전음정이고, 2도, 3도, 6도, 7도는 장음정입니다. 예를 들어 C 메이저 스케일에서 C-F는 완전4도, C-E는 장3도입니다.\", \"why_important\": \"메이저 스케일을 기준으로 하면 모든 음정을 체계적으로 이해할 수 있습니다. 다른 모든 음정(단음정, 증음정, 감음정)은 이 기준에서 변화된 형태이기 때문입니다.\"}, \"altered_intervals\": {\"concept\": \"메이저 스케일의 기본 음정에서 #(샾)을 하거나 ♭(플랫)을 하면 증음정, 단음정, 감음정이 됩니다.\", \"augmented_intervals\": \"완전음정이나 장음정의 간격을 넓히면(#) 증음정이 됩니다. 예를 들어 C-F(완전4도)에서 C-F#로 바뀌면 증4도가 됩니다.\", \"minor_intervals\": \"장음정을 반음 좁히면 단음정이 됩니다. C-E(장3도)를 C-E♭로 바꾸면 단3도가 됩니다.\", \"diminished_intervals\": \"완전음정이나 단음정을 반음 좁히면 감음정이 됩니다.\"}, \"memorization_strategy\": \"메이저 스케일만 확실히 알면 모든 음정을 체계적으로 이해할 수 있습니다! 먼저 모든 조성의 메이저 스케일을 완벽히 외우고, 완전음정(1,4,5,8)과 장음정(2,3,6,7)을 구분하여 기억한 후, 변화표(#,♭)를 적용하여 다른 음정들을 만드는 연습을 하세요.\"}",
+        "context": "music_education_system > curriculum > basic_music_theory > intervals",
+        "metadata": {},
+        "score": 0.8135376572608948,
+        "rank": 2
+      },
+      {
+        "chunk_id": "dbe42dd6",
+        "title": "Concept",
+        "content": "메이저 스케일의 기본 음정에서 #(샾)을 하거나 ♭(플랫)을 하면 증음정, 단음정, 감음정이 됩니다.",
+        "context": "music_education_system > curriculum > basic_music_theory > intervals > altered_intervals > concept",
+        "metadata": {},
+        "score": 0.8110305070877075,
+        "rank": 3
+      },
+      {
+        "chunk_id": "b9017679",
+        "title": "Scales",
+        "content": "{\"title\": \"스케일(음계)\", \"description\": \"음들을 일정한 규칙에 따라 순서대로 배열한 것입니다. 조성의 기초가 되며, 멜로디와 화성을 만드는 재료가 됩니다.\", \"major_scale\": {\"description\": \"Major scale(장음계)는 가장 기본적인 음계로, 밝고 안정적인 느낌을 줍니다. 도레미파솔라시도가 대표적인 장음계입니다.\", \"structure\": \"장음계는 1-2-3-4-5-6-7-8의 8개 음으로 구성되며, 온음과 반음의 배열이 '온-온-반-온-온-온-반' 패턴으로 되어있습니다. 특히 3-4음과 7-8음 사이가 반음인 것이 특징입니다.\", \"importance\": \"장음계를 이해하면 상대적으로 다른 스케일과 코드를 쉽게 찾을 수 있습니다. 예를 들어 C 장음계(도레미파솔라시도)를 알면, G 장음계는 G를 1번으로 하여 같은 패턴으로 만들 수 있습니다.\"}, \"minor_scale\": {\"description\": \"단음계는 장음계보다 어둡고 슬픈 느낌을 주는 음계입니다. 장음계에서 단3도 아래에 위치한 음계로, 상호 관련성이 깊습니다.\", \"types\": \"단음계에는 자연단음계, 화성단음계, 선율단음계 등 여러 종류가 있습니다. 각각 다른 특성과 용도를 가지고 있어서 작곡할 때 다양한 색깔을 표현할 수 있습니다.\", \"relationship\": \"C Major와 A minor처럼 같은 조표를 사용하는 장조와 단조를 '관계조'라고 합니다. 이들은 같은 음들을 사용하지만 중심음이 달라서 완전히 다른 느낌을 줍니다.\", \"advanced_note\": \"단음계의 세부적인 종류와 활용법은 화성학을 더 깊이 공부할 때 자세히 다루게 됩니다.\"}}",
+        "context": "music_education_system > curriculum > basic_music_theory > scales",
+        "metadata": {},
+        "score": 0.8063163757324219,
+        "rank": 4
+      },
+      {
+        "chunk_id": "bf40b751",
+        "title": "Structure",
+        "content": "장음계는 1-2-3-4-5-6-7-8의 8개 음으로 구성되며, 온음과 반음의 배열이 '온-온-반-온-온-온-반' 패턴으로 되어있습니다. 특히 3-4음과 7-8음 사이가 반음인 것이 특징입니다.",
+        "context": "music_education_system > curriculum > basic_music_theory > scales > major_scale > structure",
+        "metadata": {},
+        "score": 0.8059700727462769,
+        "rank": 5
+      }
+    ],
+    "scores": {
+      "source_accuracy": 8,
+      "source_citation": 8,
+      "no_hallucination": 8,
+      "clarity": 8,
+      "completeness": 8
+    },
+    "avg_score": 8.0,
+    "feedback": "",
+    "correction": "",
+    "timestamp": "2025-06-30T19:35:18.138014"
+  },
+  {
+    "question": "V 7이 핵심 구성 요소는 뭐야?",
+    "answer": "V7 화음의 핵심 구성 요소는 다음과 같습니다:\n\n1. V7 화음은 다이아토닉 7화음 중 유일한 도미넌트 7화음으로, 화성 진행의 추진력을 만드는 핵심 요소입니다. [참고자료 2]\n\n2. V7 화음은 메이저 트라이아드에 단7도를 추가한 화음으로, 강한 해결 욕구를 가지고 있어서 다른 코드로 이끌어가는 역할을 합니다. [참고자료 5]\n\n3. V7 화음의 구성음은 1-3-5-♭7입니다. 예를 들어 G7 화음은 G-B-D-F입니다. [참고자료 5]\n\n4. V7 화음은 모든 장르에서 사용되지만, 특히 재즈, 블루스, 클래식 음악에서 핵심적인 역할을 합니다. V7 - I 진행은 서양 음악의 가장 기본적인 해결 패턴입니다. [참고자료 5]\n\n현재 제공된 데이터셋에서는 V7 화음의 핵심 구성 요소에 대한 자세한 설명이 충분합니다. 더 궁금한 점이 있다면 추가 질문 주시기 바랍니다. 😊",
+    "sources": [
+      {
+        "chunk_id": "2bc747aa",
+        "title": "V 7",
+        "content": "{\"roman_numeral\": \"V7\", \"example_in_c\": \"G7 (G-B-D-F)\", \"characteristic\": \"다이아토닉 7화음 중 유일한 도미넌트 7화음으로, 화성 진행의 추진력을 만드는 핵심 요소입니다.\"}",
+        "context": "music_education_system > curriculum > advanced_harmony > major_key_diatonic_sevenths > chord_functions > V_7",
+        "metadata": {},
+        "score": 0.8425636291503906,
+        "rank": 1
+      },
+      {
+        "chunk_id": "2828be42",
+        "title": "Characteristic",
+        "content": "다이아토닉 7화음 중 유일한 도미넌트 7화음으로, 화성 진행의 추진력을 만드는 핵심 요소입니다.",
+        "context": "music_education_system > curriculum > advanced_harmony > major_key_diatonic_sevenths > chord_functions > V_7 > characteristic",
+        "metadata": {},
+        "score": 0.8408833742141724,
+        "rank": 2
+      },
+      {
+        "chunk_id": "c7d445d8",
+        "title": "V Of V",
+        "content": "{\"target\": \"G7 (V7)\", \"secondary_dominant\": \"D7 (V/V)\", \"explanation\": \"G Major의 도미넌트는 D7입니다. D7 → G7 → C의 강력한 연쇄 해결이며, D는 C Major 스케일에 포함되므로 유효합니다.\", \"example_progression\": \"D7 - G7 - C (매우 강력한 해결감)\"}",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > secondary_dominants > valid_secondary_dominants > V_of_V",
+        "metadata": {},
+        "score": 0.8367127776145935,
+        "rank": 3
+      },
+      {
+        "chunk_id": "46177ecb",
+        "title": "Step 1 Basic Framework",
+        "content": "{\"title\": \"1단계: I-IV-V 기본 골격 구성\", \"description\": \"먼저 다이아토닉의 IM7, IVM7, V7을 활용하여 곡의 기본 골격을 만듭니다. 이 세 코드는 토닉-서브도미넌트-도미넌트의 핵심 기능을 담당합니다. 이는 우리가 어렸을적 음악시간에 한번쯤 들어봤던 으뜸화음,버금딸림화음,딸림화음입니다.\", \"chord_roles\": {\"IM7\": \"Tonic - 안정과 휴식. 곡의 시작점이나 해결점으로 사용. 가장 편안하고 안정적인 느낌\", \"IVM7\": \"Sub-Dominant - 확장과 서정. 감정적 전개나 서정적 분위기를 만들 때 사용. '어딘가로 가고 싶은' 느낌\", \"V7\": \"Dominant - 긴장과 해결 욕구. 긴장감을 만들고 I로 돌아가려는 강한 욕구를 생성\"}, \"basic_progressions\": \"IM7 - IVM7 - V7 - IM7 (완벽한 기능 진행), IM7 - V7 - IM7 (단순하고 강력한 해결), IVM7 - V7 - IM7 (클래식한 종지형)\"}",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > composition_process > step_1_basic_framework",
+        "metadata": {},
+        "score": 0.8328320980072021,
+        "rank": 4
+      },
+      {
+        "chunk_id": "267510f4",
+        "title": "Dominant Seventh",
+        "content": "{\"symbol\": \"7 또는 dom7\", \"intervals\": [0, 4, 7, 10], \"structure\": \"1-3-5-♭7\", \"description\": \"메이저 트라이어드에 단7도를 추가한 화음으로, 가장 중요하고 기능적인 세븐스 코드입니다. 강한 해결 욕구를 가지고 있어서 다른 코드로 이끌어가는 역할을 합니다.\", \"construction\": \"메이저 코드에서 8음의 온음아래(b7)를 추가합니다. 예를 들어 G7은 G-B-D-F입니다.\", \"sound_character\": \"메이저의 3음과, 마이너요소의 b7음이 결합하여 독특한 사운드를 만들어 냅니다. 이는 고급화성과정에서 다양한 이론에서 등장합니다.\", \"usage\": \"모든 장르에서 사용되지만 특히 재즈, 블루스, 클래식에서 핵심적인 역할을 합니다. V7 - I 진행은 서양음악의 가장 기본적인 해결 패턴입니다.\"}",
+        "context": "music_education_system > curriculum > seventh_chords > dominant_seventh",
+        "metadata": {},
+        "score": 0.8324734568595886,
+        "rank": 5
+      }
+    ],
+    "scores": {
+      "source_accuracy": 8,
+      "source_citation": 8,
+      "no_hallucination": 8,
+      "clarity": 8,
+      "completeness": 8
+    },
+    "avg_score": 8.0,
+    "feedback": "",
+    "correction": "",
+    "timestamp": "2025-06-30T19:36:00.630496"
+  },
+  {
+    "question": "마이너요소를 이해하고 싶어",
+    "answer": "마이너 요소를 이해하기 위해 참고자료의 정보를 정리하면 다음과 같습니다:\n\n1. 마이너 코드의 구성: 마이너 코드는 1음, ♭3음, 5음으로 구성됩니다. [참고자료 3, 5]\n\n2. 마이너 코드의 특징:\n- 어둡고 슬픈 느낌을 줍니다. [참고자료 3, 4]\n- 발라드나 감성적인 곡에서 자주 사용됩니다. [참고자료 4]\n\n3. 마이너 코드와 메이저 코드의 차이:\n- 메이저 코드는 밝고 안정적인 느낌을 주지만, 마이너 코드는 어둡고 슬픈 느낌을 줍니다. [참고자료 3]\n- 메이저 코드는 1-3-5 음으로 구성되지만, 마이너 코드는 1-♭3-5 음으로 구성됩니다. [참고자료 3, 5]\n\n현재 제공된 데이터셋으로는 마이너 요소에 대한 추가적인 설명이 부족합니다. 계속해서 더 자세한 내용을 학습하겠습니다. 😊",
+    "sources": [
+      {
+        "chunk_id": "5c8acdcd",
+        "title": "Triads",
+        "content": "{\"title\": \"3화음 (트라이어드)\", \"level\": \"intermediate\", \"description\": \"3개의 음으로 만드는 가장 기본적인 화음입니다. 모든 복잡한 화음의 기초가 되며, 음악의 화성적 색깔을 결정하는 핵심 요소입니다.\", \"basic_concept\": {\"structure\": \"트라이어드는 1음(근음), 3음, 5음의 3개 음으로 구성됩니다. 이 중에서 3음이 화음의 성격(밝음/어두움)을 결정하는 가장 중요한 음입니다.\", \"quality_determinant\": \"코드가 메이저인지 마이너인지는 3음에 의해 결정됩니다. 3음에 아무것도 붙지 않으면 메이저 코드가 되고, 3음에 플랫(♭)이 붙으면 마이너 코드가 됩니다. 이것만 기억해도 대부분의 코드를 구별할 수 있습니다.\"}, \"major_chord\": {\"description\": \"메이저 코드는 밝고 안정적인 느낌을 주는 화음입니다. 구성음은 1-3-5 음으로 구성됩니다.\", \"construction\": \"메이저 코드 만드는 법: 어떤 음이든 그 음을 1번으로 정하고, 반음 4개(장3도) 위로 올라가면 3음, 거기서 반음 3개(단3도) 더 올라가면 5음입니다. 예를 들어 C 메이저는 C(도)-E(미)-G(솔)입니다.\", \"feeling\": \"메이저 코드는 행복하고 밝은 감정을 표현할 때 주로 사용됩니다. 대부분의 밝은 곡들이 메이저 코드를 중심으로 만들어집니다.\"}, \"minor_chord\": {\"description\": \"마이너 코드는 어둡고 슬픈 느낌을 주는 화음입니다. 구성음은 1-♭3-5 음으로 구성됩니다.\", \"construction\": \"마이너 코드는 1음에서 반음 3개(단3도) 위에 3음이, 3음에서 반음 4개(장3도) 위에 5음이 있습니다. C 마이너는 C(도)-Eb(미♭)-G(솔)입니다.\", \"emotional_impact\": \"마이너 코드는 슬픔, 우울함, 신비로움 등을 표현할 때 사용됩니다. 발라드나 감성적인 곡에서 자주 만날 수 있습니다.\"}, \"suspended_chords\": {\"description\": \"서스펜디드 코드는 3음이 없어서 메이저도 마이너도 아닌 특별한 화음입니다. 이름 그대로 '매달린', '미해결된' 긴장감을 줍니다.\", \"sus4\": \"Sus4 코드의 구성음은 1-4-5로 구성됩니다.\", \"sus2\": \"Sus2 코드의 구성음은 1-2-5로 구성됩니다.\", \"usage\": \"서스펜디드 코드는 곡에 긴장감과 움직임을 주고 싶을 때 사용합니다. 특히 코드 진행에서 다음 코드로 자연스럽게 연결해주는 역할을 합니다.\"}, \"diminished_chord\": {\"description\": \"디미니쉬드 코드는 1-♭3-♭5로 구성된 불안정하고 긴장감 넘치는 화음입니다. ♭3음 때문에 마이너 계열로 분류됩니다.\", \"characteristic\": \"모든 음정이 단3도로 이루어져 있어서 매우 특별합니다. 불안하고 어두운 느낌을 주며, 다른 코드로의 경과 역할을 자주 합니다.\", \"usage\": \"스릴러 영화 음악이나 긴장감을 표현하고 싶을 때, 또는 코드 진행에서 부드러운 연결을 위해 사용됩니다.\"}, \"augmented_chord\": {\"description\": \"어그멘티드 코드는 1-3-#5로 구성된 화음입니다. 3음이 자연음이므로 메이저 계열로 분류되지만, #5음 때문에 매우 독특한 색깔을 가집니다.\", \"sound_quality\": \"#5음 때문에 떠있는 듯한, 불안정한 느낌을 줍니다. 마법적이거나 몽환적인 분위기를 만들 때 자주 사용됩니다.\", \"application\": \"재즈나 인상주의 음악에서 특별한 색깔을 내고 싶을 때 사용합니다.\"}, \"relative_approach\": {\"concept\": \"상대적 접근법은 메이저 코드(1-3-5)의 구조만 확실히 알면 다른 모든 코드를 쉽게 만들 수 있다는 방법입니다.\", \"method\": \"C 메이저 코드(C-E-G)를 기준으로 생각해보세요. 여기서 E를 E♭로 바꾸면 C 마이너가 되고, G를 G♭로 바꾸면 C 디미니쉬드가 되고, G를 G#로 바꾸면 C 어그멘티드가 됩니다. 이렇게 기본 형태에서 한두 음만 바꿔주면 됩니다.\", \"practical_benefit\": \"이 방법을 쓰면 복잡한 코드 이론을 외우지 않고도 직관적으로 코드를 만들고 이해할 수 있습니다. 특히 악기 연주할 때 매우 유용합니다.\", \"examples\": {\"major_to_minor\": \"메이저에서 마이너로: 3음을 반음 내립니다 (E → E♭)\", \"major_to_diminished\": \"메이저에서 디미니쉬드로: 3음과 5음을 모두 반음 내립니다 (E → E♭, G → G♭)\", \"major_to_augmented\": \"메이저에서 어그멘티드로: 5음을 반음 올립니다 (G → G#)\", \"major_to_suspended\": \"메이저에서 서스펜디드로: 3음을 2음 또는 4음으로 바꿉니다 (E → D 또는 E → F)\"}}, \"learning_tips\": {\"progression\": \"메이저 코드부터 확실히 익히세요. 모든 다른 코드는 메이저 코드의 변형입니다. 이론도 중요하지만 실제로 소리를 들어보는 것이 더 중요합니다. 각 코드의 느낌과 색깔을 귀로 기억하고, 단순히 코드 하나씩 외우지 말고 코드 진행 속에서 어떻게 연결되는지 연습해보세요.\", \"practical_application\": \"좋아하는 노래들이 어떤 코드로 만들어졌는지 분석해보세요. 이론이 실제 음악과 어떻게 연결되는지 알 수 있습니다.\"}}",
+        "context": "music_education_system > curriculum > triads",
+        "metadata": {},
+        "score": 0.8396774530410767,
+        "rank": 1
+      },
+      {
+        "chunk_id": "a2a3e096",
+        "title": "Quality Determinant",
+        "content": "코드가 메이저인지 마이너인지는 3음에 의해 결정됩니다. 3음에 아무것도 붙지 않으면 메이저 코드가 되고, 3음에 플랫(♭)이 붙으면 마이너 코드가 됩니다. 이것만 기억해도 대부분의 코드를 구별할 수 있습니다.",
+        "context": "music_education_system > curriculum > triads > basic_concept > quality_determinant",
+        "metadata": {},
+        "score": 0.8358297348022461,
+        "rank": 2
+      },
+      {
+        "chunk_id": "a104bc6e",
+        "title": "Minor Chord",
+        "content": "{\"description\": \"마이너 코드는 어둡고 슬픈 느낌을 주는 화음입니다. 구성음은 1-♭3-5 음으로 구성됩니다.\", \"construction\": \"마이너 코드는 1음에서 반음 3개(단3도) 위에 3음이, 3음에서 반음 4개(장3도) 위에 5음이 있습니다. C 마이너는 C(도)-Eb(미♭)-G(솔)입니다.\", \"emotional_impact\": \"마이너 코드는 슬픔, 우울함, 신비로움 등을 표현할 때 사용됩니다. 발라드나 감성적인 곡에서 자주 만날 수 있습니다.\"}",
+        "context": "music_education_system > curriculum > triads > minor_chord",
+        "metadata": {},
+        "score": 0.8352737426757812,
+        "rank": 3
+      },
+      {
+        "chunk_id": "5d2527b8",
+        "title": "Emotional Impact",
+        "content": "마이너 코드는 슬픔, 우울함, 신비로움 등을 표현할 때 사용됩니다. 발라드나 감성적인 곡에서 자주 만날 수 있습니다.",
+        "context": "music_education_system > curriculum > triads > minor_chord > emotional_impact",
+        "metadata": {},
+        "score": 0.8304648399353027,
+        "rank": 4
+      },
+      {
+        "chunk_id": "9458442d",
+        "title": "Description",
+        "content": "마이너 코드는 어둡고 슬픈 느낌을 주는 화음입니다. 구성음은 1-♭3-5 음으로 구성됩니다.",
+        "context": "music_education_system > curriculum > triads > minor_chord > description",
+        "metadata": {},
+        "score": 0.8285795450210571,
+        "rank": 5
+      }
+    ],
+    "scores": {
+      "source_accuracy": 8,
+      "source_citation": 8,
+      "no_hallucination": 8,
+      "clarity": 8,
+      "completeness": 8
+    },
+    "avg_score": 8.0,
+    "feedback": "",
+    "correction": "",
+    "timestamp": "2025-06-30T19:36:22.919159"
+  },
+  {
+    "question": "도미넌트 개념이 궁금해",
+    "answer": "도미넌트(Dominant) 개념에 대해 다음과 같이 정리할 수 있습니다.\n\n1. 도미넌트의 핵심: 1도(토닉)로 가고 싶은 강력한 성향이 특징입니다. 이끈음(7도)의 해결 욕구가 도미넌트의 핵심 원리입니다. [참고자료 1]\n\n2. 도미넌트 7화음의 연쇄 진행: 도미넌트 7화음이 3개 이상 연속적으로 이어지는 진행을 의미합니다. 하나의 도미넌트가 끝나면 바로 다음 도미넌트로 연결되는 연쇄적인 진행입니다. [참고자료 2, 4]\n\n3. 도미넌트 7화음의 특징: 도미넌트 7화음에서 3음을 4음으로 바꾼 화음입니다. 서스펜디드의 긴장감과 도미넌트의 추진력이 결합된 강력한 코드입니다. [참고자료 3]\n\n4. 도미넌트 연쇄 진행의 특징: 계속해서 앞으로 나아가는 추진력을 만들며, 각 도미넌트가 다음 도미넌트로 해결되면서 연쇄 작용을 일으킵니다. 최종 토닉으로 도달할 때 매우 강한 해결감을 제공하고, 음악에 강력한 전진 동력을 부여합니다. [참고자료 4]\n\n현재 제공된 참고자료로는 도미넌트 개념에 대한 추가 설명이 부족한 것 같습니다. 더 자세한 정보를 찾아 보겠습니다.(😄)",
+    "sources": [
+      {
+        "chunk_id": "d6fdc558",
+        "title": "Dominant Nature",
+        "content": "도미넌트는 1도(토닉)로 가고 싶은 성향이 매우 강합니다. 이끈음(7도)의 강력한 해결 욕구가 도미넌트의 핵심이며, 이 원리는 모든 조성에서 똑같이 작용합니다.",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > secondary_dominants > primary_vs_secondary > dominant_nature",
+        "metadata": {},
+        "score": 0.8393499851226807,
+        "rank": 1
+      },
+      {
+        "chunk_id": "d7477c51",
+        "title": "Definition",
+        "content": "도미넌트 7화음들이 3개 이상 연속적으로 이어지는 진행을 의미합니다. 하나의 도미넌트가 끝나면 바로 다음 도미넌트로 연결되는 연쇄적인 진행입니다.",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > non_diatonic_applications > advanced_harmonic_techniques > extended_dominant > definition",
+        "metadata": {},
+        "score": 0.8382549285888672,
+        "rank": 2
+      },
+      {
+        "chunk_id": "7d26c05d",
+        "title": "Description",
+        "content": "도미넌트 7화음에서 3음을 4음으로 바꾼 화음입니다. 서스펜디드의 긴장감과 도미넌트의 추진력이 결합된 강력한 코드입니다.",
+        "context": "music_education_system > curriculum > seventh_chords > dominant_seventh_suspended > description",
+        "metadata": {},
+        "score": 0.8348190188407898,
+        "rank": 3
+      },
+      {
+        "chunk_id": "7ce562e0",
+        "title": "Extended Dominant",
+        "content": "{\"definition\": \"도미넌트 7화음들이 3개 이상 연속적으로 이어지는 진행을 의미합니다. 하나의 도미넌트가 끝나면 바로 다음 도미넌트로 연결되는 연쇄적인 진행입니다.\", \"core_concept\": \"도미넌트 → 도미넌트 → 도미넌트... 형태의 연속적 진행\", \"examples\": {\"basic_chain\": \"A7 - D7 - G7 - C (A7(V/ii) → D7(V/V) → G7(V) → C(I)). 세 개의 도미넌트가 연쇄적으로 연결\", \"circle_of_fifths\": \"B7 - E7 - A7 - D7 - G7 - C. 5도씩 하행하며 연속적인 도미넌트 진행으로 매우 강력한 추진력과 최종 해결감을 제공\"}, \"characteristics\": \"계속해서 앞으로 나아가는 추진력을 만들고, 각 도미넌트가 다음 도미넌트로 해결되면서 연쇄 작용을 일으키며, 최종 토닉으로 도달할 때 매우 강한 해결감을 제공하고, 음악에 강력한 전진 동력을 부여합니다.\", \"usage\": \"다이아토닉만 사용했을때의 색채감을 더 확장시켜주는 형태로 사용.\"}",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > non_diatonic_applications > advanced_harmonic_techniques > extended_dominant",
+        "metadata": {},
+        "score": 0.8337159752845764,
+        "rank": 4
+      },
+      {
+        "chunk_id": "65526e5d",
+        "title": "Ivm7",
+        "content": "Sub-Dominant - 확장과 서정. 감정적 전개나 서정적 분위기를 만들 때 사용. '어딘가로 가고 싶은' 느낌",
+        "context": "music_education_system > curriculum > advanced_harmony > chord_function_composition > composition_process > step_1_basic_framework > chord_roles > IVM7",
+        "metadata": {},
+        "score": 0.8331718444824219,
+        "rank": 5
+      }
+    ],
+    "scores": {
+      "source_accuracy": 6,
+      "source_citation": 6,
+      "no_hallucination": 6,
+      "clarity": 6,
+      "completeness": 6
+    },
+    "avg_score": 6.0,
+    "feedback": "3. 도미넌트 7화음의 특징이 틀렸고, 도미넌트 연쇄진행의 특징은 익스텐디드 도미넌트에 관한 설명이다.",
+    "correction": "도미넌트 진행은 익스텐디드 도미넌트라고  3개이상의 진행을 말한다. 또한 관계는 완전5도로 되어있다.",
+    "timestamp": "2025-06-30T19:38:09.408696"
   }
 ]

@@ -1,0 +1,62 @@
+[
+  {
+    "original": "단음정이 핵심 구성 요소는 뭐야?",
+    "improved": "단음정이 핵심 구성 요소는 뭐야?",
+    "scores": {
+      "clarity": 10,
+      "relevance": 10,
+      "difficulty": 10,
+      "specificity": 10,
+      "educational": 10
+    },
+    "feedback": ""
+  },
+  {
+    "original": "V 7이 핵심 구성 요소는 뭐야?",
+    "improved": "V 7이 핵심 구성 요소는 뭐야?",
+    "scores": {
+      "clarity": 10,
+      "relevance": 10,
+      "difficulty": 10,
+      "specificity": 10,
+      "educational": 10
+    },
+    "feedback": ""
+  },
+  {
+    "original": "마이너요소를 이해하고 싶어",
+    "improved": "마이너요소를 이해하고 싶어",
+    "scores": {
+      "clarity": 10,
+      "relevance": 10,
+      "difficulty": 10,
+      "specificity": 10,
+      "educational": 10
+    },
+    "feedback": ""
+  },
+  {
+    "original": "도미넌트 개념이 궁금해",
+    "improved": "도미넌트 개념이 궁금해",
+    "scores": {
+      "clarity": 10,
+      "relevance": 10,
+      "difficulty": 10,
+      "specificity": 10,
+      "educational": 10
+    },
+    "feedback": ""
+  },
+  {
+    "original": "쉼표를 배우는 이유는?",
+    "improved": "쉼표를 배우는 이유는?",
+    "scores": {
+      "clarity": 10,
+      "relevance": 10,
+      "difficulty": 10,
+      "specificity": 10,
+      "educational": 10
+    },
+    "feedback": ""
+  }
+]

@@ -12,8 +12,14 @@ from src.fine_tuning.utils.question_generator import QuestionGenerator
 class Phase1QuestionImprovement:
     def __init__(self):
         """Phase 1: 질문 개선 시스템 초기화"""
-        self.base_dir = 'data/fine_tuning/phase1_question_improvement'
+        self.base_dir = 'data/fine_tuning/questions'
         os.makedirs(self.base_dir, exist_ok=True)
+        
+        # 파일 경로들 업데이트
+        self.raw_questions_file = os.path.join(self.base_dir, 'raw_questions.json')
+        self.refined_questions_file = os.path.join(self.base_dir, 'refined_questions.json')
+        self.question_criteria_file = os.path.join(self.base_dir, 'question_criteria.json')
+        self.evaluations_file = os.path.join(self.base_dir, 'question_evaluations.json')
         
         # 평가 기준 로드
         self.evaluation_criteria = self._load_evaluation_criteria()
@@ -382,8 +388,8 @@ class Phase1QuestionImprovement:
         print(f"\n✨ 최종 사용 가능한 질문: {final_count}개")
         
         if final_count > 0:
-            print("\n다음 단계: Phase 2 - 답변 평가를 진행하세요.")
-            print("python src/fine_tuning/phase2_model_training.py")
+            print("\n다음 단계: model_trainer - 답변 평가를 진행하세요.")
+            print("python /src/fine_tuning/model_trainer.py")
 
 def main():
     phase1 = Phase1QuestionImprovement()

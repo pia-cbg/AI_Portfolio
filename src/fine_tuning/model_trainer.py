@@ -12,14 +12,18 @@ from src.main import initialize_system
 from src.fine_tuning.utils.evaluator import FineTuningEvaluator
 from src.fine_tuning.utils.model_updater import ModelUpdater
 
-class Phase2ModelTraining:
+class ModelTrainer:  # 클래스명 변경
     def __init__(self):
-        """Phase 2: 모델 파인튜닝 시스템 초기화"""
-        self.base_dir = 'data/fine_tuning/phase2_model_training'
-        os.makedirs(self.base_dir, exist_ok=True)
+        """모델 파인튜닝 시스템 초기화"""
+        # 새로운 구조에 맞춰 경로 변경
+        self.fine_tuning_base = 'data/fine_tuning'
+        self.questions_dir = os.path.join(self.fine_tuning_base, 'questions')
+        self.evaluations_dir = os.path.join(self.fine_tuning_base, 'evaluations')
+        self.reports_dir = os.path.join(self.fine_tuning_base, 'reports')
         
-        # Phase 1 결과 경로
-        self.phase1_dir = 'data/fine_tuning/phase1_question_improvement'
+        # 필요한 디렉토리 생성
+        os.makedirs(self.evaluations_dir, exist_ok=True)
+        os.makedirs(self.reports_dir, exist_ok=True)
         
         # 컴포넌트 초기화
         self.rag_model = None
@@ -34,22 +38,22 @@ class Phase2ModelTraining:
             'improvements_made': []
         }
     
-    def run_phase2(self):
-        """Phase 2 전체 프로세스 실행"""
-        print("🎵 Phase 2: 모델 파인튜닝 프로세스 시작")
+    def run_training(self):  # 메서드명 변경
+        """모델 파인튜닝 프로세스 실행"""
+        print("🎵 음악 이론 모델 파인튜닝 프로세스 시작")
         print("="*60)
         
         # 1. 시스템 초기화
         print("\n1️⃣ RAG 시스템 초기화...")
         self._initialize_rag_system()
         
-        # 2. 개선된 질문 로드
-        print("\n2️⃣ Phase 1 결과 로드...")
-        questions = self._load_refined_questions()
+        # 2. 질문 로드
+        print("\n2️⃣ 생성된 질문 로드...")
+        questions = self._load_questions()
         
         if not questions:
-            print("❌ Phase 1에서 개선된 질문을 찾을 수 없습니다.")
-            print("먼저 Phase 1을 완료해주세요.")
+            print("❌ 사용할 질문을 찾을 수 없습니다.")
+            print("먼저 질문 생성을 완료해주세요.")
             return
         
         # 3. 답변 생성 및 평가
@@ -65,7 +69,7 @@ class Phase2ModelTraining:
         print("\n5️⃣ 모델 업데이트...")
         self._update_model_if_needed()
         
-        print("\n✅ Phase 2 완료!")
+        print("\n✅ 모델 파인튜닝 완료!")
         self._print_summary()
     
     def _initialize_rag_system(self):
@@ -85,14 +89,12 @@ class Phase2ModelTraining:
             traceback.print_exc()
             raise
     
-    def _load_refined_questions(self) -> List[str]:
-        """Phase 1에서 개선된 질문들 로드"""
-        # 여러 가능한 파일 위치 확인
+    def _load_questions(self) -> List[str]:
+        """생성된 질문들 로드"""
+        # 새로운 구조에서 질문 파일 위치
         possible_files = [
-            os.path.join(self.phase1_dir, 'refined_questions.json'),
-            os.path.join(self.phase1_dir, 'raw_questions.json'),
-            'data/fine_tuning/phase1_question_improvement/refined_questions.json',
-            'data/fine_tuning/phase1_question_improvement/raw_questions.json'
+            os.path.join(self.questions_dir, 'refined_questions.json'),
+            os.path.join(self.questions_dir, 'raw_questions.json'),
         ]
         
         for questions_file in possible_files:
@@ -143,9 +145,6 @@ class Phase2ModelTraining:
             print("\n🤖 답변 생성 중...")
             try:
                 response = self.rag_model.get_conversation_response(question)
-                
-                # 디버깅: 응답 구조 출력
-                # print(f"DEBUG: 응답 타입: {type(response)}")
                 
                 # 응답이 딕셔너리인지 확인
                 if isinstance(response, dict):
@@ -248,9 +247,9 @@ class Phase2ModelTraining:
                 'improvement_needed': low_quality_count > 0
             }
         
-        # 세션 파일 저장
+        # 세션 파일을 reports 폴더에 저장
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        session_file = os.path.join(self.base_dir, f'phase2_session_{timestamp}.json')
+        session_file = os.path.join(self.reports_dir, f'training_session_{timestamp}.json')
         
         with open(session_file, 'w', encoding='utf-8') as f:
             json.dump(self.session_data, f, ensure_ascii=False, indent=2)
@@ -279,22 +278,41 @@ class Phase2ModelTraining:
             try:
                 # 모델 업데이트 실행
                 print("\n🔄 모델 업데이트 중...")
-                self.model_updater.process_corrections(poor_evaluations)
+                
+                # poor_evaluations를 correction 형태로 변환하여 처리
+                corrections = []
+                for eval_data in poor_evaluations:
+                    correction = {
+                        'question': eval_data.get('question', ''),
+                        'original_response': eval_data.get('answer', ''),
+                        'corrected_response': eval_data.get('correction', ''),
+                        'avg_score': eval_data.get('avg_score', 0),
+                        'scores': eval_data.get('scores', {}),
+                        'feedback': eval_data.get('feedback', ''),
+                        'timestamp': eval_data.get('timestamp', datetime.now().isoformat())
+                    }
+                    corrections.append(correction)
+                
+                # 모델 업데이트 실행 (수정된 방식)
+                for correction in corrections:
+                    self.model_updater.update_model_data(correction)
                 
                 # 업데이트 결과 기록
-                self.session_data['improvements_made'] = self.model_updater.get_update_history()
+                self.session_data['improvements_made'] = self.model_updater.update_history
                 
                 print("✅ 모델 업데이트 완료!")
                 
             except Exception as e:
                 print(f"❌ 모델 업데이트 중 오류: {e}")
+                import traceback
+                traceback.print_exc()
         else:
             print("모델 업데이트를 건너뜁니다.")
     
     def _print_summary(self):
-        """Phase 2 결과 요약"""
+        """파인튜닝 결과 요약"""
         print("\n" + "="*60)
-        print("📊 Phase 2 결과 요약")
+        print("📊 모델 파인튜닝 결과 요약")
         print("="*60)
         
         stats = self.session_data.get('statistics', {})
@@ -310,18 +328,18 @@ class Phase2ModelTraining:
         
         print("\n다음 단계:")
         print("- 만족스러운 결과라면 웹 앱 실행: python app.py")
-        print("- 추가 개선이 필요하다면 Phase 2 재실행")
+        print("- 추가 개선이 필요하다면 모델 파인튜닝 재실행")
         print("- 데이터 갭이 많다면 원본 데이터 확장 고려")
 
 def main():
-    """Phase 2 메인 실행"""
+    """모델 파인튜닝 메인 실행"""
     try:
-        phase2 = Phase2ModelTraining()
-        phase2.run_phase2()
+        trainer = ModelTrainer()  # 변경된 클래스명
+        trainer.run_training()   # 변경된 메서드명
     except KeyboardInterrupt:
-        print("\n\n👋 Phase 2 프로세스가 중단되었습니다.")
+        print("\n\n👋 모델 파인튜닝 프로세스가 중단되었습니다.")
     except Exception as e:
-        print(f"\n❌ Phase 2 실행 중 오류: {e}")
+        print(f"\n❌ 모델 파인튜닝 실행 중 오류: {e}")
         import traceback
         traceback.print_exc()
 

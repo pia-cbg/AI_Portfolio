@@ -87,70 +87,83 @@ class FineTuningEvaluator:
         ]
     
     def evaluate_answer(self, question: str, answer: str, sources: List[Dict]) -> Dict:
-        """
-        답변 평가
+        """점수별 전략을 고려한 답변 평가"""
         
-        :param question: 질문
-        :param answer: 모델 응답
-        :param sources: 검색된 소스
-        :return: 평가 데이터
-        """
         print(f"\n📋 답변 평가: {question}")
+        print(f"\n💡 현재 답변:\n{answer}")
         
-        # 평가 기준 확인
-        if not self.criteria or not isinstance(self.criteria, list):
-            print("❌ 평가 기준이 올바르지 않습니다.")
-            return {
-                'question': question,
-                'answer': answer,
-                'sources': sources,
-                'scores': {},
-                'avg_score': 0,
-                'feedback': "평가 기준 오류",
-                'correction': ""
-            }
+        # 점수별 전략 안내
+        print(f"\n📊 점수별 업데이트 전략:")
+        print(f"  🔴 0-3점: 업데이트 안함")
+        print(f"  🟡 4-5점: 완전 교체 (새로 작성 필요)")  
+        print(f"  🟢 6-7점: 미세 조정 (원본 + 수정사항)")
+        print(f"  🔵 8-10점: 선택적 개선 (원본 유지 + 약간 보완)")
         
-        scores = {}
+        # 간편 평가
+        print(f"\n⚡ 빠른 평가:")
+        print(f"1. 완전히 틀림 (1-3점) - 업데이트 안함")
+        print(f"2. 많이 틀림 (4-5점) - 새로 작성")
+        print(f"3. 괜찮지만 아쉬움 (6-7점) - 미세 조정")  
+        print(f"4. 거의 완벽 (8-10점) - 약간만 보완")
         
-        # 각 기준별 점수 입력
-        for criterion in self.criteria:
-            # 타입 검증
-            if not isinstance(criterion, dict):
-                print(f"⚠️ 잘못된 기준 형식: {criterion}")
-                continue
-                
-            print(f"\n{criterion.get('name', '기준')} - {criterion.get('description', '')}")
-            while True:
-                try:
-                    score_input = input(f"점수 (0-10): ").strip()
-                    if score_input == '':
-                        score = 5  # 기본값
-                        print(f"   기본값 사용: {score}")
-                        break
-                    score = int(score_input)
-                    if 0 <= score <= 10:
-                        break
-                    else:
-                        print("0-10 사이 점수를 입력하세요.")
-                except ValueError:
-                    print("숫자를 입력하세요 (엔터: 기본값 5).")
+        choice = input("선택 (1-4): ").strip()
+        
+        if choice == '1':
+            # 업데이트 안함
+            scores = {criterion['key']: 2 for criterion in self.criteria}
+            feedback = "답변이 부적절하여 업데이트하지 않음"
+            correction = ""
             
-            scores[criterion.get('key', f'criterion_{len(scores)}')] = score
+        elif choice == '2':
+            # 완전 교체
+            scores = {criterion['key']: 4 for criterion in self.criteria}
+            feedback = input("어떤 점이 문제인가요? ")
+            print("💡 완전히 새로운 답변을 작성해주세요:")
+            correction = input("새로운 답변: ")
+            
+        elif choice == '3':
+            # 미세 조정 - 가장 많이 사용될 케이스
+            scores = {criterion['key']: 6 for criterion in self.criteria}
+            feedback = input("어떤 부분을 개선하면 좋을까요? ")
+            print("💡 추가하거나 수정할 내용만 입력해주세요:")
+            correction = input("미세 조정 내용: ")
+            
+        elif choice == '4':
+            # 선택적 개선
+            scores = {criterion['key']: 8 for criterion in self.criteria}
+            feedback = input("더 좋게 만들 수 있는 점이 있다면? ")
+            correction = input("약간의 보완 내용 (선택사항): ")
+            
+        else:
+            # 수동 입력
+            print("\n상세 평가 모드:")
+            scores = {}
+            for criterion in self.criteria:
+                while True:
+                    try:
+                        score = int(input(f"{criterion['name']} (0-10): "))
+                        if 0 <= score <= 10:
+                            scores[criterion['key']] = score
+                            break
+                    except ValueError:
+                        print("숫자를 입력해주세요.")
+            
+            avg_score = sum(scores.values()) / len(scores)
+            print(f"\n현재 평균 점수: {avg_score:.1f}")
+            
+            if avg_score >= 8:
+                print("💡 높은 점수입니다. 약간의 보완만 입력하세요.")
+            elif avg_score >= 6:
+                print("💡 중간 점수입니다. 미세 조정 내용을 입력하세요.")
+            else:
+                print("💡 낮은 점수입니다. 새로운 답변이나 대폭 수정이 필요합니다.")
+                
+            feedback = input("피드백: ")
+            correction = input("수정/보완 내용: ")
         
-        # 피드백
-        feedback = input("\n상세 피드백 (선택사항): ").strip()
+        avg_score = sum(scores.values()) / len(scores)
         
-        # 수정 제안
-        correction = input("수정된 답변 제안 (선택사항): ").strip()
-        
-        # 평균 점수
-        avg_score = sum(scores.values()) / len(scores) if scores else 0
-        
-        # 점수 요약 출력
-        print(f"\n평균 점수: {avg_score:.1f}/10")
-        
-        # 평가 데이터
-        evaluation = {
+        return {
             'question': question,
             'answer': answer,
             'sources': sources,
@@ -161,8 +174,6 @@ class FineTuningEvaluator:
             'timestamp': datetime.now().isoformat()
         }
         
-        return evaluation
-    
     def save_evaluation(self, evaluation: Dict):
         """
         평가 데이터 저장 (누적 방식)

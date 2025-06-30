@@ -1,5 +1,5 @@
 """
-음악 이론 엄격한 RAG 모델
+음악 이론 RAG 모델
 - 오직 데이터셋 기반 답변만 제공
 - 외부 지식 사용 금지
 - 데이터 부족 시 명확히 표시
@@ -22,7 +22,7 @@ from utils.music_utils import extract_musical_terms, format_chord_name
 class RAGModel:
     def __init__(self, retriever, min_similarity_score: float = 0.7):
         """
-        엄격한 RAG 모델 초기화
+        RAG 모델 초기화
         
         :param retriever: 벡터 검색기
         :param min_similarity_score: 최소 유사도 점수 (기본 0.7)
@@ -73,7 +73,7 @@ class RAGModel:
             return None
     
     def _prepare_system_prompt(self) -> str:
-        """엄격한 시스템 프롬프트"""
+        """시스템 프롬프트"""
         return """
 당신은 음악 이론 교육 시스템의 AI 어시스턴트입니다.
 
@@ -86,11 +86,12 @@ class RAGModel:
 - 모든 정보는 참고자료에서 직접 인용
 - 각 문장 끝에 [참고자료 번호] 표시
 - 추론이나 유추 금지
-- 정보가 없으면 "현재 데이터셋에 정보 없음" 명시
+- 정보가 없거나 부족할 시 "현재 데이터셋이 부족해서 더 열심히 배우겠습니다. | 이모티콘 사용" 명시
+- 문단별 마침표가 있을 경우 다음 줄로 출력
 
 ## 답변 구조
 1. 참고자료에 있는 핵심 정보 요약
-2. 세부 설명 (출처 표시)
+2. 세부 설명 (참고자료 표시)
 3. 부족한 정보 명시
 
 ## 용어 사용
@@ -100,7 +101,7 @@ class RAGModel:
         """
     
     def get_conversation_response(self, query: str) -> Dict:
-        """엄격한 RAG 기반 응답 생성"""
+        """RAG 기반 응답 생성"""
         self.stats['total_queries'] += 1
         
         try:
@@ -116,7 +117,7 @@ class RAGModel:
             if self.retriever is not None:
                 try:
                     sources = self.retriever.search(query, top_k=5)
-                    print(f"✅ 검색 완료: {len(sources)}개 결과")
+                    # print(f"✅ 검색 완료: {len(sources)}개 결과")
                 except Exception as search_error:
                     print(f"⚠️ 검색 중 오류: {search_error}")
                     return self._create_error_response(f"검색 중 오류 발생: {search_error}")
@@ -352,7 +353,7 @@ def main():
         test_queries = [
             "세컨더리 도미넌트란?",
             "12 equal temperament에 대해 설명해줘",
-            "평균율과 순정률의 차이는?"  # 데이터에 없을 가능성 높음
+            "평균율과 순정률의 차이는?"
         ]
         
         for query in test_queries:
