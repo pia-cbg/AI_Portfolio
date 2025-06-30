@@ -81,5 +81,4 @@ if __name__ == "__main__":
     print(format_chord_name("G 7"))  # -> G7
     print(parse_roman_numeral("V7"))  # -> {'degree': 5, 'quality': 'major', 'extension': '7'}
     print(generate_key_description("C"))
-    print(get_example_songs(["C", "G", "Am", "F"]))
     print(extract_musical_terms("This is a progression using secondary dominant chords"))
