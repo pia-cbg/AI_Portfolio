@@ -1,0 +1,5130 @@
+{
+  "start_time": "2025-06-30T17:05:19.732854",
+  "evaluations": [
+    {
+      "question_id": 1,
+      "question": "chords는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:05:37.623872",
+      "status": "accepted"
+    },
+    {
+      "question_id": 2,
+      "question": "반음을 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:05:42.232848",
+      "status": "rejected"
+    },
+    {
+      "question_id": 3,
+      "question": "옥타브와 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 8,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 7,
+        "educational": 8
+      },
+      "avg_score": 8.6,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:06:12.333065",
+      "improved_question": "옥타브의 개념에 대해서 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 4,
+      "question": "keys는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:06:30.519353",
+      "improved_question": "key를 찾는 방법은?",
+      "status": "improved"
+    },
+    {
+      "question_id": 5,
+      "question": "Sub는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:06:42.699345",
+      "status": "rejected"
+    },
+    {
+      "question_id": 6,
+      "question": "단음정이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:06:50.550341",
+      "improved_question": "단음정의 종류는 몇도가 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 7,
+      "question": "V 7이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:06.301688",
+      "improved_question": "V7의 구성음은 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 8,
+      "question": "마이너요소를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:18.002499",
+      "status": "accepted"
+    },
+    {
+      "question_id": 9,
+      "question": "도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:21.828583",
+      "status": "accepted"
+    },
+    {
+      "question_id": 10,
+      "question": "쉼표를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:27.713117",
+      "status": "accepted"
+    },
+    {
+      "question_id": 11,
+      "question": "avoid notes에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:31.298377",
+      "status": "accepted"
+    },
+    {
+      "question_id": 12,
+      "question": "Sus이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 7,
+        "relevance": 7,
+        "difficulty": 7,
+        "specificity": 7,
+        "educational": 7
+      },
+      "avg_score": 7.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:07:43.149029",
+      "improved_question": "Sus chord의 개념과 종류에 대해서 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 13,
+      "question": "토닉이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:08:00.077935",
+      "status": "accepted"
+    },
+    {
+      "question_id": 14,
+      "question": "멜로디가 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:08:10.237091",
+      "improved_question": "멜로디가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 15,
+      "question": "seventh는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:08:20.996379",
+      "improved_question": "seventh chord는 음악에서 어떤 역할을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 16,
+      "question": "논다이아토닉이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:08:33.427131",
+      "status": "accepted"
+    },
+    {
+      "question_id": 17,
+      "question": "Bb이 정의는 뭐야??",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:08:38.672746",
+      "improved_question": "Bb이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 18,
+      "question": "iiim이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:09:22.909817",
+      "improved_question": "iiim의 코드의 기능이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 19,
+      "question": "iiim를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:09:39.699267",
+      "status": "accepted"
+    },
+    {
+      "question_id": 20,
+      "question": "iiim는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:09:44.960811",
+      "status": "accepted"
+    },
+    {
+      "question_id": 21,
+      "question": "sus이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:09:50.689134",
+      "status": "accepted"
+    },
+    {
+      "question_id": 22,
+      "question": "chord functions을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:09:59.104658",
+      "status": "accepted"
+    },
+    {
+      "question_id": 23,
+      "question": "vi 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:06.020643",
+      "improved_question": "vim는 코드에서 어떤 기능을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 24,
+      "question": "베이스음이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:21.012809",
+      "improved_question": "베이음에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 25,
+      "question": "tritone sub과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:35.898509",
+      "status": "accepted"
+    },
+    {
+      "question_id": 26,
+      "question": "inversions는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:40.430403",
+      "status": "accepted"
+    },
+    {
+      "question_id": 27,
+      "question": "signatures를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:46.929456",
+      "improved_question": "key signatures를 정확히 이해하고 싶어.",
+      "status": "improved"
+    },
+    {
+      "question_id": 28,
+      "question": "쉼표 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:10:59.179407",
+      "status": "accepted"
+    },
+    {
+      "question_id": 29,
+      "question": "c major이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:11:04.506133",
+      "improved_question": "C major chord에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 30,
+      "question": "옥타브가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:11:20.117606",
+      "improved_question": "옥타브의 정의가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 31,
+      "question": "diminished intervals는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:11:41.049481",
+      "status": "rejected"
+    },
+    {
+      "question_id": 32,
+      "question": "sevenths는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:11:49.115031",
+      "improved_question": "seventh chord는 어떤 역할을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 33,
+      "question": "Interval는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:12:10.135259",
+      "improved_question": "Inte의 정의에 대해서 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 34,
+      "question": "iii가 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:12:31.489501",
+      "improved_question": "iiim가 코드에서 무슨기능을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 35,
+      "question": "더블플랫이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:12:47.303625",
+      "improved_question": "더블플랫에 대해서 자히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 36,
+      "question": "도미솔 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:13:03.321632",
+      "improved_question": "도미솔이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 37,
+      "question": "strong progressions과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:13:15.879650",
+      "status": "accepted"
+    },
+    {
+      "question_id": 38,
+      "question": "triad이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:13:28.299448",
+      "improved_question": "triad의 핵심 구성음이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 39,
+      "question": "avoid notes이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:13:42.185644",
+      "improved_question": "avoid note가 무엇인지 알고 싶어.",
+      "status": "improved"
+    },
+    {
+      "question_id": 40,
+      "question": "Db을 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:13:58.172986",
+      "status": "rejected"
+    },
+    {
+      "question_id": 41,
+      "question": "가온음자리표에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:02.402390",
+      "status": "accepted"
+    },
+    {
+      "question_id": 42,
+      "question": "chord progression에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:06.233415",
+      "status": "accepted"
+    },
+    {
+      "question_id": 43,
+      "question": "IM을 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:19.268719",
+      "status": "rejected"
+    },
+    {
+      "question_id": 44,
+      "question": "화음에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:23.540071",
+      "status": "accepted"
+    },
+    {
+      "question_id": 45,
+      "question": "minor chord이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:30.564099",
+      "improved_question": "minor chord의 개념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 46,
+      "question": "단음정 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:42.453638",
+      "status": "accepted"
+    },
+    {
+      "question_id": 47,
+      "question": "연주를 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:47.619104",
+      "status": "rejected"
+    },
+    {
+      "question_id": 48,
+      "question": "descending를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:14:55.234521",
+      "status": "accepted"
+    },
+    {
+      "question_id": 49,
+      "question": "root position이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:00.468673",
+      "status": "accepted"
+    },
+    {
+      "question_id": 50,
+      "question": "Dom을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:08.822939",
+      "improved_question": "dominant를 배우는 이유는?",
+      "status": "improved"
+    },
+    {
+      "question_id": 51,
+      "question": "Interval를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:20.972554",
+      "status": "accepted"
+    },
+    {
+      "question_id": 52,
+      "question": "마디가 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:25.152570",
+      "status": "rejected"
+    },
+    {
+      "question_id": 53,
+      "question": "Abm 개념이 궁금해",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:29.390557",
+      "status": "rejected"
+    },
+    {
+      "question_id": 54,
+      "question": "inversion이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:36.336439",
+      "status": "accepted"
+    },
+    {
+      "question_id": 55,
+      "question": "디미니쉬가 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:15:49.023404",
+      "improved_question": "디미니쉬 코드의 기본 개념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 56,
+      "question": "augmented chord이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:01.419634",
+      "improved_question": "augmented chord의 기본 개념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 57,
+      "question": "intervals이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:20.632385",
+      "improved_question": "interv의 종류는 어떤게 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 58,
+      "question": "IVM는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:41.169315",
+      "status": "accepted"
+    },
+    {
+      "question_id": 59,
+      "question": "Tonic이 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:45.397905",
+      "status": "accepted"
+    },
+    {
+      "question_id": 60,
+      "question": "tritone interval이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:49.569887",
+      "status": "accepted"
+    },
+    {
+      "question_id": 61,
+      "question": "논다이아토닉과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:16:55.907189",
+      "status": "accepted"
+    },
+    {
+      "question_id": 62,
+      "question": "major chord이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:17:05.340231",
+      "improved_question": "major chord는 어떻게 만들어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 63,
+      "question": "트라이어드가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:17:16.909114",
+      "improved_question": "트라이어드가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 64,
+      "question": "하프디미니쉬드를 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:17:38.357225",
+      "status": "rejected"
+    },
+    {
+      "question_id": 65,
+      "question": "IM7이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:17:49.907791",
+      "improved_question": "IM7이 하는 코드기능을 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 66,
+      "question": "secondary dominants는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:18:09.246830",
+      "status": "accepted"
+    },
+    {
+      "question_id": 67,
+      "question": "viim에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:18:18.937539",
+      "improved_question": "viim7b5에해 설명해줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 68,
+      "question": "서브도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:18:34.743306",
+      "status": "accepted"
+    },
+    {
+      "question_id": 69,
+      "question": "iim과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:18:42.935881",
+      "improved_question": "iim과 유사한 기능을 하는 코드를 알려줘",
+      "status": "improved"
+    },
+    {
+      "question_id": 70,
+      "question": "쉼표에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:19:04.597129",
+      "status": "accepted"
+    },
+    {
+      "question_id": 71,
+      "question": "Tonic는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:19:20.178264",
+      "status": "accepted"
+    },
+    {
+      "question_id": 72,
+      "question": "Dominants이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:19:26.043242",
+      "improved_question": "Dominant chord에 대해서 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 73,
+      "question": "음계가 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:19:42.635548",
+      "status": "accepted"
+    },
+    {
+      "question_id": 74,
+      "question": "minor seventh이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:19:49.668493",
+      "improved_question": "minor seventh chord구성음을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 75,
+      "question": "완전음정을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:20:11.768372",
+      "improved_question": "념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 76,
+      "question": "조표는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:20:27.365094",
+      "status": "accepted"
+    },
+    {
+      "question_id": 77,
+      "question": "더블플랫을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:20:33.981368",
+      "improved_question": "더블플랫이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 78,
+      "question": "Cmaj는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:20:46.016335",
+      "improved_question": "Cmaj의 코드 구성음이 어떻게 돼?",
+      "status": "improved"
+    },
+    {
+      "question_id": 79,
+      "question": "related ii minor이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:06.923826",
+      "improved_question": "related ii minor에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 80,
+      "question": "chord inversions는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:21.501611",
+      "status": "accepted"
+    },
+    {
+      "question_id": 81,
+      "question": "이명동음이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:25.070961",
+      "status": "accepted"
+    },
+    {
+      "question_id": 82,
+      "question": "major scale를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:29.328150",
+      "status": "accepted"
+    },
+    {
+      "question_id": 83,
+      "question": "c major에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:39.082587",
+      "status": "accepted"
+    },
+    {
+      "question_id": 84,
+      "question": "root이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:48.156849",
+      "improved_question": "root가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 85,
+      "question": "dominants이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:21:56.988474",
+      "status": "accepted"
+    },
+    {
+      "question_id": 86,
+      "question": "메이저키를 배우는 이유는?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:05.089061",
+      "status": "rejected"
+    },
+    {
+      "question_id": 87,
+      "question": "Ab 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:10.428526",
+      "status": "rejected"
+    },
+    {
+      "question_id": 88,
+      "question": "root position를 이해하고 싶어",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:15.218682",
+      "status": "rejected"
+    },
+    {
+      "question_id": 89,
+      "question": "보이싱이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:18.892059",
+      "status": "accepted"
+    },
+    {
+      "question_id": 90,
+      "question": "major seventh는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:23.749832",
+      "status": "accepted"
+    },
+    {
+      "question_id": 91,
+      "question": "베이스음이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:32.825583",
+      "improved_question": "베이스음을 변화시키는 것을 뭐라고 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 92,
+      "question": "reharmonization을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:44.959346",
+      "status": "accepted"
+    },
+    {
+      "question_id": 93,
+      "question": "sus는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:22:53.194517",
+      "improved_question": "sus chord는 음악에서 어떻게 활용돼?",
+      "status": "improved"
+    },
+    {
+      "question_id": 94,
+      "question": "IM는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:23:07.896330",
+      "status": "accepted"
+    },
+    {
+      "question_id": 95,
+      "question": "intervals는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:23:12.378194",
+      "improved_question": "interval의 종류는 어떤것들이 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 96,
+      "question": "버금딸림화음과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:23:34.702575",
+      "improved_question": "버금딸림화음과 같은 기능을 하는 코드는 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 97,
+      "question": "온음표가 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:23:52.867468",
+      "improved_question": "음표의 길이는 몇박자야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 98,
+      "question": "Db이 정의는 뭐야??",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:06.558960",
+      "status": "rejected"
+    },
+    {
+      "question_id": 99,
+      "question": "FM이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:17.602732",
+      "status": "rejected"
+    },
+    {
+      "question_id": 100,
+      "question": "성부를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:21.575451",
+      "status": "accepted"
+    },
+    {
+      "question_id": 101,
+      "question": "inversions이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:26.689570",
+      "improved_question": "inversion에 대해자세히 설명해줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 102,
+      "question": "리듬를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:41.569285",
+      "improved_question": "리듬을 이해하고 싶어.",
+      "status": "improved"
+    },
+    {
+      "question_id": 103,
+      "question": "도레미파솔라시도는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:24:51.694275",
+      "status": "accepted"
+    },
+    {
+      "question_id": 104,
+      "question": "sub을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:04.205795",
+      "improved_question": "sub-dominant는 음악에서 어떤역할을해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 105,
+      "question": "major seventh 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:18.769358",
+      "status": "accepted"
+    },
+    {
+      "question_id": 106,
+      "question": "secondary이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:26.870361",
+      "status": "accepted"
+    },
+    {
+      "question_id": 107,
+      "question": "IV maj7이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:31.474373",
+      "improved_question": "IV maj7의 주요 특징은 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 108,
+      "question": "major scale에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:45.139265",
+      "status": "accepted"
+    },
+    {
+      "question_id": 109,
+      "question": "vi m7과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:25:54.859039",
+      "improved_question": "vim7과 같은 기능을 하는 코는 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 110,
+      "question": "c major이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:26:22.703093",
+      "improved_question": "c major scale은 어떻게 만들어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 111,
+      "question": "건반이 왜 중요해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:26:41.720922",
+      "status": "rejected"
+    },
+    {
+      "question_id": 112,
+      "question": "전조에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:26:45.874480",
+      "status": "accepted"
+    },
+    {
+      "question_id": 113,
+      "question": "vii 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:26:52.091529",
+      "improved_question": "vim7b5에 대해서 설명해줘",
+      "status": "improved"
+    },
+    {
+      "question_id": 114,
+      "question": "strong progressions이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:27:16.039669",
+      "improved_question": "strong progression의 개념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 115,
+      "question": "reharmonization는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:27:32.226634",
+      "status": "accepted"
+    },
+    {
+      "question_id": 116,
+      "question": "flat keys 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:27:37.550751",
+      "status": "accepted"
+    },
+    {
+      "question_id": 117,
+      "question": "성부가 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:27:42.068453",
+      "improved_question": "성부가 무슨말이야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 118,
+      "question": "major scale 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:02.002719",
+      "status": "accepted"
+    },
+    {
+      "question_id": 119,
+      "question": "V7을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:08.210653",
+      "status": "accepted"
+    },
+    {
+      "question_id": 120,
+      "question": "half diminished이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:17.015872",
+      "improved_question": "half diminished의 핵심 구성뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 121,
+      "question": "Secondary이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:35.795407",
+      "improved_question": "secondary dominant가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 122,
+      "question": "음계 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:46.730858",
+      "status": "accepted"
+    },
+    {
+      "question_id": 123,
+      "question": "vi가 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:28:54.202585",
+      "improved_question": "vim7이 하는 기능을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 124,
+      "question": "장음정이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:29:10.094421",
+      "improved_question": "장음정이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 125,
+      "question": "화성이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:29:18.771278",
+      "improved_question": "화성에 해 자세히 설명해줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 126,
+      "question": "Major과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:29:36.394778",
+      "status": "accepted"
+    },
+    {
+      "question_id": 127,
+      "question": "도레미파솔라시가 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:29:41.409527",
+      "improved_question": "도레미파솔라시가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 128,
+      "question": "viim이 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:29:54.769996",
+      "improved_question": "viim7b5는 무슨 특징을 가지고 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 129,
+      "question": "조성감을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:30:13.716696",
+      "status": "accepted"
+    },
+    {
+      "question_id": 130,
+      "question": "tritone substitution 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:30:19.073112",
+      "status": "accepted"
+    },
+    {
+      "question_id": 131,
+      "question": "minor major seventh를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:30:25.326044",
+      "improved_question": "minor major seventh chord의 구성음을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 132,
+      "question": "강진행이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:30:40.279641",
+      "improved_question": "강진행에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 133,
+      "question": "어그멘티드가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:30:53.421387",
+      "improved_question": "어그멘티드 코드에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 134,
+      "question": "음이름이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:31:14.270750",
+      "improved_question": "음이름이 중요한 이유가 뭐?",
+      "status": "improved"
+    },
+    {
+      "question_id": 135,
+      "question": "dominant seventh이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:31:27.493655",
+      "status": "accepted"
+    },
+    {
+      "question_id": 136,
+      "question": "sus2이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:31:38.710225",
+      "improved_question": "sus2에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 137,
+      "question": "seventh 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:32:05.602203",
+      "improved_question": "seventh에 대해서 알려줘",
+      "status": "improved"
+    },
+    {
+      "question_id": 138,
+      "question": "리하모나이제이션과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:32:28.044332",
+      "improved_question": "리하모나이제이션이 무슨 뜻이야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 139,
+      "question": "코드가 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:32:38.806687",
+      "improved_question": "코드의 정의가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 140,
+      "question": "조성이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:32:51.143821",
+      "improved_question": "조성의 기본 개념을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 141,
+      "question": "이끈음는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:33:04.700065",
+      "improved_question": "이끈음은 왜 배워야해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 142,
+      "question": "서브도미넌트는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:33:21.289967",
+      "improved_question": "서브도미넌트는 어떤 역할을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 143,
+      "question": "accidentals를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:33:38.659709",
+      "status": "accepted"
+    },
+    {
+      "question_id": 144,
+      "question": "토닉이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:33:42.467317",
+      "improved_question": "토닉에 대해 자세히 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 145,
+      "question": "avoid notes이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:33:55.517952",
+      "status": "accepted"
+    },
+    {
+      "question_id": 146,
+      "question": "음계는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:03.241784",
+      "status": "accepted"
+    },
+    {
+      "question_id": 147,
+      "question": "iii와 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:10.441426",
+      "improved_question": "iiim와 유사한 코드기능을 알려줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 148,
+      "question": "inversions이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:23.461901",
+      "status": "accepted"
+    },
+    {
+      "question_id": 149,
+      "question": "낮은음자리표가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:32.357674",
+      "improved_question": "낮은음자리표가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 150,
+      "question": "I iii vi I가 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:49.472938",
+      "status": "rejected"
+    },
+    {
+      "question_id": 151,
+      "question": "chord inversions이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:54.061555",
+      "status": "accepted"
+    },
+    {
+      "question_id": 152,
+      "question": "harmony을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:34:57.273335",
+      "status": "accepted"
+    },
+    {
+      "question_id": 153,
+      "question": "augmented chord 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:01.336611",
+      "status": "accepted"
+    },
+    {
+      "question_id": 154,
+      "question": "descending이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:07.703340",
+      "improved_question": "descending diminishe가 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 155,
+      "question": "Tritone를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:24.796484",
+      "status": "accepted"
+    },
+    {
+      "question_id": 156,
+      "question": "notes에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:28.290908",
+      "status": "accepted"
+    },
+    {
+      "question_id": 157,
+      "question": "seventh이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:35.042114",
+      "improved_question": "seventh의 주요 특징은 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 158,
+      "question": "단음계를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:50.192488",
+      "status": "accepted"
+    },
+    {
+      "question_id": 159,
+      "question": "vi를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:35:57.486803",
+      "status": "accepted"
+    },
+    {
+      "question_id": 160,
+      "question": "IM7이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:01.668906",
+      "improved_question": "IM7는 코드에서 어떤 역할을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 161,
+      "question": "Sus을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:16.097890",
+      "status": "accepted"
+    },
+    {
+      "question_id": 162,
+      "question": "suspended이 왜 중요해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:21.722116",
+      "status": "rejected"
+    },
+    {
+      "question_id": 163,
+      "question": "key signatures는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:25.696967",
+      "status": "accepted"
+    },
+    {
+      "question_id": 164,
+      "question": "Dominant이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "너무 많음",
+      "timestamp": "2025-06-30T17:36:34.344387",
+      "status": "rejected"
+    },
+    {
+      "question_id": 165,
+      "question": "ascending는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:40.368469",
+      "status": "accepted"
+    },
+    {
+      "question_id": 166,
+      "question": "c major 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:44.074233",
+      "status": "accepted"
+    },
+    {
+      "question_id": 167,
+      "question": "오선보가 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:48.648167",
+      "status": "rejected"
+    },
+    {
+      "question_id": 168,
+      "question": "보이싱이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:36:59.341659",
+      "status": "accepted"
+    },
+    {
+      "question_id": 169,
+      "question": "vi m7이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:05.762385",
+      "improved_question": "vim7의 핵심 구성 음이 뭐야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 170,
+      "question": "세컨더리가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:19.592767",
+      "improved_question": "세컨더리 도미넌트에 대해 자세히 알려줄 수 있어?",
+      "status": "improved"
+    },
+    {
+      "question_id": 171,
+      "question": "time signatures이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:30.692471",
+      "status": "accepted"
+    },
+    {
+      "question_id": 172,
+      "question": "이끈음이 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:34.293086",
+      "status": "accepted"
+    },
+    {
+      "question_id": 173,
+      "question": "디미니쉬는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:37.848206",
+      "status": "accepted"
+    },
+    {
+      "question_id": 174,
+      "question": "diminished intervals이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:47.509175",
+      "status": "accepted"
+    },
+    {
+      "question_id": 175,
+      "question": "triads에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:50.570756",
+      "status": "accepted"
+    },
+    {
+      "question_id": 176,
+      "question": "Eb 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:37:57.421881",
+      "status": "rejected"
+    },
+    {
+      "question_id": 177,
+      "question": "circle of fifths이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:01.762121",
+      "status": "accepted"
+    },
+    {
+      "question_id": 178,
+      "question": "extended dominant 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:04.998917",
+      "status": "accepted"
+    },
+    {
+      "question_id": 179,
+      "question": "라시도레미파솔에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:15.046969",
+      "improved_question": "라시도레미파솔은 무슨스케일이야?",
+      "status": "improved"
+    },
+    {
+      "question_id": 180,
+      "question": "sharp keys이 왜 중요해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:29.720316",
+      "status": "rejected"
+    },
+    {
+      "question_id": 181,
+      "question": "flat 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:34.188532",
+      "status": "accepted"
+    },
+    {
+      "question_id": 182,
+      "question": "Submediant을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:43.969605",
+      "improved_question": "Submediant는 코드에서 무슨기능을 해?",
+      "status": "improved"
+    },
+    {
+      "question_id": 183,
+      "question": "피아노는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:38:59.538271",
+      "status": "rejected"
+    },
+    {
+      "question_id": 184,
+      "question": "Tritone는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:04.743698",
+      "status": "accepted"
+    },
+    {
+      "question_id": 185,
+      "question": "가온음자리표는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:09.062589",
+      "status": "rejected"
+    },
+    {
+      "question_id": 186,
+      "question": "Diatonic이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:15.707922",
+      "improved_question": "diatonic의 순서가 어떻게 돼?",
+      "status": "improved"
+    },
+    {
+      "question_id": 187,
+      "question": "FM이 왜 중요해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:30.192953",
+      "status": "rejected"
+    },
+    {
+      "question_id": 188,
+      "question": "이끈음를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:38.688763",
+      "status": "accepted"
+    },
+    {
+      "question_id": 189,
+      "question": "iii m7는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:44.612720",
+      "status": "accepted"
+    },
+    {
+      "question_id": 190,
+      "question": "Am에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:50.221717",
+      "status": "accepted"
+    },
+    {
+      "question_id": 191,
+      "question": "음역이 핵심 구성 요소는 뭐야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:39:53.885166",
+      "status": "rejected"
+    },
+    {
+      "question_id": 192,
+      "question": "diminished seventh에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:07.025088",
+      "improved_question": "diminished seventh chord에 대해 설명해줘.",
+      "status": "improved"
+    },
+    {
+      "question_id": 193,
+      "question": "chord functions 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:20.561353",
+      "status": "accepted"
+    },
+    {
+      "question_id": 194,
+      "question": "Diatonic를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:24.436837",
+      "status": "accepted"
+    },
+    {
+      "question_id": 195,
+      "question": "박자를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "avg_score": 10.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:27.876951",
+      "status": "accepted"
+    },
+    {
+      "question_id": 196,
+      "question": "Sub 개념이 궁금해",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "너무 많음",
+      "timestamp": "2025-06-30T17:40:34.735203",
+      "status": "rejected"
+    },
+    {
+      "question_id": 197,
+      "question": "diminished intervals이 왜 중요해?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:40.042484",
+      "status": "rejected"
+    },
+    {
+      "question_id": 198,
+      "question": "마디가 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:47.043813",
+      "status": "rejected"
+    },
+    {
+      "question_id": 199,
+      "question": "시플랫이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:53.028488",
+      "status": "rejected"
+    },
+    {
+      "question_id": 200,
+      "question": "오선보가 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "avg_score": 0.0,
+      "feedback": "",
+      "timestamp": "2025-06-30T17:40:58.875796",
+      "status": "rejected"
+    }
+  ],
+  "improved_questions": [
+    {
+      "original": "chords는 음악에서 어떻게 활용돼?",
+      "improved": "chords는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "옥타브와 유사한 다른 개념들을 설명해줘.",
+      "improved": "옥타브의 개념에 대해서 알려줘.",
+      "scores": {
+        "clarity": 8,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 7,
+        "educational": 8
+      },
+      "feedback": ""
+    },
+    {
+      "original": "keys는 음악에서 어떻게 활용돼?",
+      "improved": "key를 찾는 방법은?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "단음정이 핵심 구성 요소는 뭐야?",
+      "improved": "단음정의 종류는 몇도가 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "V 7이 핵심 구성 요소는 뭐야?",
+      "improved": "V7의 구성음은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "마이너요소를 이해하고 싶어",
+      "improved": "마이너요소를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "도미넌트 개념이 궁금해",
+      "improved": "도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "쉼표를 배우는 이유는?",
+      "improved": "쉼표를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "avoid notes에 대해 설명해줘",
+      "improved": "avoid notes에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Sus이 기본 개념을 알려줘.",
+      "improved": "Sus chord의 개념과 종류에 대해서 알려줘.",
+      "scores": {
+        "clarity": 7,
+        "relevance": 7,
+        "difficulty": 7,
+        "specificity": 7,
+        "educational": 7
+      },
+      "feedback": ""
+    },
+    {
+      "original": "토닉이 정의는 뭐야??",
+      "improved": "토닉이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "멜로디가 기본 개념을 알려줘.",
+      "improved": "멜로디가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "seventh는 음악에서 어떤 역할을 해?",
+      "improved": "seventh chord는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "논다이아토닉이 정의는 뭐야??",
+      "improved": "논다이아토닉이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Bb이 정의는 뭐야??",
+      "improved": "Bb이 뭐야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iiim이 핵심 구성 요소는 뭐야?",
+      "improved": "iiim의 코드의 기능이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iiim를 이해하고 싶어",
+      "improved": "iiim를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iiim는 음악에서 어떻게 활용돼?",
+      "improved": "iiim는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "sus이 주요 특징은 뭐야?",
+      "improved": "sus이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "chord functions을 배우는 이유는?",
+      "improved": "chord functions을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vi 관련 내용을 알려줘",
+      "improved": "vim는 코드에서 어떤 기능을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "베이스음이 대해 자세히 알려줄 수 있어?",
+      "improved": "베이음에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "tritone sub과 유사한 다른 개념들을 설명해줘.",
+      "improved": "tritone sub과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "inversions는 음악에서 어떻게 활용돼?",
+      "improved": "inversions는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "signatures를 이해하고 싶어",
+      "improved": "key signatures를 정확히 이해하고 싶어.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "쉼표 개념이 궁금해",
+      "improved": "쉼표 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "c major이 대해 자세히 알려줄 수 있어?",
+      "improved": "C major chord에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "옥타브가 대해 자세히 알려줄 수 있어?",
+      "improved": "옥타브의 정의가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "sevenths는 음악에서 어떤 역할을 해?",
+      "improved": "seventh chord는 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Interval는 어떤 구조로 이루어져 있어?",
+      "improved": "Inte의 정의에 대해서 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iii가 무엇인지 알고 싶어",
+      "improved": "iiim가 코드에서 무슨기능을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "더블플랫이 대해 자세히 알려줄 수 있어?",
+      "improved": "더블플랫에 대해서 자히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "도미솔 개념이 궁금해",
+      "improved": "도미솔이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "strong progressions과 유사한 다른 개념들을 설명해줘.",
+      "improved": "strong progressions과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "triad이 핵심 구성 요소는 뭐야?",
+      "improved": "triad의 핵심 구성음이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "avoid notes이 무엇인지 알고 싶어",
+      "improved": "avoid note가 무엇인지 알고 싶어.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "가온음자리표에 대해 설명해줘",
+      "improved": "가온음자리표에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "chord progression에 대해 설명해줘",
+      "improved": "chord progression에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "화음에 대해 설명해줘",
+      "improved": "화음에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "minor chord이 기본 개념을 알려줘.",
+      "improved": "minor chord의 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "단음정 개념이 궁금해",
+      "improved": "단음정 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "descending를 이해하고 싶어",
+      "improved": "descending를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "root position이 무엇인지 알고 싶어",
+      "improved": "root position이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Dom을 배우는 이유는?",
+      "improved": "dominant를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Interval를 이해하고 싶어",
+      "improved": "Interval를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "inversion이 무엇인지 알고 싶어",
+      "improved": "inversion이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "디미니쉬가 기본 개념을 알려줘.",
+      "improved": "디미니쉬 코드의 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "augmented chord이 기본 개념을 알려줘.",
+      "improved": "augmented chord의 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "intervals이 핵심 구성 요소는 뭐야?",
+      "improved": "interv의 종류는 어떤게 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "IVM는 음악에서 어떻게 활용돼?",
+      "improved": "IVM는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Tonic이 왜 중요해?",
+      "improved": "Tonic이 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "tritone interval이 주요 특징은 뭐야?",
+      "improved": "tritone interval이 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "논다이아토닉과 유사한 다른 개념들을 설명해줘.",
+      "improved": "논다이아토닉과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major chord이 기본 개념을 알려줘.",
+      "improved": "major chord는 어떻게 만들어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "트라이어드가 대해 자세히 알려줄 수 있어?",
+      "improved": "트라이어드가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "IM7이 대해 자세히 알려줄 수 있어?",
+      "improved": "IM7이 하는 코드기능을 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "secondary dominants는 음악에서 어떤 역할을 해?",
+      "improved": "secondary dominants는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "viim에 대해 설명해줘",
+      "improved": "viim7b5에해 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "서브도미넌트 개념이 궁금해",
+      "improved": "서브도미넌트 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iim과 유사한 다른 개념들을 설명해줘.",
+      "improved": "iim과 유사한 기능을 하는 코드를 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "쉼표에 대해 설명해줘",
+      "improved": "쉼표에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Tonic는 음악에서 어떻게 활용돼?",
+      "improved": "Tonic는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Dominants이 대해 자세히 알려줄 수 있어?",
+      "improved": "Dominant chord에 대해서 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "음계가 왜 중요해?",
+      "improved": "음계가 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "minor seventh이 기본 개념을 알려줘.",
+      "improved": "minor seventh chord구성음을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "완전음정을 배우는 이유는?",
+      "improved": "념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "조표는 음악에서 어떻게 활용돼?",
+      "improved": "조표는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "더블플랫을 배우는 이유는?",
+      "improved": "더블플랫이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Cmaj는 음악에서 어떤 역할을 해?",
+      "improved": "Cmaj의 코드 구성음이 어떻게 돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "related ii minor이 대해 자세히 알려줄 수 있어?",
+      "improved": "related ii minor에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "chord inversions는 음악에서 어떻게 활용돼?",
+      "improved": "chord inversions는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "이명동음이 무엇인지 알고 싶어",
+      "improved": "이명동음이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major scale를 이해하고 싶어",
+      "improved": "major scale를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "c major에 대해 설명해줘",
+      "improved": "c major에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "root이 기본 개념을 알려줘.",
+      "improved": "root가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "dominants이 정의는 뭐야??",
+      "improved": "dominants이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "보이싱이 정의는 뭐야??",
+      "improved": "보이싱이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major seventh는 어떤 구조로 이루어져 있어?",
+      "improved": "major seventh는 어떤 구조로 이루어져 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "베이스음이 기본 개념을 알려줘.",
+      "improved": "베이스음을 변화시키는 것을 뭐라고 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "reharmonization을 배우는 이유는?",
+      "improved": "reharmonization을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "sus는 음악에서 어떻게 활용돼?",
+      "improved": "sus chord는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "IM는 음악에서 어떻게 활용돼?",
+      "improved": "IM는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "intervals는 어떤 구조로 이루어져 있어?",
+      "improved": "interval의 종류는 어떤것들이 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "버금딸림화음과 유사한 다른 개념들을 설명해줘.",
+      "improved": "버금딸림화음과 같은 기능을 하는 코드는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "온음표가 핵심 구성 요소는 뭐야?",
+      "improved": "음표의 길이는 몇박자야?",
+      "scores": {
+        "clarity": 0,
+        "relevance": 0,
+        "difficulty": 0,
+        "specificity": 0,
+        "educational": 0
+      },
+      "feedback": ""
+    },
+    {
+      "original": "성부를 배우는 이유는?",
+      "improved": "성부를 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "inversions이 대해 자세히 알려줄 수 있어?",
+      "improved": "inversion에 대해자세히 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "리듬를 이해하고 싶어",
+      "improved": "리듬을 이해하고 싶어.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "도레미파솔라시도는 음악에서 어떤 역할을 해?",
+      "improved": "도레미파솔라시도는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "sub을 배우는 이유는?",
+      "improved": "sub-dominant는 음악에서 어떤역할을해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major seventh 개념이 궁금해",
+      "improved": "major seventh 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "secondary이 대해 자세히 알려줄 수 있어?",
+      "improved": "secondary이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "IV maj7이 주요 특징은 뭐야?",
+      "improved": "IV maj7의 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major scale에 대해 설명해줘",
+      "improved": "major scale에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vi m7과 유사한 다른 개념들을 설명해줘.",
+      "improved": "vim7과 같은 기능을 하는 코는 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "c major이 정의는 뭐야??",
+      "improved": "c major scale은 어떻게 만들어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "전조에 대해 설명해줘",
+      "improved": "전조에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vii 개념이 궁금해",
+      "improved": "vim7b5에 대해서 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "strong progressions이 기본 개념을 알려줘.",
+      "improved": "strong progression의 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "reharmonization는 음악에서 어떤 역할을 해?",
+      "improved": "reharmonization는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "flat keys 관련 내용을 알려줘",
+      "improved": "flat keys 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "성부가 정의는 뭐야??",
+      "improved": "성부가 무슨말이야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "major scale 개념이 궁금해",
+      "improved": "major scale 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "V7을 배우는 이유는?",
+      "improved": "V7을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "half diminished이 핵심 구성 요소는 뭐야?",
+      "improved": "half diminished의 핵심 구성뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Secondary이 무엇인지 알고 싶어",
+      "improved": "secondary dominant가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "음계 관련 내용을 알려줘",
+      "improved": "음계 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vi가 기본 개념을 알려줘.",
+      "improved": "vim7이 하는 기능을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "장음정이 대해 자세히 알려줄 수 있어?",
+      "improved": "장음정이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "화성이 대해 자세히 알려줄 수 있어?",
+      "improved": "화성에 해 자세히 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Major과 유사한 다른 개념들을 설명해줘.",
+      "improved": "Major과 유사한 다른 개념들을 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "도레미파솔라시가 기본 개념을 알려줘.",
+      "improved": "도레미파솔라시가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "viim이 왜 중요해?",
+      "improved": "viim7b5는 무슨 특징을 가지고 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "조성감을 배우는 이유는?",
+      "improved": "조성감을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "tritone substitution 관련 내용을 알려줘",
+      "improved": "tritone substitution 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "minor major seventh를 이해하고 싶어",
+      "improved": "minor major seventh chord의 구성음을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "강진행이 대해 자세히 알려줄 수 있어?",
+      "improved": "강진행에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "어그멘티드가 대해 자세히 알려줄 수 있어?",
+      "improved": "어그멘티드 코드에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "음이름이 핵심 구성 요소는 뭐야?",
+      "improved": "음이름이 중요한 이유가 뭐?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "dominant seventh이 정의는 뭐야??",
+      "improved": "dominant seventh이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "sus2이 대해 자세히 알려줄 수 있어?",
+      "improved": "sus2에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "seventh 관련 내용을 알려줘",
+      "improved": "seventh에 대해서 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "리하모나이제이션과 유사한 다른 개념들을 설명해줘.",
+      "improved": "리하모나이제이션이 무슨 뜻이야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "코드가 정의는 뭐야??",
+      "improved": "코드의 정의가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "조성이 기본 개념을 알려줘.",
+      "improved": "조성의 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "이끈음는 어떤 구조로 이루어져 있어?",
+      "improved": "이끈음은 왜 배워야해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "서브도미넌트는 어떤 구조로 이루어져 있어?",
+      "improved": "서브도미넌트는 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "accidentals를 이해하고 싶어",
+      "improved": "accidentals를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "토닉이 대해 자세히 알려줄 수 있어?",
+      "improved": "토닉에 대해 자세히 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "avoid notes이 정의는 뭐야??",
+      "improved": "avoid notes이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "음계는 음악에서 어떻게 활용돼?",
+      "improved": "음계는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iii와 유사한 다른 개념들을 설명해줘.",
+      "improved": "iiim와 유사한 코드기능을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "inversions이 무엇인지 알고 싶어",
+      "improved": "inversions이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "낮은음자리표가 대해 자세히 알려줄 수 있어?",
+      "improved": "낮은음자리표가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "chord inversions이 기본 개념을 알려줘.",
+      "improved": "chord inversions이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "harmony을 배우는 이유는?",
+      "improved": "harmony을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "augmented chord 개념이 궁금해",
+      "improved": "augmented chord 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "descending이 핵심 구성 요소는 뭐야?",
+      "improved": "descending diminishe가 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Tritone를 이해하고 싶어",
+      "improved": "Tritone를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "notes에 대해 설명해줘",
+      "improved": "notes에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "seventh이 주요 특징은 뭐야?",
+      "improved": "seventh의 주요 특징은 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "단음계를 이해하고 싶어",
+      "improved": "단음계를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vi를 이해하고 싶어",
+      "improved": "vi를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "IM7이 정의는 뭐야??",
+      "improved": "IM7는 코드에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Sus을 배우는 이유는?",
+      "improved": "Sus을 배우는 이유는?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "key signatures는 음악에서 어떻게 활용돼?",
+      "improved": "key signatures는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "ascending는 음악에서 어떻게 활용돼?",
+      "improved": "ascending는 음악에서 어떻게 활용돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "c major 관련 내용을 알려줘",
+      "improved": "c major 관련 내용을 알려줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "보이싱이 기본 개념을 알려줘.",
+      "improved": "보이싱이 기본 개념을 알려줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "vi m7이 핵심 구성 요소는 뭐야?",
+      "improved": "vim7의 핵심 구성 음이 뭐야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "세컨더리가 대해 자세히 알려줄 수 있어?",
+      "improved": "세컨더리 도미넌트에 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "time signatures이 정의는 뭐야??",
+      "improved": "time signatures이 정의는 뭐야??",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "이끈음이 왜 중요해?",
+      "improved": "이끈음이 왜 중요해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "디미니쉬는 음악에서 어떤 역할을 해?",
+      "improved": "디미니쉬는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "diminished intervals이 대해 자세히 알려줄 수 있어?",
+      "improved": "diminished intervals이 대해 자세히 알려줄 수 있어?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "triads에 대해 설명해줘",
+      "improved": "triads에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "circle of fifths이 무엇인지 알고 싶어",
+      "improved": "circle of fifths이 무엇인지 알고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "extended dominant 개념이 궁금해",
+      "improved": "extended dominant 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "라시도레미파솔에 대해 설명해줘",
+      "improved": "라시도레미파솔은 무슨스케일이야?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "flat 개념이 궁금해",
+      "improved": "flat 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Submediant을 배우는 이유는?",
+      "improved": "Submediant는 코드에서 무슨기능을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Tritone는 음악에서 어떤 역할을 해?",
+      "improved": "Tritone는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Diatonic이 핵심 구성 요소는 뭐야?",
+      "improved": "diatonic의 순서가 어떻게 돼?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "이끈음를 이해하고 싶어",
+      "improved": "이끈음를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "iii m7는 음악에서 어떤 역할을 해?",
+      "improved": "iii m7는 음악에서 어떤 역할을 해?",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Am에 대해 설명해줘",
+      "improved": "Am에 대해 설명해줘",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "diminished seventh에 대해 설명해줘",
+      "improved": "diminished seventh chord에 대해 설명해줘.",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "chord functions 개념이 궁금해",
+      "improved": "chord functions 개념이 궁금해",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "Diatonic를 이해하고 싶어",
+      "improved": "Diatonic를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    },
+    {
+      "original": "박자를 이해하고 싶어",
+      "improved": "박자를 이해하고 싶어",
+      "scores": {
+        "clarity": 10,
+        "relevance": 10,
+        "difficulty": 10,
+        "specificity": 10,
+        "educational": 10
+      },
+      "feedback": ""
+    }
+  ],
+  "end_time": "2025-06-30T17:40:59.976519"
+}

@@ -1,0 +1,14 @@
+{
+  "question": "단음정의 종류는 몇도가 있어?",
+  "original_response": "참고자료에 따르면, 단음정의 종류는 총 2도가 있습니다:\n\n1. 단3도 [참고자료 2]\n2. 단7도 [참고자료 3]\n\n참고자료에서는 단음정에 대한 더 자세한 정보는 제공되지 않았습니다. 단음계의 세부적인 종류와 활용법은 화성학을 더 깊이 공부할 때 다루어진다고 합니다. [참고자료 4]",
+  "corrected_response": "단음정은 2,3,6,7도가 있다. 이는 장음정에서 플랫을 시킨 것이다.",
+  "scores": {
+    "source_accuracy": 10,
+    "source_citation": 10,
+    "no_hallucination": 10,
+    "clarity": 0,
+    "completeness": 0
+  },
+  "feedback": "",
+  "timestamp": "2025-06-30T17:53:41.724909"
+}

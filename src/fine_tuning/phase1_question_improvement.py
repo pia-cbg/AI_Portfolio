@@ -125,34 +125,57 @@ class Phase1QuestionImprovement:
         return set()
     
     def _generate_questions(self, keywords: Set[str]) -> List[str]:
-        """초기 질문 생성"""
-        # 승인된 키워드를 명시적으로 전달
+        """
+        키워드 기반 질문 생성
+        
+        :param keywords: 키워드 세트
+        :return: 생성된 질문 리스트
+        """
+        print("\n2️⃣ 질문 생성 중...")
+        
+        # 이미 생성된 질문 로드 (추가 방식)
+        existing_questions = []
+        raw_questions_file = os.path.join(self.base_dir, 'raw_questions.json')
+        
+        if os.path.exists(raw_questions_file):
+            try:
+                with open(raw_questions_file, 'r', encoding='utf-8') as f:
+                    existing_questions = json.load(f)
+                    print(f"✅ 기존 질문 {len(existing_questions)}개 로드 완료")
+            except json.JSONDecodeError:
+                print("⚠️ 기존 질문 파일 손상. 새로 시작합니다.")
+        
+        # 생성할 질문 수 결정 (기존 질문이 충분하면 적게 생성)
+        if len(existing_questions) >= 200:  # 최대 질문 수
+            print(f"⚠️ 이미 충분한 질문({len(existing_questions)}개)이 있습니다.")
+            return existing_questions
+            
+        # 필요한 추가 질문 수 계산
+        target_total = 100  # 목표 질문 수
+        num_to_generate = max(10, target_total - len(existing_questions))  # 최소 10개는 생성
+        
+        print(f"🎲 {num_to_generate}개의 새 질문 생성 중...")
+        
+        # 질문 생성기 초기화
         generator = QuestionGenerator(keywords)
         
-        # 질문 생성 수 입력
-        try:
-            num_questions = int(input("\n생성할 질문 수 (기본 30개): ") or 30)
-        except ValueError:
-            num_questions = 30
+        # 질문 생성
+        questions = generator.generate_questions(num_questions=num_to_generate)
         
-        print(f"📝 {num_questions}개의 질문을 생성합니다...")
-        
-        questions = generator.generate_questions(num_questions)
-        
-        # 필터링
+        # 질문 필터링
         filtered_questions = generator.filter_questions(questions)
         
+        # 질문 저장 (기존 + 새로운 질문들)
+        all_questions = existing_questions + [q for q in filtered_questions if q not in existing_questions]
+        
         # 저장
-        generator.save_questions(filtered_questions, 'raw_questions.json')
+        save_path = os.path.join(self.base_dir, 'raw_questions.json')
+        with open(save_path, 'w', encoding='utf-8') as f:
+            json.dump(all_questions, f, ensure_ascii=False, indent=2)
         
-        print(f"✅ {len(filtered_questions)}개의 질문 생성 완료")
+        print(f"✅ 질문 저장 완료: {len(filtered_questions)}개 추가, 총 {len(all_questions)}개")
         
-        # 생성된 질문 미리보기
-        print("\n📋 생성된 질문 미리보기 (처음 5개):")
-        for i, q in enumerate(filtered_questions[:5], 1):
-            print(f"  {i}. {q}")
-        
-        return filtered_questions
+        return all_questions
     
     def _evaluate_and_improve_questions(self, questions: List[str]) -> List[Dict]:
         """질문 평가 및 개선"""

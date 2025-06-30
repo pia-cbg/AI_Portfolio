@@ -1,90 +1,91 @@
-import random
-from typing import List, Set
-import json
 import os
+import random
+import json
+from typing import List, Set
 
 class QuestionGenerator:
-    def __init__(self, keywords: Set[str] = None):
+    def __init__(self, keywords: Set[str]):
         """
         키워드 기반 질문 생성기
         
-        :param keywords: 키워드 세트 (None인 경우 승인된 키워드 로드)
+        :param keywords: 키워드 세트
         """
-        self.keywords = keywords if keywords is not None else self._load_approved_keywords()
-        self.question_templates = self._load_question_templates()
-    
-    def _load_approved_keywords(self) -> Set[str]:
-        """승인된 키워드만 로드"""
-        # 승인된 키워드 파일 경로
-        approved_keywords_path = 'data/fine_tuning/keywords/approved_keywords.json'
-        
-        # 파일이 없으면 기본 키워드 파일 시도
-        if not os.path.exists(approved_keywords_path):
-            fallback_path = 'data/fine_tuning/keywords/extracted_keywords.json'
-            print(f"승인된 키워드 파일이 없어 기본 키워드 파일 사용: {fallback_path}")
-            approved_keywords_path = fallback_path
-        
-        try:
-            with open(approved_keywords_path, 'r', encoding='utf-8') as f:
-                keywords = json.load(f)
-                print(f"✅ 키워드 로드 완료: {len(keywords)}개")
-                return set(keywords)
-        except FileNotFoundError:
-            print(f"키워드 파일을 찾을 수 없습니다: {approved_keywords_path}")
-            return set()
-        except json.JSONDecodeError:
-            print("키워드 파일 형식이 올바르지 않습니다.")
-            return set()
-    
-    def _load_question_templates(self) -> List[str]:
-        """자연스러운 질문 템플릿 로드"""
-        templates_path = 'data/fine_tuning/question_templates.json'
-        
-        # 항상 새로운 자연스러운 템플릿 사용
-        natural_templates = [
-            # 기본 정의 (친근한 어투)
-            "{}가 뭐야?",
-            "{}에 대해 알려줘",
-            "{}를 쉽게 설명해줄래?",
-            "{}가 무엇인지 알고 싶어",
+        self.keywords = keywords
+        self.question_templates = [
+            # 정의 관련 질문 (이름 기반 템플릿 사용)
+            "{keyword}{josa_i} 정의는 뭐야??",
+            "{keyword}{josa_i} 대해 자세히 알려줄 수 있어?",
+            "{keyword}{josa_i} 기본 개념을 알려줘.",
             
-            # 실용적 질문
-            "{}는 어떻게 쓰는 거야?",
-            "{}를 어떻게 연주하면 돼?",
-            "{}는 언제 사용하는 거야?",
-            "{}를 어떻게 만들어?",
+            # 특징/구조 관련 질문
+            "{keyword}{josa_i} 주요 특징은 뭐야?",
+            "{keyword}는 어떤 구조로 이루어져 있어?",
+            "{keyword}{josa_i} 핵심 구성 요소는 뭐야?",
             
-            # 호기심 기반
-            "{}가 왜 중요해?",
-            "{}를 배우면 뭐가 좋아?",
-            "{}는 어떤 느낌이야?",
-            "{}의 특징이 뭐야?",
+            # 응용/활용 관련 질문
+            "{keyword}는 음악에서 어떻게 활용돼?",
+            "{keyword}는 음악에서 어떤 역할을 해?",
             
-            # 비교/관계
-            "{}와 비슷한 게 또 있어?",
-            "{}와 다른 점이 뭐야?",
-            "{}와 {}의 차이점은?",
+            # 비교/관계 관련 질문,
+            "{keyword}{josa_wa} 유사한 다른 개념들을 설명해줘.",
             
-            # 실제 적용
-            "{}가 들어간 곡 추천해줘",
-            "{}를 실제로 어떻게 써?",
-            "{}로 연습할 만한 곡 있어?",
-            "{}의 예시를 들어줘",
+            # 심화 질문
+            "{keyword}{josa_i} 왜 중요해?",
+            "{keyword}{josa_eul} 배우는 이유는?",
+            "{keyword}{josa_i} 무엇인지 알고 싶어",
             
-            # 학습 관련
-            "{}를 어떻게 연습해야 해?",
-            "{}를 배우는 순서는?",
-            "{}에서 주의할 점이 뭐야?",
-            "{}를 이해하는 팁이 있어?"
+            # 추가 질문들 (조사 없는 버전)
+            "{keyword}에 대해 설명해줘",
+            "{keyword} 관련 내용을 알려줘",
+            "{keyword} 개념이 궁금해",
+            "{keyword}를 이해하고 싶어"
         ]
+    
+    def get_josa(self, word: str, josa_type: str) -> str:
+        """
+        한국어 조사를 올바르게 선택하는 함수
         
-        # 템플릿 저장 (선택적)
-        if not os.path.exists(templates_path):
-            os.makedirs(os.path.dirname(templates_path), exist_ok=True)
-            with open(templates_path, 'w', encoding='utf-8') as f:
-                json.dump(natural_templates, f, ensure_ascii=False, indent=2)
+        :param word: 단어
+        :param josa_type: 조사 타입 ('이', '와', '을', '는')
+        :return: 올바른 조사
+        """
+        if not word:
+            return ''
+            
+        # 마지막 글자의 받침 확인
+        last_char = word[-1]
         
-        return natural_templates
+        # 영어인 경우 발음 기준으로 처리
+        if ord('A') <= ord(last_char) <= ord('z'):
+            # 영어 단어의 경우 발음을 고려
+            # 모음으로 끝나는 발음: A, E, I, O, U
+            vowel_endings = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+            has_batchim = last_char not in vowel_endings
+        else:
+            # 한글인 경우 받침 확인
+            try:
+                char_code = ord(last_char) - 0xAC00
+                # 한글 범위 확인 (가~힣)
+                if 0 <= char_code <= 11171:
+                    has_batchim = char_code % 28 != 0
+                else:
+                    # 한글이 아닌 경우 받침이 있는 것으로 처리
+                    has_batchim = True
+            except:
+                # 예외 발생 시 받침이 있는 것으로 처리
+                has_batchim = True
+        
+        # 조사 선택
+        josa_map = {
+            '이': '이' if has_batchim else '가',
+            '은': '은' if has_batchim else '는',
+            '을': '을' if has_batchim else '를',
+            '와': '과' if has_batchim else '와',
+            '로': '으로' if has_batchim else '로',
+            '의': '의'  # 의는 변하지 않음
+        }
+        
+        return josa_map.get(josa_type, '')
     
     def generate_questions(self, num_questions: int = 10) -> List[str]:
         """
@@ -94,135 +95,52 @@ class QuestionGenerator:
         :return: 생성된 질문 리스트
         """
         if not self.keywords:
-            print("사용 가능한 키워드가 없습니다.")
+            print("경고: 사용 가능한 키워드가 없습니다.")
             return []
-        
-        if not self.question_templates:
-            print("질문 템플릿이 없습니다.")
-            return []
-        
+            
         # 키워드를 리스트로 변환
         keywords_list = list(self.keywords)
         
         # 질문 생성
         questions = []
+        max_attempts = num_questions * 3  # 무한 루프 방지
         attempts = 0
-        max_attempts = num_questions * 5  # 무한루프 방지
         
         while len(questions) < num_questions and attempts < max_attempts:
+            attempts += 1
+            
             # 랜덤 키워드 선택
             keyword = random.choice(keywords_list)
             
             # 랜덤 템플릿 선택
             template = random.choice(self.question_templates)
             
+            # 템플릿에 따라 적절한 조사 생성
+            josa_i = self.get_josa(keyword, '이')
+            josa_wa = self.get_josa(keyword, '와')
+            josa_eul = self.get_josa(keyword, '을')
+            josa_eun = self.get_josa(keyword, '은')
+            
             # 질문 생성
             try:
-                question = template.format(keyword)
-                
-                # 중복 방지 및 품질 검사
-                if (question not in questions and 
-                    self._is_valid_question(question, keyword)):
-                    questions.append(question)
-                    
-            except Exception as e:
-                print(f"질문 생성 중 오류: {e}")
+                question = template.format(
+                    keyword=keyword,
+                    josa_i=josa_i,
+                    josa_wa=josa_wa,
+                    josa_eul=josa_eul,
+                    josa_eun=josa_eun
+                )
+            except KeyError:
+                # 조사 없는 템플릿인 경우
+                question = template.format(keyword=keyword)
             
-            attempts += 1
-        
-        if len(questions) < num_questions:
-            print(f"요청한 {num_questions}개 중 {len(questions)}개만 생성되었습니다.")
+            # 중복 방지
+            if question not in questions:
+                questions.append(question)
         
         return questions
     
-    def _is_valid_question(self, question: str, keyword: str) -> bool:
-        """질문 유효성 검사"""
-        # 너무 짧은 질문 제외
-        if len(question) < 5:
-            return False
-        
-        # 키워드가 실제로 포함되어 있는지 확인
-        if keyword not in question:
-            return False
-        
-        # 조사 중복 확인 (예: "도미넌트는는")
-        if any(dup in question for dup in ['은은', '는는', '이이', '가가', '을을', '를를']):
-            return False
-        
-        return True
-    
-    def generate_questions_by_category(self, categories: dict) -> dict:
-        """
-        카테고리별 질문 생성
-        
-        :param categories: {'기본': 키워드세트, '고급': 키워드세트}
-        :return: 카테고리별 질문 딕셔너리
-        """
-        categorized_questions = {}
-        
-        for category, category_keywords in categories.items():
-            # 임시로 키워드 설정
-            original_keywords = self.keywords
-            self.keywords = category_keywords
-            
-            # 해당 카테고리 질문 생성
-            questions = self.generate_questions(num_questions=10)
-            categorized_questions[category] = questions
-            
-            # 원래 키워드로 복원
-            self.keywords = original_keywords
-        
-        return categorized_questions
-    
-    def generate_questions_batch(self, num_batches: int = 5, batch_size: int = 10) -> List[List[str]]:
-        """
-        배치 단위로 질문 생성
-        
-        :param num_batches: 배치 수
-        :param batch_size: 배치당 질문 수
-        :return: 배치별 질문 리스트
-        """
-        batches = []
-        
-        for i in range(num_batches):
-            batch = self.generate_questions(batch_size)
-            batches.append(batch)
-            print(f"배치 {i+1}/{num_batches} 생성 완료: {len(batch)}개 질문")
-        
-        return batches
-    
-    def save_questions(self, questions: List[str], filename: str = 'generated_questions.json'):
-        """
-        생성된 질문 저장
-        
-        :param questions: 질문 리스트
-        :param filename: 저장할 파일명
-        """
-        output_dir = 'data/fine_tuning/phase1_question_improvement'
-        os.makedirs(output_dir, exist_ok=True)
-        
-        output_path = os.path.join(output_dir, filename)
-        
-        # 기존 질문이 있다면 로드
-        existing_questions = []
-        if os.path.exists(output_path):
-            try:
-                with open(output_path, 'r', encoding='utf-8') as f:
-                    existing_questions = json.load(f)
-            except json.JSONDecodeError:
-                existing_questions = []
-        
-        # 중복 제거하여 병합
-        all_questions = list(dict.fromkeys(existing_questions + questions))
-        
-        # 저장
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(all_questions, f, ensure_ascii=False, indent=2)
-        
-        print(f"✅ 질문 저장 완료: {output_path}")
-        print(f"   기존: {len(existing_questions)}개, 추가: {len(questions)}개, 총: {len(all_questions)}개")
-    
-    def filter_questions(self, questions: List[str], min_length: int = 8) -> List[str]:
+    def filter_questions(self, questions: List[str], min_length: int = 10) -> List[str]:
         """
         생성된 질문 필터링
         
@@ -230,73 +148,97 @@ class QuestionGenerator:
         :param min_length: 최소 길이
         :return: 필터링된 질문 리스트
         """
-        filtered = []
+        return [q for q in questions if len(q) >= min_length]
+
+    def save_questions(self, questions: List[str], filename: str = None):
+        """
+        질문을 JSON 파일로 저장 (누적 방식)
         
-        for question in questions:
-            # 길이 체크
-            if len(question) < min_length:
-                continue
-            
-            # 유효성 체크
-            if not any(keyword in question for keyword in self.keywords):
-                continue
-            
-            # 조사 중복 체크
-            if any(dup in question for dup in ['은은', '는는', '이이', '가가']):
-                continue
-            
-            filtered.append(question)
+        :param questions: 저장할 질문 리스트
+        :param filename: 저장할 파일명 (기본값: raw_questions.json)
+        """
+        if filename is None:
+            filename = 'data/fine_tuning/phase1_question_improvement/raw_questions.json'
+        else:
+            # 파일명만 전달된 경우 기본 경로 추가
+            if '/' not in filename and '\\' not in filename:
+                filename = f'data/fine_tuning/phase1_question_improvement/{filename}'
         
-        if len(filtered) < len(questions):
-            print(f"필터링: {len(questions) - len(filtered)}개의 질문이 제거됨")
+        # 디렉토리 생성
+        directory = os.path.dirname(filename)
+        if directory:  # 디렉토리가 있는 경우만 생성
+            os.makedirs(directory, exist_ok=True)
         
-        return filtered
-    
-    def get_keyword_stats(self) -> dict:
-        """키워드 통계 정보"""
-        return {
-            'total_keywords': len(self.keywords),
-            'total_templates': len(self.question_templates),
-            'max_possible_questions': len(self.keywords) * len(self.question_templates),
-            'sample_keywords': list(self.keywords)[:10] if self.keywords else []
-        }
+        # 기존 질문이 있다면 로드
+        existing_questions = []
+        if os.path.exists(filename):
+            try:
+                with open(filename, 'r', encoding='utf-8') as f:
+                    existing_questions = json.load(f)
+                print(f"🔄 기존 질문 {len(existing_questions)}개 로드됨")
+            except (json.JSONDecodeError, FileNotFoundError):
+                print("⚠️ 기존 파일을 로드할 수 없어 새로 시작합니다.")
+        
+        # 새 질문 추가 (중복 제거)
+        # 더 엄격한 중복 체크 (대소문자, 공백 무시)
+        normalized_existing = [q.lower().strip() for q in existing_questions]
+        new_questions_added = []
+        
+        for q in questions:
+            normalized_q = q.lower().strip()
+            if normalized_q not in normalized_existing:
+                existing_questions.append(q)
+                new_questions_added.append(q)
+                normalized_existing.append(normalized_q)
+        
+        # 저장
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(existing_questions, f, ensure_ascii=False, indent=2)
+        
+        print(f"✅ 질문 저장 완료: {len(new_questions_added)}개 추가, 총 {len(existing_questions)}개")
+        print(f"   저장 위치: {filename}")
+        
+        return existing_questions
+        
+    def load_questions(self, filename: str = None) -> List[str]:
+        """
+        저장된 질문 로드
+        
+        :param filename: 로드할 파일명
+        :return: 로드된 질문 리스트
+        """
+        if filename is None:
+            filename = 'data/fine_tuning/phase1_question_improvement/raw_questions.json'
+        else:
+            # 파일명만 전달된 경우 기본 경로 추가
+            if '/' not in filename and '\\' not in filename:
+                filename = f'data/fine_tuning/phase1_question_improvement/{filename}'
+        
+        try:
+            with open(filename, 'r', encoding='utf-8') as f:
+                questions = json.load(f)
+            print(f"✅ 질문 로드 완료: {len(questions)}개")
+            return questions
+        except (FileNotFoundError, json.JSONDecodeError) as e:
+            print(f"❌ 질문 로드 실패: {e}")
+            return []
 
 def main():
-    """질문 생성기 테스트"""
-    print("🎵 음악 이론 질문 생성기 테스트")
+    # 테스트
+    test_keywords = {'음정', '더블샾', '화음', 'scale', 'chord', '도미넌트', '메이저', '마이너'}
+    generator = QuestionGenerator(test_keywords)
     
-    # 질문 생성기 초기화
-    generator = QuestionGenerator()
+    print("=== 조사 테스트 ===")
+    for keyword in test_keywords:
+        print(f"- {keyword}{generator.get_josa(keyword, '이')} 무엇인가?")
+        print(f"- {keyword}{generator.get_josa(keyword, '와')} 관련된 것은?")
+        print(f"- {keyword}{generator.get_josa(keyword, '을')} 배우려면?")
+        print()
     
-    # 통계 출력
-    stats = generator.get_keyword_stats()
-    print(f"\n📊 키워드 통계:")
-    print(f"  - 총 키워드: {stats['total_keywords']}개")
-    print(f"  - 총 템플릿: {stats['total_templates']}개")
-    print(f"  - 최대 생성 가능: {stats['max_possible_questions']}개")
-    
-    if stats['sample_keywords']:
-        print(f"  - 샘플 키워드: {', '.join(stats['sample_keywords'])}")
-    
-    # 질문 생성
-    questions = generator.generate_questions(num_questions=20)
-    
-    # 필터링
-    filtered_questions = generator.filter_questions(questions)
-    
-    # 출력
-    print(f"\n🎲 생성된 질문 ({len(filtered_questions)}개):")
-    for idx, question in enumerate(filtered_questions[:10], 1):
-        print(f"{idx:2d}. {question}")
-    
-    if len(filtered_questions) > 10:
-        print(f"   ... 외 {len(filtered_questions) - 10}개")
-    
-    # 저장
-    if filtered_questions:
-        generator.save_questions(filtered_questions, 'raw_questions.json')
-    else:
-        print("❌ 생성된 질문이 없어 저장하지 않습니다.")
+    print("\n=== 자동 생성된 질문 ===")
+    questions = generator.generate_questions(15)
+    for i, q in enumerate(questions, 1):
+        print(f"{i}. {q}")
 
 if __name__ == "__main__":
     main()

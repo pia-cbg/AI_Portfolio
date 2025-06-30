@@ -1,0 +1,14 @@
+{
+  "question": "iiim를 이해하고 싶어",
+  "original_response": "iiim를 이해하기 위해 참고자료를 살펴보면 다음과 같습니다:\n\n1. iiim7은 Em7 코드를 의미합니다. [참고자료 1]\n2. Em7(iiim7)은 E minor 조성에서 3번째 코드로, 상대적으로 약한 기능을 합니다. [참고자료 2]\n3. 그러나 iiim7 코드는 I-iii-vi-I 진행에서 유사한 기능을 하며, 안정감 있는 진행을 만들어냅니다. [참고자료 2]\n4. iiim7 코드는 V7 코드의 세컨더리 도미넌트로 사용될 수 있습니다. 예를 들어 B7(V/iiim7) - Em7(iiim7) 진행이 가능합니다. [참고자료 1]\n\n현재 제공된 참고자료에서는 iiim7 코드의 자세한 성질이나 역할에 대한 정보가 부족합니다. 추가적인 정보가 필요할 것 같습니다.",
+  "corrected_response": "iiim는 다이아토닉의 3번째 위한 코드로 tonic과 유사한 기능을 하 코드입니다.",
+  "scores": {
+    "source_accuracy": 0,
+    "source_citation": 10,
+    "no_hallucination": 4,
+    "clarity": 2,
+    "completeness": 5
+  },
+  "feedback": "",
+  "timestamp": "2025-06-30T18:04:19.936036"
+}

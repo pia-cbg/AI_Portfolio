@@ -8,11 +8,9 @@ from datetime import datetime
 project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, project_root)
 
-# 절대 경로 방식으로 import
 from src.main import initialize_system
 from src.fine_tuning.utils.evaluator import FineTuningEvaluator
 from src.fine_tuning.utils.model_updater import ModelUpdater
-
 
 class Phase2ModelTraining:
     def __init__(self):
@@ -73,44 +71,11 @@ class Phase2ModelTraining:
     def _initialize_rag_system(self):
         """RAG 시스템 초기화"""
         try:
-            print("🎵 음악 지식 RAG 시스템 초기화 중...")
+            # initialize_system 사용 (main.py에서)
+            self.rag_model = initialize_system()
             
-            # 1. 데이터 로딩
-            print("1. 데이터 로딩...")
-            from src.data_processing.json_loader import MusicTheoryDataLoader
-            loader = MusicTheoryDataLoader()
-            data = loader.load_data()
-            
-            # 2. 임베딩 처리
-            print("2. 임베딩 처리...")
-            from src.data_processing.embedding_generator import EmbeddingGenerator
-            embedder = EmbeddingGenerator()
-            
-            # 기존 임베딩이 있는지 확인
-            if not embedder.load_embeddings():
-                print("   새로운 임베딩 생성 중...")
-                chunks = loader.extract_text_chunks()
-                embedder.generate_embeddings(chunks)
-                embedder.save_embeddings()
-            
-            # 3. 검색기 초기화
-            print("3. 검색기 초기화...")
-            from src.models.retriever import VectorRetriever
-            retriever = VectorRetriever()
-            
-            # 검색기가 직접 임베딩 로드하도록 설정
-            print("   - 검색기 설정 완료")
-            
-            # 4. RAG 모델 초기화
-            print("4. RAG 모델 초기화...")
-            
-            # 프로젝트 루트 경로 추가 (utils 접근용)
-            project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-            sys.path.insert(0, project_root)
-            
-            # RAG 모델 생성
-            from src.models.rag_model import RAGModel
-            self.rag_model = RAGModel(retriever)
+            if self.rag_model is None:
+                raise Exception("RAG 모델 초기화 실패")
             
             print("✅ RAG 시스템 초기화 완료")
             
@@ -122,27 +87,38 @@ class Phase2ModelTraining:
     
     def _load_refined_questions(self) -> List[str]:
         """Phase 1에서 개선된 질문들 로드"""
-        questions_file = os.path.join(self.phase1_dir, 'refined_questions.json')
+        # 여러 가능한 파일 위치 확인
+        possible_files = [
+            os.path.join(self.phase1_dir, 'refined_questions.json'),
+            os.path.join(self.phase1_dir, 'raw_questions.json'),
+            'data/fine_tuning/phase1_question_improvement/refined_questions.json',
+            'data/fine_tuning/phase1_question_improvement/raw_questions.json'
+        ]
         
-        if not os.path.exists(questions_file):
-            print(f"❌ 개선된 질문 파일을 찾을 수 없습니다: {questions_file}")
-            return []
+        for questions_file in possible_files:
+            if os.path.exists(questions_file):
+                try:
+                    with open(questions_file, 'r', encoding='utf-8') as f:
+                        questions = json.load(f)
+                    
+                    print(f"✅ {len(questions)}개의 질문 로드 완료: {questions_file}")
+                    self.session_data['questions_used'] = questions
+                    return questions
+                    
+                except Exception as e:
+                    print(f"❌ 질문 로드 중 오류 ({questions_file}): {e}")
+                    continue
         
-        try:
-            with open(questions_file, 'r', encoding='utf-8') as f:
-                questions = json.load(f)
-            
-            print(f"✅ {len(questions)}개의 개선된 질문 로드 완료")
-            self.session_data['questions_used'] = questions
-            return questions
-            
-        except Exception as e:
-            print(f"❌ 질문 로드 중 오류: {e}")
-            return []
+        print(f"❌ 질문 파일을 찾을 수 없습니다. 확인된 경로:")
+        for file_path in possible_files:
+            print(f"   - {file_path}: {'존재' if os.path.exists(file_path) else '없음'}")
+        
+        return []
     
     def _evaluate_answers(self, questions: List[str]):
         """답변 생성 및 평가"""
         print(f"\n총 {len(questions)}개의 질문에 대한 답변을 평가합니다.")
+        print("⚠️  데이터셋 기반 답변만 생성되며, 데이터 부족 시 명확히 표시됩니다.")
         
         # 평가할 질문 범위 선택
         try:
@@ -151,6 +127,10 @@ class Phase2ModelTraining:
         except ValueError:
             start_idx = 0
             end_idx = min(10, len(questions))
+        
+        # 범위 검증
+        start_idx = max(0, start_idx)
+        end_idx = min(len(questions), end_idx)
         
         selected_questions = questions[start_idx:end_idx]
         
@@ -163,26 +143,90 @@ class Phase2ModelTraining:
             print("\n🤖 답변 생성 중...")
             try:
                 response = self.rag_model.get_conversation_response(question)
-                answer = response['answer']
-                sources = response.get('sources', [])
                 
-                # 답변 평가 (질문은 평가하지 않음)
-                evaluation = self.evaluator.evaluate_answer(question, answer, sources)
+                # 디버깅: 응답 구조 출력
+                # print(f"DEBUG: 응답 타입: {type(response)}")
                 
-                # 평가 저장
-                self.evaluator.save_evaluation(evaluation)
-                self.session_data['evaluations'].append(evaluation)
-                
-                print(f"\n평가 완료: {evaluation['avg_score']:.1f}/10")
+                # 응답이 딕셔너리인지 확인
+                if isinstance(response, dict):
+                    answer = response.get('answer', '응답을 생성할 수 없습니다.')
+                    sources = response.get('sources', [])
+                    confidence = response.get('confidence', 'unknown')
+                    coverage = response.get('data_coverage', 'unknown')
+                    
+                    # 답변 출력
+                    print(f"\n💡 모델 응답:")
+                    print(answer)
+                    
+                    # 참고자료 출력
+                    if sources:
+                        print(f"\n📚 참고자료:")
+                        for i, source in enumerate(sources, 1):
+                            title = source.get('title', '제목 없음')
+                            content = source.get('content', '내용 없음')
+                            score = source.get('score', 0)
+                            
+                            # 내용이 너무 길면 일부만 표시
+                            if len(content) > 200:
+                                content_preview = content[:200] + "..."
+                            else:
+                                content_preview = content
+                            
+                            print(f"\n  [{i}] {title} (유사도: {score:.3f})")
+                            print(f"      내용: {content_preview}")
+                    else:
+                        print("\n📚 참고자료: 없음")
+                    
+                    # 메타데이터 출력
+                    print(f"\n📊 메타정보:")
+                    print(f"  - 신뢰도: {confidence}")
+                    print(f"  - 데이터 커버리지: {coverage}")
+                    
+                    # 데이터 커버리지에 따른 처리
+                    if coverage == 'none':
+                        print("\nℹ️  이 질문은 데이터셋에 정보가 없어 답변할 수 없었습니다.")
+                        skip_eval = input("평가를 건너뛰시겠습니까? (y/n): ").lower() == 'y'
+                        
+                        if skip_eval:
+                            # 갭 데이터로 기록
+                            gap_data = {
+                                'question': question,
+                                'skipped': True,
+                                'reason': 'no_data',
+                                'timestamp': datetime.now().isoformat()
+                            }
+                            self.session_data['evaluations'].append(gap_data)
+                            continue
+                    
+                    # 답변 평가
+                    evaluation = self.evaluator.evaluate_answer(question, answer, sources)
+                    
+                    # 평가 저장
+                    self.evaluator.save_evaluation(evaluation)
+                    self.session_data['evaluations'].append(evaluation)
+                    
+                    print(f"\n✅ 평가 완료: {evaluation['avg_score']:.1f}/10")
+                    
+                else:
+                    print(f"❌ 응답 형식 오류: {type(response)}")
+                    print(f"응답 내용: {response}")
+                    continue
                 
                 # 계속 진행 여부
-                if idx < end_idx:
-                    cont = input("\n다음 질문으로 진행하시겠습니까? (y/n): ")
-                    if cont.lower() != 'y':
+                if idx < start_idx + len(selected_questions):
+                    cont = input("\n다음 질문으로 진행하시겠습니까? (y/n): ").lower()
+                    if cont != 'y':
                         break
                         
             except Exception as e:
                 print(f"❌ 답변 생성 중 오류: {e}")
+                import traceback
+                traceback.print_exc()
+                
+                # 오류 발생 시에도 계속 진행할지 선택
+                cont = input("오류가 발생했습니다. 다음 질문으로 진행하시겠습니까? (y/n): ").lower()
+                if cont != 'y':
+                    break
                 continue
     
     def _save_session_data(self):
@@ -190,15 +234,17 @@ class Phase2ModelTraining:
         self.session_data['end_time'] = datetime.now().isoformat()
         
         # 평가 통계 계산
-        evaluations = self.session_data['evaluations']
+        evaluations = [e for e in self.session_data['evaluations'] if not e.get('skipped', False)]
+        
         if evaluations:
-            avg_score = sum(e['avg_score'] for e in evaluations) / len(evaluations)
-            low_quality_count = len([e for e in evaluations if e['avg_score'] < 7])
+            avg_score = sum(e.get('avg_score', 0) for e in evaluations) / len(evaluations)
+            low_quality_count = len([e for e in evaluations if e.get('avg_score', 0) < 7])
             
             self.session_data['statistics'] = {
                 'total_evaluations': len(evaluations),
                 'average_score': avg_score,
                 'low_quality_count': low_quality_count,
+                'skipped_count': len(self.session_data['evaluations']) - len(evaluations),
                 'improvement_needed': low_quality_count > 0
             }
         
@@ -214,8 +260,9 @@ class Phase2ModelTraining:
     def _update_model_if_needed(self):
         """필요시 모델 업데이트"""
         # 개선이 필요한 평가 확인
+        evaluations = [e for e in self.session_data['evaluations'] if not e.get('skipped', False)]
         poor_evaluations = [
-            e for e in self.session_data['evaluations'] 
+            e for e in evaluations 
             if e.get('avg_score', 0) < 7 and e.get('correction')
         ]
         
@@ -239,54 +286,10 @@ class Phase2ModelTraining:
                 
                 print("✅ 모델 업데이트 완료!")
                 
-                # 재평가 옵션
-                retest = input("\n업데이트된 모델로 재평가하시겠습니까? (y/n): ")
-                if retest.lower() == 'y':
-                    self._retest_improved_questions(poor_evaluations)
-                    
             except Exception as e:
                 print(f"❌ 모델 업데이트 중 오류: {e}")
         else:
             print("모델 업데이트를 건너뜁니다.")
-    
-    def _retest_improved_questions(self, poor_evaluations: List[Dict]):
-        """개선된 질문들 재평가"""
-        print("\n🔄 개선된 모델로 재평가 중...")
-        
-        # RAG 시스템 재초기화 (업데이트된 데이터 반영)
-        self._initialize_rag_system()
-        
-        retest_results = []
-        
-        for eval_data in poor_evaluations:
-            question = eval_data['question']
-            print(f"\n재평가: {question}")
-            
-            try:
-                # 새로운 답변 생성
-                response = self.rag_model.get_conversation_response(question)
-                new_answer = response['answer']
-                
-                print(f"새로운 답변:\n{new_answer}")
-                
-                # 간단한 개선 확인
-                better = input("답변이 개선되었나요? (y/n): ")
-                
-                retest_results.append({
-                    'question': question,
-                    'old_score': eval_data['avg_score'],
-                    'new_answer': new_answer,
-                    'improved': better.lower() == 'y'
-                })
-                
-            except Exception as e:
-                print(f"재평가 중 오류: {e}")
-        
-        # 재평가 결과 저장
-        self.session_data['retest_results'] = retest_results
-        
-        improved_count = len([r for r in retest_results if r['improved']])
-        print(f"\n✅ 재평가 완료: {improved_count}/{len(retest_results)}개 답변 개선됨")
     
     def _print_summary(self):
         """Phase 2 결과 요약"""
@@ -297,21 +300,18 @@ class Phase2ModelTraining:
         stats = self.session_data.get('statistics', {})
         
         if stats:
-            print(f"총 평가 질문: {stats['total_evaluations']}개")
-            print(f"평균 점수: {stats['average_score']:.2f}/10")
-            print(f"개선 필요: {stats['low_quality_count']}개")
+            print(f"총 평가 질문: {stats.get('total_evaluations', 0)}개")
+            print(f"평균 점수: {stats.get('average_score', 0):.2f}/10")
+            print(f"개선 필요: {stats.get('low_quality_count', 0)}개")
+            print(f"건너뛴 질문: {stats.get('skipped_count', 0)}개")
             
             if self.session_data.get('improvements_made'):
                 print(f"모델 업데이트: {len(self.session_data['improvements_made'])}개 변경사항 적용")
-            
-            if self.session_data.get('retest_results'):
-                retest = self.session_data['retest_results']
-                improved = len([r for r in retest if r['improved']])
-                print(f"재평가 결과: {improved}/{len(retest)}개 개선됨")
         
         print("\n다음 단계:")
         print("- 만족스러운 결과라면 웹 앱 실행: python app.py")
         print("- 추가 개선이 필요하다면 Phase 2 재실행")
+        print("- 데이터 갭이 많다면 원본 데이터 확장 고려")
 
 def main():
     """Phase 2 메인 실행"""
@@ -322,6 +322,8 @@ def main():
         print("\n\n👋 Phase 2 프로세스가 중단되었습니다.")
     except Exception as e:
         print(f"\n❌ Phase 2 실행 중 오류: {e}")
+        import traceback
+        traceback.print_exc()
 
 if __name__ == "__main__":
     main()
