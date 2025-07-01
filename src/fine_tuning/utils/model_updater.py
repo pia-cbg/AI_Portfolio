@@ -17,7 +17,8 @@ class ModelUpdater:
         """
         self.raw_data_path = raw_data_path
         self.base_path = base_path
-        self.corrections_path = os.path.join(base_path, 'phase2_model_training', 'corrections')
+        # 경로 수정
+        self.corrections_path = os.path.join(base_path, 'corrections')
         
         # 원본 데이터 로드
         self.raw_data = self._load_raw_data()
@@ -57,22 +58,61 @@ class ModelUpdater:
         shutil.copy2(self.raw_data_path, backup_path)
         print(f"📁 원본 데이터 백업 생성: {backup_path}")
     
-    def process_corrections(self, evaluations: List[Dict]):
-        """
-        평가 결과에서 수정사항을 처리
+    def load_corrections(self) -> List[Dict]:
+        """corrections 파일에서 데이터 로드 (새로운 경로)"""
+        corrections = []
         
-        :param evaluations: 평가 데이터 리스트
-        """
+        # 새로운 경로: aggregated/all_corrections.json
+        all_corrections_file = os.path.join(self.base_path, 'aggregated', 'all_corrections.json')
+        if os.path.exists(all_corrections_file):
+            try:
+                with open(all_corrections_file, 'r', encoding='utf-8') as f:
+                    corrections = json.load(f)
+                print(f"✅ {len(corrections)}개의 correction 로드됨")
+            except Exception as e:
+                print(f"❌ corrections 로드 오류: {e}")
+        else:
+            # 구 경로도 확인 (호환성)
+            old_corrections_file = os.path.join(self.corrections_path, 'all_corrections.json')
+            if os.path.exists(old_corrections_file):
+                try:
+                    with open(old_corrections_file, 'r', encoding='utf-8') as f:
+                        corrections = json.load(f)
+                    print(f"✅ 구 경로에서 {len(corrections)}개의 correction 로드됨")
+                except Exception as e:
+                    print(f"❌ corrections 로드 오류: {e}")
+            else:
+                print(f"❌ corrections 파일을 찾을 수 없습니다:")
+                print(f"   - 신규 경로: {all_corrections_file}")
+                print(f"   - 구 경로: {old_corrections_file}")
+        
+        return corrections
+    
+    def process_all_corrections(self):
+        """모든 correction 처리 (기존 시스템과 연동)"""
+        corrections = self.load_corrections()
+        
+        if not corrections:
+            print("처리할 correction이 없습니다.")
+            return
+        
         corrections_made = 0
         
-        for evaluation in evaluations:
-            if evaluation.get('correction') and evaluation.get('avg_score', 0) < 7:
-                try:
-                    success = self._apply_correction(evaluation)
-                    if success:
-                        corrections_made += 1
-                except Exception as e:
-                    print(f"수정 적용 중 오류: {e}")
+        for correction in corrections:
+            avg_score = correction.get('avg_score', 0)
+            
+            # 점수 기반 필터링
+            if avg_score < 4:
+                print(f"❌ 점수 너무 낮음 ({avg_score:.1f}). 건너뜀: {correction.get('question', '')[:30]}...")
+                continue
+            
+            try:
+                success = self._apply_correction_from_data(correction)
+                if success:
+                    corrections_made += 1
+                    print(f"✅ 적용 완료 ({avg_score:.1f}점): {correction.get('question', '')[:30]}...")
+            except Exception as e:
+                print(f"❌ 수정 적용 중 오류: {e}")
         
         if corrections_made > 0:
             # 데이터 저장
@@ -81,25 +121,38 @@ class ModelUpdater:
             # 임베딩 재생성
             self._regenerate_embeddings()
             
-            print(f"✅ {corrections_made}개의 수정사항이 적용되었습니다.")
+            print(f"\n🎉 {corrections_made}개의 수정사항이 적용되었습니다.")
         else:
             print("적용할 수정사항이 없습니다.")
     
-    def _apply_correction(self, evaluation: Dict) -> bool:
-        """단일 수정사항 적용"""
-        question = evaluation.get('question', '')
-        original_answer = evaluation.get('answer', '')
-        corrected_answer = evaluation.get('correction', '')
+    def _apply_correction_from_data(self, correction: Dict) -> bool:
+        """correction 데이터에서 수정사항 적용"""
+        question = correction.get('question', '')
+        original_answer = correction.get('original_response', '')
+        corrected_answer = correction.get('corrected_response', '')
+        avg_score = correction.get('avg_score', 0)
         
         if not corrected_answer:
             return False
+        
+        # 점수 기반 업데이트 전략
+        if avg_score < 6:
+            # 낮은 점수: 완전 교체
+            final_response = corrected_answer
+            update_type = "완전 교체"
+        else:
+            # 높은 점수: 내용 합치기
+            final_response = self._simple_merge(original_answer, corrected_answer)
+            update_type = "내용 합치기"
+        
+        print(f"📝 {update_type} (점수: {avg_score:.1f})")
         
         # 관련 섹션 찾기
         target_section, section_path = self._find_related_section(question, original_answer)
         
         if target_section:
             # 업데이트 적용
-            update_success = self._update_section(target_section, corrected_answer, question)
+            update_success = self._update_section(target_section, final_response, question)
             
             if update_success:
                 # 업데이트 이력 기록
@@ -107,13 +160,18 @@ class ModelUpdater:
                     'timestamp': datetime.now().isoformat(),
                     'question': question,
                     'section_path': section_path,
-                    'original_answer': original_answer[:100] + "...",
-                    'corrected_answer': corrected_answer[:100] + "...",
-                    'scores': evaluation.get('scores', {})
+                    'update_type': update_type,
+                    'score': avg_score
                 })
                 return True
         
         return False
+    
+    def _simple_merge(self, original: str, corrected: str) -> str:
+        """단순하게 원본 + 수정사항 합치기"""
+        if not corrected:
+            return original
+        return f"{original}\n\n{corrected}"
     
     def _find_related_section(self, question: str, answer: str) -> Tuple[Optional[Dict], Optional[str]]:
         """질문과 답변에 관련된 JSON 섹션 찾기"""
@@ -195,7 +253,7 @@ class ModelUpdater:
         
         return matches / len(keywords) if keywords else 0
     
-    def _update_section(self, section: Dict, corrected_answer: str, question: str) -> bool:
+    def _update_section(self, section: Dict, final_response: str, question: str) -> bool:
         """섹션 업데이트"""
         # 업데이트할 필드 찾기
         update_fields = ['description', 'explanation', 'detailed_explanation', 'definition']
@@ -206,20 +264,20 @@ class ModelUpdater:
                 existing_content = section[field]
                 
                 # 내용 유사성 확인
-                similarity = self._calculate_text_similarity(existing_content, corrected_answer)
+                similarity = self._calculate_text_similarity(existing_content, final_response)
                 
                 if similarity > 0.3:  # 유사도가 높으면 교체
-                    section[field] = corrected_answer
+                    section[field] = final_response
                     print(f"필드 '{field}' 업데이트됨")
                     return True
-                elif len(corrected_answer) > len(existing_content):  # 더 상세한 내용이면 교체
-                    section[field] = corrected_answer
+                elif len(final_response) > len(existing_content):  # 더 상세한 내용이면 교체
+                    section[field] = final_response
                     print(f"필드 '{field}' 확장됨")
                     return True
         
         # 적절한 필드가 없으면 새 필드 추가
         if 'improved_explanation' not in section:
-            section['improved_explanation'] = corrected_answer
+            section['improved_explanation'] = final_response
             print("새 필드 'improved_explanation' 추가됨")
             return True
         
@@ -239,10 +297,15 @@ class ModelUpdater:
         return len(intersection) / len(union) if union else 0
     
     def _regenerate_embeddings(self):
-        """임베딩 재생성"""
+        """임베딩 재생성 (경로 수정)"""
         try:
+            # 프로젝트 루트 경로 찾기
+            current_file = os.path.abspath(__file__)
+            project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(current_file))))
+            
             import sys
-            sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+            if project_root not in sys.path:
+                sys.path.insert(0, project_root)
             
             from src.data_processing.json_loader import MusicTheoryDataLoader
             from src.data_processing.embedding_generator import EmbeddingGenerator
@@ -264,6 +327,8 @@ class ModelUpdater:
             
         except Exception as e:
             print(f"❌ 임베딩 재생성 오류: {e}")
+            print("수동으로 임베딩을 재생성하세요:")
+            print("python src/data_processing/embedding_generator.py")
             return False
     
     def get_update_history(self) -> List[Dict]:
@@ -275,7 +340,7 @@ class ModelUpdater:
         if not self.update_history:
             return
         
-        log_dir = os.path.join(self.base_path, 'phase2_model_training', 'update_logs')
+        log_dir = os.path.join(self.base_path, 'corrections')
         os.makedirs(log_dir, exist_ok=True)
         
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -313,22 +378,9 @@ class ModelUpdater:
             return False
 
 def main():
-    """모델 업데이터 테스트"""
+    """기존 시스템과 연동된 모델 업데이터"""
     updater = ModelUpdater()
-    
-    # 샘플 평가 데이터
-    sample_evaluations = [
-        {
-            'question': '세컨더리 도미넌트란 무엇인가?',
-            'answer': '간단한 답변...',
-            'correction': '세컨더리 도미넌트는 조성 내에서 다른 화음으로의 일시적 전조를 만드는 도미넌트 화음입니다...',
-            'avg_score': 5.5,
-            'scores': {'accuracy': 6, 'completeness': 5}
-        }
-    ]
-    
-    # 수정사항 처리
-    updater.process_corrections(sample_evaluations)
+    updater.process_all_corrections()
     updater.save_update_log()
 
 if __name__ == "__main__":

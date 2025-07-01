@@ -12,13 +12,21 @@ from typing import Dict, List, Any, Optional
 class FineTuningEvaluator:
     def __init__(self, base_path='data/fine_tuning'):
         """
-        평가 데이터 관리 시스템 초기화
+        평가 데이터 관리 시스템 초기화 (세션별 관리)
         
         :param base_path: 파인튜닝 데이터 저장 경로
         """
         self.base_path = base_path
-        self.evaluations_path = os.path.join(base_path, 'evaluations')
-        self.corrections_path = os.path.join(base_path, 'corrections')
+        self.sessions_path = os.path.join(base_path, 'sessions')
+        self.aggregated_path = os.path.join(base_path, 'aggregated')
+        
+        # 현재 세션 설정
+        self.current_session = self._get_or_create_session()
+        self.session_dir = os.path.join(self.sessions_path, self.current_session)
+        
+        # 세션별 경로
+        self.evaluations_path = os.path.join(self.session_dir, 'evaluations')
+        self.corrections_path = os.path.join(self.session_dir, 'corrections')
         
         # 디렉토리 생성
         self._create_directories()
@@ -28,11 +36,43 @@ class FineTuningEvaluator:
         
         # 평가 데이터 캐시
         self.current_session_evaluations = []
+        
+        print(f"📁 현재 세션: {self.current_session}")
+    
+    def _get_or_create_session(self) -> str:
+        """현재 세션 가져오기 또는 새 세션 생성"""
+        os.makedirs(self.sessions_path, exist_ok=True)
+        
+        # 기존 세션들 확인
+        existing_sessions = [d for d in os.listdir(self.sessions_path) 
+                           if d.startswith('session_') and os.path.isdir(os.path.join(self.sessions_path, d))]
+        
+        if existing_sessions:
+            latest_session = sorted(existing_sessions)[-1]
+            print(f"\n📋 기존 세션들:")
+            for i, session in enumerate(sorted(existing_sessions), 1):
+                marker = " (최신)" if session == latest_session else ""
+                print(f"  {i}. {session}{marker}")
+            
+            choice = input(f"\n새 세션을 시작하시겠습니까? (y: 새 세션, n: 최신 세션 계속): ").lower()
+            
+            if choice != 'y':
+                print(f"✅ 기존 세션 계속: {latest_session}")
+                return latest_session
+        
+        # 새 세션 생성
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        session_count = len(existing_sessions) + 1
+        new_session = f"session_{session_count:03d}_{timestamp}"
+        
+        print(f"🆕 새 세션 생성: {new_session}")
+        return new_session
     
     def _create_directories(self):
         """필요한 디렉토리 생성"""
-        for path in [self.evaluations_path, self.corrections_path]:
-            os.makedirs(path, exist_ok=True)
+        os.makedirs(self.evaluations_path, exist_ok=True)
+        os.makedirs(self.corrections_path, exist_ok=True)
+        os.makedirs(self.aggregated_path, exist_ok=True)
     
     def _load_evaluation_criteria(self) -> List[Dict]:
         """평가 기준 로드 - 딕셔너리 리스트로 반환"""
@@ -87,7 +127,7 @@ class FineTuningEvaluator:
         ]
     
     def evaluate_answer(self, question: str, answer: str, sources: List[Dict]) -> Dict:
-        """점수별 전략을 고려한 답변 평가"""
+        """점수별 전략을 고려한 답변 평가 (원본 방식 유지)"""
         
         print(f"\n📋 답변 평가: {question}")
         print(f"\n💡 현재 답변:\n{answer}")
@@ -171,56 +211,71 @@ class FineTuningEvaluator:
             'avg_score': avg_score,
             'feedback': feedback,
             'correction': correction,
-            'timestamp': datetime.now().isoformat()
+            'timestamp': datetime.now().isoformat(),
+            'session': self.current_session
         }
         
     def save_evaluation(self, evaluation: Dict):
         """
-        평가 데이터 저장 (누적 방식)
+        평가 데이터 저장 (세션별 + 통합)
         
         :param evaluation: 평가 데이터
         """
-        # 타임스탬프 추가
+        # 타임스탬프 및 세션 정보 추가
         evaluation['timestamp'] = datetime.now().isoformat()
+        evaluation['session'] = self.current_session
         
         # 세션 캐시에 추가
         self.current_session_evaluations.append(evaluation)
         
-        # 누적 파일에 추가
-        evaluations_file = os.path.join(self.evaluations_path, "all_evaluations.json")
+        # 1. 세션별 평가 파일에 저장
+        session_evaluations_file = os.path.join(self.evaluations_path, "session_evaluations.json")
         
-        # 기존 데이터 로드
         existing_evaluations = []
-        if os.path.exists(evaluations_file):
+        if os.path.exists(session_evaluations_file):
             try:
-                with open(evaluations_file, 'r', encoding='utf-8') as f:
+                with open(session_evaluations_file, 'r', encoding='utf-8') as f:
                     existing_evaluations = json.load(f)
             except json.JSONDecodeError:
-                print(f"⚠️ 손상된 평가 파일 발견. 새 파일 생성합니다.")
+                print(f"⚠️ 세션 평가 파일 손상. 새 파일 생성합니다.")
         
-        # 새 평가 데이터 추가
         existing_evaluations.append(evaluation)
         
-        # 전체 데이터 저장
-        with open(evaluations_file, 'w', encoding='utf-8') as f:
+        with open(session_evaluations_file, 'w', encoding='utf-8') as f:
             json.dump(existing_evaluations, f, ensure_ascii=False, indent=2)
         
-        print(f"✅ 평가 데이터 추가 완료 (총 {len(existing_evaluations)}개)")
+        # 2. 통합 파일에도 저장
+        self._save_to_aggregated(evaluation)
         
-        # 낮은 점수 평가는 별도로 처리
-        if evaluation.get('avg_score', 0) < 7 and evaluation.get('correction'):
-            self._handle_low_score_evaluation(evaluation)
+        print(f"✅ 평가 데이터 저장 완료 (세션: {self.current_session})")
+        
+        # 3. correction이 있으면 별도 처리
+        if evaluation.get('avg_score', 0) >= 4 and evaluation.get('correction'):
+            self._handle_correction(evaluation)
     
-    def _handle_low_score_evaluation(self, evaluation: Dict):
-        """
-        낮은 점수 평가 처리
+    def _save_to_aggregated(self, evaluation: Dict):
+        """통합 파일에 평가 저장"""
+        aggregated_file = os.path.join(self.aggregated_path, 'all_evaluations.json')
         
-        :param evaluation: 평가 데이터
-        """
-        # 수정이 필요한 경우 corrections 폴더에 저장
+        existing_evaluations = []
+        if os.path.exists(aggregated_file):
+            try:
+                with open(aggregated_file, 'r', encoding='utf-8') as f:
+                    existing_evaluations = json.load(f)
+            except json.JSONDecodeError:
+                print(f"⚠️ 통합 평가 파일 손상. 새 파일 생성합니다.")
+        
+        existing_evaluations.append(evaluation)
+        
+        with open(aggregated_file, 'w', encoding='utf-8') as f:
+            json.dump(existing_evaluations, f, ensure_ascii=False, indent=2)
+    
+    def _handle_correction(self, evaluation: Dict):
+        """correction 처리 (세션별 + 통합) - 원본 로직 유지"""
+        if not evaluation.get('correction'):
+            return
+            
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"correction_{timestamp}.json"
-        filepath = os.path.join(self.corrections_path, filename)
         
         correction_data = {
             'question': evaluation['question'],
@@ -228,32 +283,57 @@ class FineTuningEvaluator:
             'corrected_response': evaluation['correction'],
             'scores': evaluation['scores'],
             'feedback': evaluation['feedback'],
-            'timestamp': evaluation['timestamp']
+            'avg_score': evaluation['avg_score'],
+            'timestamp': evaluation['timestamp'],
+            'session': self.current_session
         }
         
-        with open(filepath, 'w', encoding='utf-8') as f:
+        # 1. 세션별 correction 저장 (개별 파일)
+        session_correction_file = os.path.join(self.corrections_path, f"correction_{timestamp}.json")
+        with open(session_correction_file, 'w', encoding='utf-8') as f:
             json.dump(correction_data, f, ensure_ascii=False, indent=2)
         
-        print(f"📝 수정 데이터 저장 완료: {filename}")
+        # 2. 통합 corrections에도 저장
+        aggregated_corrections_file = os.path.join(self.aggregated_path, 'all_corrections.json')
+        
+        existing_corrections = []
+        if os.path.exists(aggregated_corrections_file):
+            try:
+                with open(aggregated_corrections_file, 'r', encoding='utf-8') as f:
+                    existing_corrections = json.load(f)
+            except json.JSONDecodeError:
+                print("⚠️ all_corrections.json 파일 손상. 새로 생성합니다.")
+        
+        existing_corrections.append(correction_data)
+        
+        with open(aggregated_corrections_file, 'w', encoding='utf-8') as f:
+            json.dump(existing_corrections, f, ensure_ascii=False, indent=2)
     
     def save_session(self):
-        """현재 세션 데이터 저장"""
+        """현재 세션 요약 저장"""
         if not self.current_session_evaluations:
             print("저장할 세션 데이터가 없습니다.")
             return
         
-        # 세션 요약
+        # 세션 요약 생성
         session_summary = {
+            'session_id': self.current_session,
             'session_date': datetime.now().isoformat(),
             'total_evaluations': len(self.current_session_evaluations),
             'avg_score': sum(e.get('avg_score', 0) for e in self.current_session_evaluations) / len(self.current_session_evaluations),
+            'score_distribution': self._calculate_score_distribution(),
+            'corrections_count': len([e for e in self.current_session_evaluations if e.get('correction')]),
             'evaluations': self.current_session_evaluations
         }
         
-        # 세션 요약 파일 경로
-        summaries_file = os.path.join(self.evaluations_path, "session_summaries.json")
+        # 세션 요약 저장
+        summary_file = os.path.join(self.session_dir, 'session_summary.json')
+        with open(summary_file, 'w', encoding='utf-8') as f:
+            json.dump(session_summary, f, ensure_ascii=False, indent=2)
         
-        # 기존 세션 요약 로드
+        # 통합 세션 요약에도 저장
+        summaries_file = os.path.join(self.aggregated_path, "session_summaries.json")
+        
         existing_summaries = []
         if os.path.exists(summaries_file):
             try:
@@ -262,21 +342,64 @@ class FineTuningEvaluator:
             except json.JSONDecodeError:
                 print(f"⚠️ 손상된 세션 요약 파일 발견. 새 파일 생성합니다.")
         
-        # 새 세션 요약 추가
         existing_summaries.append(session_summary)
         
-        # 전체 데이터 저장
         with open(summaries_file, 'w', encoding='utf-8') as f:
             json.dump(existing_summaries, f, ensure_ascii=False, indent=2)
         
-        print(f"📊 세션 요약 추가 완료 (총 {len(existing_summaries)}개 세션)")
+        # 세션 인덱스 업데이트
+        self._update_session_index(session_summary)
         
-        # 개별 세션 파일도 저장
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        session_file = os.path.join(self.evaluations_path, f"session_{timestamp}.json")
+        print(f"✅ 세션 요약 저장 완료: {self.current_session}")
+        print(f"   - 총 평가: {session_summary['total_evaluations']}개")
+        print(f"   - 평균 점수: {session_summary['avg_score']:.1f}/10")
+        print(f"   - Corrections: {session_summary['corrections_count']}개")
+    
+    def _calculate_score_distribution(self) -> Dict:
+        """점수 분포 계산"""
+        scores = [e.get('avg_score', 0) for e in self.current_session_evaluations]
         
-        with open(session_file, 'w', encoding='utf-8') as f:
-            json.dump(session_summary, f, ensure_ascii=False, indent=2)
+        return {
+            'excellent': len([s for s in scores if s >= 8]),
+            'good': len([s for s in scores if 6 <= s < 8]),
+            'poor': len([s for s in scores if 4 <= s < 6]),
+            'very_poor': len([s for s in scores if s < 4])
+        }
+    
+    def _update_session_index(self, session_summary: Dict):
+        """세션 인덱스 업데이트"""
+        index_file = os.path.join(self.aggregated_path, 'session_index.json')
+        
+        existing_index = []
+        if os.path.exists(index_file):
+            try:
+                with open(index_file, 'r', encoding='utf-8') as f:
+                    existing_index = json.load(f)
+            except json.JSONDecodeError:
+                existing_index = []
+        
+        # 기존 세션 정보 업데이트 또는 새로 추가
+        session_info = {
+            'session_id': session_summary['session_id'],
+            'date': session_summary['session_date'],
+            'total_evaluations': session_summary['total_evaluations'],
+            'avg_score': session_summary['avg_score'],
+            'corrections_count': session_summary['corrections_count']
+        }
+        
+        # 기존 세션 찾아서 업데이트
+        updated = False
+        for i, existing_session in enumerate(existing_index):
+            if existing_session['session_id'] == session_summary['session_id']:
+                existing_index[i] = session_info
+                updated = True
+                break
+        
+        if not updated:
+            existing_index.append(session_info)
+        
+        with open(index_file, 'w', encoding='utf-8') as f:
+            json.dump(existing_index, f, ensure_ascii=False, indent=2)
     
     def get_low_score_evaluations(self, threshold: float = 7.0) -> List[Dict]:
         """
@@ -287,8 +410,8 @@ class FineTuningEvaluator:
         """
         low_score_evals = []
         
-        # 전체 평가 데이터 로드
-        evaluations_file = os.path.join(self.evaluations_path, "all_evaluations.json")
+        # 통합 평가 데이터 로드
+        evaluations_file = os.path.join(self.aggregated_path, "all_evaluations.json")
         if os.path.exists(evaluations_file):
             try:
                 with open(evaluations_file, 'r', encoding='utf-8') as f:
@@ -306,25 +429,55 @@ class FineTuningEvaluator:
     
     def get_all_corrections(self) -> List[Dict]:
         """
-        모든 수정 데이터 가져오기
+        모든 수정 데이터 가져오기 (통합 파일에서)
         
         :return: 모든 수정 데이터 리스트
         """
         corrections = []
         
-        # corrections 디렉토리의 모든 파일 로드
-        if os.path.exists(self.corrections_path):
-            for filename in os.listdir(self.corrections_path):
-                if filename.startswith('correction_') and filename.endswith('.json'):
-                    filepath = os.path.join(self.corrections_path, filename)
-                    try:
-                        with open(filepath, 'r', encoding='utf-8') as f:
-                            correction = json.load(f)
-                            corrections.append(correction)
-                    except Exception as e:
-                        print(f"수정 데이터 로드 오류 ({filename}): {e}")
+        # 통합 corrections 파일에서 로드
+        all_corrections_file = os.path.join(self.aggregated_path, 'all_corrections.json')
+        if os.path.exists(all_corrections_file):
+            try:
+                with open(all_corrections_file, 'r', encoding='utf-8') as f:
+                    corrections = json.load(f)
+            except Exception as e:
+                print(f"통합 수정 데이터 로드 오류: {e}")
         
         return corrections
+    
+    def get_all_sessions(self) -> List[str]:
+        """모든 세션 목록 반환"""
+        if not os.path.exists(self.sessions_path):
+            return []
+        
+        sessions = [d for d in os.listdir(self.sessions_path) 
+                   if d.startswith('session_') and os.path.isdir(os.path.join(self.sessions_path, d))]
+        
+        return sorted(sessions)
+    
+    def show_session_stats(self):
+        """세션 통계 표시"""
+        sessions = self.get_all_sessions()
+        
+        if not sessions:
+            print("📊 세션 데이터가 없습니다.")
+            return
+        
+        print(f"\n📊 세션 통계 (총 {len(sessions)}개 세션):")
+        
+        index_file = os.path.join(self.aggregated_path, 'session_index.json')
+        if os.path.exists(index_file):
+            try:
+                with open(index_file, 'r', encoding='utf-8') as f:
+                    session_index = json.load(f)
+                
+                for session in session_index:
+                    print(f"  📁 {session['session_id']}")
+                    print(f"     평가: {session['total_evaluations']}개, 평균: {session['avg_score']:.1f}/10, 수정: {session['corrections_count']}개")
+                    
+            except Exception as e:
+                print(f"세션 인덱스 로드 오류: {e}")
     
     def generate_improvement_report(self, output_path: Optional[str] = None) -> Dict:
         """
@@ -333,9 +486,9 @@ class FineTuningEvaluator:
         :param output_path: 출력 파일 경로 (없으면 저장하지 않음)
         :return: 리포트 데이터
         """
-        # 모든 평가 데이터 로드
+        # 모든 평가 데이터 로드 (통합 파일에서)
         all_evaluations = []
-        evaluations_file = os.path.join(self.evaluations_path, "all_evaluations.json")
+        evaluations_file = os.path.join(self.aggregated_path, "all_evaluations.json")
         if os.path.exists(evaluations_file):
             try:
                 with open(evaluations_file, 'r', encoding='utf-8') as f:
@@ -372,7 +525,8 @@ class FineTuningEvaluator:
                 'total_evaluations': total_evals,
                 'average_score': avg_score,
                 'low_score_count': low_score_count,
-                'correction_count': len(all_corrections)
+                'correction_count': len(all_corrections),
+                'total_sessions': len(self.get_all_sessions())
             },
             'criteria_averages': criteria_avgs,
             'improvement_areas': [
@@ -402,14 +556,19 @@ def main():
     for criterion in evaluator.criteria:
         print(f"- {criterion.get('name')}: {criterion.get('description')}")
     
+    # 세션 통계 표시
+    evaluator.show_session_stats()
+    
     # 개선 리포트 생성
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    report = evaluator.generate_improvement_report(f"data/fine_tuning/improvement_report_{timestamp}.json")
+    report_path = os.path.join(evaluator.aggregated_path, f"improvement_report_{timestamp}.json")
+    report = evaluator.generate_improvement_report(report_path)
     
     print("\n📊 개선 리포트 요약:")
     print(f"총 평가: {report['statistics']['total_evaluations']}개")
     print(f"평균 점수: {report['statistics']['average_score']:.2f}/10")
     print(f"개선 필요: {report['statistics']['low_score_count']}개")
+    print(f"총 세션: {report['statistics']['total_sessions']}개")
 
 if __name__ == "__main__":
     main()

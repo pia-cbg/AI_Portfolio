@@ -1,133 +1,55 @@
 """
-음악 이론 RAG 시스템 메인 실행 파일
+음악 이론 RAG 시스템 객체 초기화 모듈
+(파인튜닝/운영/실험 스크립트에서 import해서 사용)
 """
+
 import os
-import sys
-from typing import Optional
-
-# 프로젝트 루트 경로 추가
-project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, project_root)
-
-# 올바른 경로로 모듈 임포트
 from src.data_processing.json_loader import MusicTheoryDataLoader
 from src.data_processing.embedding_generator import EmbeddingGenerator
 from src.models.retriever import VectorRetriever
 from src.models.rag_model import RAGModel
 
-# utils 폴더의 music_utils 사용
-from utils.music_utils import extract_musical_terms, format_chord_name
+def initialize_system(force_regenerate: bool = False):
+    """
+    RAG 모델+검색기 전체 시스템 객체 생성 (실패시 Exception)
+    - 임베딩/인덱스 자동 로드, 필요시 재생성
+    - 반환값: rag_model 객체 (get_conversation_response 등 인터페이스 지원)
+    """
+    print("🎵 음악 이론 RAG 시스템 초기화...")
 
-def initialize_system():
-    """시스템을 초기화합니다."""
-    print("🎵 음악 지식 RAG 시스템 초기화 중...")
-    
     # 1. 데이터 로드
-    print("1. 데이터 로딩...")
     loader = MusicTheoryDataLoader()
     data = loader.load_data()
-    
     if not data:
-        print("❌ 데이터 로드 실패!")
-        return None
-    
+        raise RuntimeError("음악이론 데이터 로드 실패!")
+
     # 2. 임베딩 처리
-    print("2. 임베딩 처리...")
     embedder = EmbeddingGenerator()
-    
-    # 기존 임베딩이 있는지 확인
-    if not embedder.load_embeddings():
-        print("   새로운 임베딩 생성 중...")
+    embedding_dir = 'data/embeddings'
+    embedding_path = os.path.join(embedding_dir, 'music_theory_embeddings.pkl')
+    json_path = 'data/raw/music_theory_curriculum.json'
+
+    need_regen = force_regenerate
+    if os.path.exists(embedding_path) and os.path.exists(json_path):
+        if os.path.getmtime(json_path) > os.path.getmtime(embedding_path):
+            need_regen = True
+    if need_regen or not embedder.load_embeddings():
+        print("   🔄 임베딩 생성 시작...")
         chunks = loader.extract_text_chunks()
         embedder.generate_embeddings(chunks)
         embedder.save_embeddings()
-    
-    # 3. 검색기 초기화
-    print("3. 검색기 초기화...")
+        print("   ✅ 임베딩 생성 완료!")
+    else:
+        print("   ✅ 임베딩 로드 완료!")
+
+    # 3. 검색기(벡터) 초기화
     retriever = VectorRetriever()
-    
-    # 검색기가 자체적으로 임베딩을 로드하도록 설정
     if not retriever.load_embeddings():
-        print("❌ 검색기 임베딩 로드 실패!")
-        return None
-    
+        raise RuntimeError("검색기 임베딩 로드 실패!")
     if not retriever.build_index():
-        print("❌ 검색기 인덱스 구축 실패!")
-        return None
-    
-    # 4. RAG 모델 초기화
-    print("4. RAG 모델 초기화...")
+        raise RuntimeError("검색기 인덱스 구축 실패!")
+
+    # 4. RAG 모델 래퍼 초기화
     rag_model = RAGModel(retriever)
-    
-    print("✅ 시스템 초기화 완료!")
+    print("✅ RAG 시스템 객체 생성 성공!")
     return rag_model
-
-def print_welcome_message():
-    """환영 메시지를 출력합니다."""
-    print("\n" + "="*60)
-    print("🎼  음악 이론 Q&A 시스템에 오신 것을 환영합니다!  🎼")
-    print("="*60)
-    print("음악 이론에 관한 질문을 입력해주세요.")
-    print("예시 질문:")
-    print("  - 세븐스 코드가 뭐야?")
-    print("  - 도미넌트 코드는 왜 토닉으로 해결되려고 하나요?")
-    print("  - 세컨더리 도미넌트와 트라이톤 서브스티튜션의 차이점은?")
-    print("-"*60)
-    print("종료하려면 'quit', 'exit', '종료' 또는 'q'를 입력하세요.")
-    print("="*60)
-
-def main():
-    """메인 실행 함수"""
-    # 시스템 초기화
-    rag_model = initialize_system()
-    
-    if rag_model is None:
-        print("시스템 초기화에 실패했습니다.")
-        return
-    
-    # 환영 메시지 출력
-    print_welcome_message()
-    
-    # 대화 루프
-    while True:
-        try:
-            # 사용자 입력 받기
-            query = input("\n🎵 질문: ").strip()
-            
-            # 종료 명령 확인
-            if query.lower() in ['quit', 'exit', '종료', 'q']:
-                print("\n👋 시스템을 종료합니다. 감사합니다!")
-                break
-            
-            # 빈 입력 처리
-            if not query:
-                print("질문을 입력해주세요.")
-                continue
-            
-            # 질문에서 음악 용어 추출
-            musical_terms = extract_musical_terms(query)
-            if musical_terms:
-                print(f"🔍 감지된 음악 용어: {', '.join(musical_terms)}")
-            
-            # 답변 생성
-            print("\n⏳ 답변 생성 중...")
-            response = rag_model.get_conversation_response(query)
-            
-            # 답변 출력
-            print(f"\n💡 답변:")
-            print(response['answer'])
-            
-            # 참고자료 출력
-            if response['sources']:
-                print(f"\n📚 참고자료:")
-                for i, source in enumerate(response['sources'], 1):
-                    print(f"  {i}. {source.get('title', '제목 없음')} (유사도: {source.get('score', 0):.3f})")
-            
-        except KeyboardInterrupt:
-            print("\n\n👋 시스템을 종료합니다. 감사합니다!")
-            break
-        except Exception as e:
-            print(f"❌ 오류가 발생했습니다: {str(e)}")
-
-if __name__ == "__main__":
-    main()

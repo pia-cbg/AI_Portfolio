@@ -15,7 +15,7 @@ class EmbeddingGenerator:
     def __init__(
         self, 
         model_name: str = None, 
-        embedding_path: str = 'data/embeddings/music_embeddings.pkl'
+        embedding_path: str = 'data/embeddings/music_theory_embeddings.pkl'
     ):
         """
         임베딩 생성기 초기화

@@ -2,16 +2,20 @@
 
 **RAG 기반 음악 이론 Q&A 시스템 with Fine-tuning**
 
-음악 이론 JSON 데이터를 활용한 지능형 질의응답 시스템입니다. 사용자 질문을 벡터화하여 관련 음악 이론을 검색하고, Claude AI를 통해 정확한 답변을 제공합니다.
+자체 구축된 음악 이론 데이터를 활용한 지능형 질의응답 시스템입니다. 사용자 질문을 벡터화하여 관련 음악 이론을 검색하고, Claude AI를 통해 정확한 답변을 제공합니다.
 
 ---
 
 ## 🚀 주요 기능
 
-- **RAG 기반 Q&A**: 음악 이론 데이터베이스에서 관련 정보를 검색하여 정확한 답변 제공
-- **질문 품질 관리**: 음악 용어 필터링 및 질문 자동 생성
-- **파인튜닝 시스템**: 질문/답변 품질 평가 및 모델 개선
+- **RAG 기반 Q&A**: 자체 구축 음악 이론 데이터베이스에서 관련 정보를 검색하여 정확한 답변 제공
+
+- **데이터셋 기반 답변**: 외부 지식 의존 없이 구축된 데이터만을 활용한 신뢰성 있는 답변
+- **지능형 파인튜닝 시스템**: 질문/답변 품질 평가 및 점수 기반 스마트 모델 개선
+- **자동 질문 생성**: 음악 용어 추출 및 템플릿 기반 학습용 질문 자동 생성
+- **갭 분석 시스템**: 답변 불가능한 질문 추적 및 데이터셋 확장 가이드 제공
 - **웹 인터페이스**: Streamlit 기반 사용자 친화적 UI
+- **파인튜닝 시스템**: 질문/답변 품질 평가 및 모델 개선
 
 ---
 
@@ -42,7 +46,6 @@ pip install -r requirements.txt
 
 # 환경 파일 생성
 cp .env.example .env
-
 ```
 ### 2. API 키 설정
 ```
@@ -53,7 +56,7 @@ ANTHROPIC_API_KEY=your_api_key_here
 # 임베딩 생성 (최초 1회)
 python src/data_processing/embedding_generator.py
 
-# CLI 버전
+# main
 python src/main.py
 
 # 웹 인터페이스
@@ -69,23 +72,69 @@ Phase 2: 질의응답
 사용자 질문 → 벡터 검색 → 음악 용어 추출 → Claude AI → 답변 생성
 
 Phase 3: 파인튜닝 (선택사항)
-# 질문 품질 개선
-python src/fine_tuning/phase1_question_improvement.py
+# 질문 품질 개선 및 화이트리스트 생성
+python src/fine_tuning/question_improver.py
 
 # 답변 품질 개선
-python src/fine_tuning/phase2_model_training.py
+python src/fine_tuning/model_training.py
 ```
 ### 4. 폴더 트리
 ```
 AI_Portfolio/
+├── LICENSE
+├── README.md
+├── app.py                     # Streamlit 웹 인터페이스
+├── requirements.txt
 ├── src/
-│   ├── data_processing/     # 데이터 처리 및 임베딩
-│   ├── models/             # RAG 모델 및 검색기
-│   ├── fine_tuning/        # 파인튜닝 시스템
-│   └── main.py            # CLI 실행
-├── utils/                  # 음악 이론 유틸리티
-├── data/                   # 데이터 저장소
-└── app.py                 # 웹 인터페이스
+│   ├── main.py               # main 실행
+│   ├── data_processing/      # 데이터 처리 및 분석
+│   │   ├── json_loader.py
+│   │   ├── embedding_generator.py
+│   │   ├── keyword_extractor.py
+│   │   └── gap_analyzer.py
+│   ├── models/              # RAG 모델 및 검색기
+│   │   ├── rag_model.py
+│   │   └── retriever.py
+│   └── fine_tuning/         # 파인튜닝 시스템
+│       ├── question_improver.py    # Phase 1: 질문 품질 개선
+│       ├── model_trainer.py        # Phase 2: 모델 훈련 및 평가
+│       └── utils/
+│           ├── question_generator.py
+│           ├── evaluator.py
+│           ├── model_updater.py
+│           └── dataset_validator.py
+├── utils/                   # 공통 유틸리티
+│   └── music_utils.py
+└── data/                    # 데이터 저장소
+    ├── raw/                 # 원본 데이터
+    │   ├── music_theory_curriculum.json
+    │   └── backups/
+    │       ├── v1_original.json
+    │       └── v2_updated.json
+    ├── embeddings/          # 벡터 임베딩
+    │   └── music_theory_embeddings.pkl
+    └── fine_tuning/         # 파인튜닝 데이터
+        ├── keywords/        # 키워드 관리
+        │   ├── extracted_keywords.json
+        │   ├── approved_keywords.json
+        │   └── rejected_keywords.json
+        ├── questions/       # 질문 관리
+        │   ├── raw_questions.json
+        │   ├── refined_questions.json
+        │   ├── question_criteria.json
+        │   ├── question_evaluations.json
+        │   └── improvement_history.json
+        ├── evaluations/     # 답변 평가
+        │   ├── all_evaluations.json
+        │   ├── session_summaries.json
+        │   └── session_*.json
+        ├── corrections/     # 수정 데이터
+        │   ├── all_corrections.json
+        │   └── correction_*.json
+        └── reports/         # 분석 리포트
+            ├── gap_analysis_latest.json
+            ├── improvement_history.json
+            └── training_session_*.json
 ```
 # 🎯 핵심 특징
 
@@ -96,6 +145,7 @@ AI_Portfolio/
 - Anthropic Claude API를 활용한 고품질 답변 생성
 - RAG 아키텍처로 정확도 향상
 - 자체 파인튜닝 시스템 구현
+- 자체 구축 데이터셋: 구조화된 음악 이론 교육과정 JSON 활용
 
 # 💡 사용 예시
 질문: "세컨더리 도미넌트가 뭐야?"
@@ -106,6 +156,19 @@ AI_Portfolio/
 Claude AI를 통한 전문적 답변 생성
 
 답변: 세컨더리 도미넌트에 대한 상세하고 정확한 설명 제공
+
+# 🔧 시스템 워크플로우
+## 데이터 처리
+음악이론.json → 텍스트 청크 분할 → 벡터 임베딩 → FAISS 인덱스
+
+## 질의응답
+사용자 질문 → 벡터 검색 → 음악 용어 추출 → Claude AI(LLM) → 데이터 기반 답변
+
+## 파인튜닝 사이클
+키워드 추출 → 질문 생성 → 모델 테스트 → 점수 평가 → 스마트 업데이트 → 임베딩 재생성
+
+## 지속적 개선
+갭 분석 → 데이터셋 확장 계획 → 새 데이터 추가 → 성능 재평가
 
 ## 🔧 개발자 정보
 
@@ -127,7 +190,7 @@ Claude AI를 통한 전문적 답변 생성
 - GitHub: [@bogyeongchoi](https://github.com/bogyeongchoi)
 
 **Tech Stack**:
-`Python` `RAG` `FAISS` `Claude AI` `Streamlit` `Sentence-Transformers`
+`Python` `RAG` `FAISS` `Claude AI` `Streamlit` `Sentence-Transformers` `Fine-tuning`
 
 ## 📄 라이센스
 MIT License
