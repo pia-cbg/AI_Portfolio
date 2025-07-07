@@ -8,57 +8,17 @@
     "feedback": ""
   },
   {
-    "keyword": "리듬",
-    "question": "리듬이 특징은 뭐야?",
-    "improved_question": "리듬의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "ii",
     "question": "ii가 특징은 뭐야?",
-    "improved_question": "iim는 코드에서 어떤 기능을 해?",
+    "improved_question": "iim7는 코드에서 어떤 기능을 해?",
     "grade": 1,
     "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "ii",
-    "question": "ii와 비슷한 개념은 뭐가 있어?",
-    "improved_question": "iim7과 비슷한 코드기능을 가지는 코드가뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "dm7",
-    "question": "dm7가 특징은 뭐야?",
-    "improved_question": "Dm7는 어연주해?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "dm7",
-    "question": "dm7를 배워야 하는 이유는?",
-    "improved_question": "dm7를 배워야 하는 이유는?",
-    "grade": 2,
-    "grade_label": "hold",
     "feedback": ""
   },
   {
     "keyword": "스케일에",
     "question": "스케일에 개념이 뭐야?",
-    "improved_question": "스케일에 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "스케일에",
-    "question": "스케일에는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "스케 음악에서 어떻게 사용되나요?",
+    "improved_question": "스케일의 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -72,33 +32,9 @@
     "feedback": ""
   },
   {
-    "keyword": "iii",
-    "question": "iii에 대해 알려줘.",
-    "improved_question": "iiim7에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "roman",
     "question": "roman 개념이 뭐야?",
-    "improved_question": "로마숫자는 어떻게 사용돼?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "roman",
-    "question": "roman이 특징은 뭐야?",
-    "improved_question": "roman이 특징은 뭐야?",
-    "grade": 2,
-    "grade_label": "hold",
-    "feedback": "raw데이터 정보 추가 필요"
-  },
-  {
-    "keyword": "secondary",
-    "question": "secondary에 대해 알려줘.",
-    "improved_question": "secondary에 대해 알려줘.",
+    "improved_question": "로마숫자는 음악에서 어떻게 사용해?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -114,15 +50,7 @@
   {
     "keyword": "7화음은",
     "question": "7화음은이 대해 설명해줘.",
-    "improved_question": "7화음에 대해설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "7화음은",
-    "question": "7화음은는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "7화음은음악에서 어떻게쓰이나요?",
+    "improved_question": "7화음에 대해 설명해줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -131,14 +59,6 @@
     "keyword": "다이아토닉의",
     "question": "다이아토닉의가 대해 설명해줘.",
     "improved_question": "다이아토닉에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "다이아토닉의",
-    "question": "다이아토닉의가 정의는 뭐야?",
-    "improved_question": "다이아토닉의 정의가 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -184,22 +104,6 @@
     "feedback": ""
   },
   {
-    "keyword": "도미넌트입니다",
-    "question": "도미넌트입니다란 무엇인가요?",
-    "improved_question": "도미넌트란 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드의",
-    "question": "코드의가 구조를 알려줘.",
-    "improved_question": "코드의 구조를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "코드의",
     "question": "코드의 개념이 뭐야?",
     "improved_question": "코드의 개념이 뭐야?",
@@ -216,25 +120,9 @@
     "feedback": ""
   },
   {
-    "keyword": "메이저키 다이아토닉 7화음",
-    "question": "메이저키 다이아토닉 7화음이 구조를 알려줘.",
-    "improved_question": "메이저키 다이아토닉 7화음의 구조를 려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "스케일에 포함되므로",
     "question": "스케일에 포함되므로와 차이점은?",
-    "improved_question": "스케일과 리듬과 차이점이 뭐야?",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "스케일에 포함되므로",
-    "question": "스케일에 포함되므로가 특징은 뭐야?",
-    "improved_question": "스케일의 특징이 뭐야?",
+    "improved_question": "스케일과 리듬의 차이점이 뭐야?",
     "grade": 3,
     "grade_label": "advanced",
     "feedback": ""
@@ -257,14 +145,6 @@
   },
   {
     "keyword": "병진행",
-    "question": "병진행이 구조를 알려줘.",
-    "improved_question": "병진행의 구조를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "병진행",
     "question": "병진행이 대해 설명해줘.",
     "improved_question": "병진행에 대해 설명해줘.",
     "grade": 1,
@@ -280,17 +160,9 @@
     "feedback": ""
   },
   {
-    "keyword": "약진행",
-    "question": "약진행이 대해 설명해줘.",
-    "improved_question": "약진행에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "suspended",
     "question": "suspended는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "suspended chord는 음악에서 어떻게쓰이나요?",
+    "improved_question": "suspended chord는 음악에서 어떻게 쓰이나요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -312,25 +184,9 @@
     "feedback": ""
   },
   {
-    "keyword": "extended dominant",
-    "question": "extended dominant이 특징은 뭐야?",
-    "improved_question": "extended dominant의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "vim7",
     "question": "vim7가 대해 설명해줘.",
     "improved_question": "vim7에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "vim7",
-    "question": "vim7란 무엇인가요?",
-    "improved_question": "vim7란 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -341,22 +197,6 @@
     "improved_question": "세컨더리의 정의는 뭐야?",
     "grade": 1,
     "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "세컨더리",
-    "question": "세컨더리란 무엇인가요?",
-    "improved_question": "세컨더리란 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "voice leading",
-    "question": "voice leading이 구조를 알려줘.",
-    "improved_question": "voice leading에 대해 알려줘.",
-    "grade": 3,
-    "grade_label": "advanced",
     "feedback": ""
   },
   {
@@ -373,14 +213,6 @@
     "improved_question": "jazz란 무엇인가요?",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "마이너",
-    "question": "마이너의 역할을 알려줘.",
-    "improved_question": "마이너의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {
@@ -408,25 +240,9 @@
     "feedback": ""
   },
   {
-    "keyword": "화음을",
-    "question": "화음을에 대해 알려줘.",
-    "improved_question": "화음에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "화음을",
-    "question": "화음을란 무엇인가요?",
-    "improved_question": "화음이란 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "트라이톤 서브스티튜션 (Tritone Substitution)",
     "question": "트라이톤 서브스티튜션 (Tritone Substitution)에 대해 알려줘.",
-    "improved_question": "트라이톤 서브스티튜션 (Tritone Substitution)에 대해 알려줘.",
+    "improved_question": "트라이톤 서브스티튜션에 대해 알려줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -437,22 +253,6 @@
     "improved_question": "트라이톤 서브스티튜션과 세컨더리 도미넌트의 차이점은?",
     "grade": 1,
     "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드 진행",
-    "question": "코드 진행란 무엇인가요?",
-    "improved_question": "코드진행이 무슨뜻인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드 진행",
-    "question": "코드 진행이 특징은 뭐야?",
-    "improved_question": "코드진행의 특징이 뭐야?",
-    "grade": 3,
-    "grade_label": "advanced",
     "feedback": ""
   },
   {
@@ -489,16 +289,8 @@
   },
   {
     "keyword": "코드들을",
-    "question": "코드들을 관련 설명 부탁해.",
-    "improved_question": "코드 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드들을",
     "question": "코드들을이 특징은 뭐야?",
-    "improved_question": "코드의 특징이 뭐야?",
+    "improved_question": "코드의 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -512,25 +304,9 @@
     "feedback": ""
   },
   {
-    "keyword": "augmented",
-    "question": "augmented이 대해 설명해줘.",
-    "improved_question": "augmented이 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "am7",
     "question": "am7 관련 설명 부탁해.",
     "improved_question": "am7 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "am7",
-    "question": "am7 개념이 뭐야?",
-    "improved_question": "am7 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -560,22 +336,6 @@
     "feedback": ""
   },
   {
-    "keyword": "m7",
-    "question": "m7 개념이 뭐야?",
-    "improved_question": "m7 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "펑션",
-    "question": "펑션이 구조를 알려줘.",
-    "improved_question": "코드펑션을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "펑션",
     "question": "펑션에 대해 알려줘.",
     "improved_question": "코드펑션에 대해 알려줘.",
@@ -586,7 +346,7 @@
   {
     "keyword": "조성을",
     "question": "조성을 관련 설명 부탁해.",
-    "improved_question": "조성 설명 부탁해.",
+    "improved_question": "조성에 대한 설명 부탁해.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -618,17 +378,9 @@
   {
     "keyword": "major의 ii",
     "question": "major의 ii가 특징은 뭐야?",
-    "improved_question": "major diatonic의 iim7의특징은 뭐야?",
+    "improved_question": "major diatonic의 iim7의 특징은 뭐야?",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "major의 ii",
-    "question": "major의 ii에 대해 알려줘.",
-    "improved_question": "major diatonic의 iim7에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {
@@ -649,14 +401,6 @@
   },
   {
     "keyword": "트라이어드",
-    "question": "트라이어드를 배워야 하는 이유는?",
-    "improved_question": "트라이어드를 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이어드",
     "question": "트라이어드에 대해 알려줘.",
     "improved_question": "트라이어드에 대해 알려줘.",
     "grade": 1,
@@ -666,7 +410,7 @@
   {
     "keyword": "스케일",
     "question": "스케일 개념이 뭐야?",
-    "improved_question": "스케일 개념이 뭐야?",
+    "improved_question": "스케일의 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -704,14 +448,6 @@
     "feedback": ""
   },
   {
-    "keyword": "강진행의",
-    "question": "강진행의에 대해 알려줘.",
-    "improved_question": "강진행에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "폴리리듬",
     "question": "폴리리듬 개념이 뭐야?",
     "improved_question": "폴리리듬 개념이 뭐야?",
@@ -730,7 +466,7 @@
   {
     "keyword": "음정 (Interval)",
     "question": "음정 (Interval)와 차이점은?",
-    "improved_question": "음정(Interval)과전위(Inversion)의 차이점은?",
+    "improved_question": "음정(Interval)과 전위(Inversion)의 차이점은?",
     "grade": 3,
     "grade_label": "advanced",
     "feedback": ""
@@ -762,23 +498,7 @@
   {
     "keyword": "3화음 (트라이어드)",
     "question": "3화음 (트라이어드)가 대해 설명해줘.",
-    "improved_question": "3화음 (트라이어드)가 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "3화음 (트라이어드)",
-    "question": "3화음 (트라이어드) 관련 설명 부탁해.",
-    "improved_question": "3화음 (트라이어드) 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "화성(하모니)",
-    "question": "화성(하모니)가 정의는 뭐야?",
-    "improved_question": "화성(하모니)가 정의는 뭐야?",
+    "improved_question": "3화음 (트라이어드)에 대해 설명해줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -826,7 +546,7 @@
   {
     "keyword": "7화음 (세븐스 코드)",
     "question": "7화음 (세븐스 코드)와 차이점은?",
-    "improved_question": "7화음 (세븐스 코드) 와 3화음 (트라이어드) 코드의 차이점은?",
+    "improved_question": "7화음(세븐스 코드)과 3화음(트라이어드 코드)의 차이점은?",
     "grade": 3,
     "grade_label": "advanced",
     "feedback": ""
@@ -865,14 +585,6 @@
   },
   {
     "keyword": "a7",
-    "question": "a7가 특징은 뭐야?",
-    "improved_question": "A7의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "a7",
     "question": "a7와 차이점은?",
     "improved_question": "A7와 AM7의 차이점은?",
     "grade": 1,
@@ -883,14 +595,6 @@
     "keyword": "스케일의",
     "question": "스케일의를 배워야 하는 이유는?",
     "improved_question": "스케일을 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "스케일의",
-    "question": "스케일의란 무엇인가요?",
-    "improved_question": "스케일은 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -912,30 +616,6 @@
     "feedback": ""
   },
   {
-    "keyword": "화음입니다",
-    "question": "화음입니다가 특징은 뭐야?",
-    "improved_question": "화음의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "secondary dominant",
-    "question": "secondary dominant의 역할을 알려줘.",
-    "improved_question": "secondary dominant의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "secondary dominant",
-    "question": "secondary dominant이 정의는 뭐야?",
-    "improved_question": "secondary dominant의 정의가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "v7",
     "question": "v7를 배워야 하는 이유는?",
     "improved_question": "V7를 배워야 하는 이유는?",
@@ -947,22 +627,6 @@
     "keyword": "v7",
     "question": "v7가 정의는 뭐야?",
     "improved_question": "V7의 정의가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "iim7",
-    "question": "iim7가 정의는 뭐야?",
-    "improved_question": "iim7의 정의가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "iim7",
-    "question": "iim7란 무엇인가요?",
-    "improved_question": "iim7는 어떻게 쳐?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -992,17 +656,9 @@
     "feedback": ""
   },
   {
-    "keyword": "메이저",
-    "question": "메이저 개념이 뭐야?",
-    "improved_question": "메이저 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "어그멘티드",
     "question": "어그멘티드 개념이 뭐야?",
-    "improved_question": "어그멘티드 개념이 뭐야?",
+    "improved_question": "어그멘티드의 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1048,30 +704,6 @@
     "feedback": ""
   },
   {
-    "keyword": "dominants",
-    "question": "dominants 개념이 뭐야?",
-    "improved_question": "dominants 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "dominants",
-    "question": "dominants을 배워야 하는 이유는?",
-    "improved_question": "dominants을 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "iiim7",
-    "question": "iiim7 관련 설명 부탁해.",
-    "improved_question": "iiim7 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "iiim7",
     "question": "iiim7가 정의는 뭐야?",
     "improved_question": "iiim7의 코드기능이 뭐야?",
@@ -1104,14 +736,6 @@
     "feedback": ""
   },
   {
-    "keyword": "인버전",
-    "question": "인버전이 대해 설명해줘.",
-    "improved_question": "인버전에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "g7 cmaj7",
     "question": "g7 cmaj7 개념이 뭐야?",
     "improved_question": "G7 - Cmaj7의 코드진행에 대해서 설명해줘.",
@@ -1129,24 +753,8 @@
   },
   {
     "keyword": "maj7",
-    "question": "maj7를 배워야 하는 이유는?",
-    "improved_question": "maj7 코드를 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "maj7",
     "question": "maj7란 무엇인가요?",
-    "improved_question": "major 7th코드는 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "다이아토닉 진행을",
-    "question": "다이아토닉 진행을이 정의는 뭐야?",
-    "improved_question": "다이아토닉 진행의 정의가 뭐야?",
+    "improved_question": "major 7th 코드는 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1154,7 +762,7 @@
   {
     "keyword": "다이아토닉 진행을",
     "question": "다이아토닉 진행을이 특징은 뭐야?",
-    "improved_question": "다이아토닉 진행의 특징이 뭐야?",
+    "improved_question": "다이아토닉 코드진행의 특징이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1168,14 +776,6 @@
     "feedback": ""
   },
   {
-    "keyword": "substitution",
-    "question": "substitution이 정의는 뭐야?",
-    "improved_question": "tritone substitution의 정의가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "종지",
     "question": "종지가 정의는 뭐야?",
     "improved_question": "종지의 정의가 뭐야?",
@@ -1184,17 +784,9 @@
     "feedback": ""
   },
   {
-    "keyword": "종지",
-    "question": "종지 개념이 뭐야?",
-    "improved_question": "종지 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "major 스케일에",
     "question": "major 스케일에 관련 설명 부탁해.",
-    "improved_question": "major 스케일에 관련 설명 부탁해.",
+    "improved_question": "major 스케일의 설명 부탁해.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1203,22 +795,6 @@
     "keyword": "major 스케일에",
     "question": "major 스케일에가 특징은 뭐야?",
     "improved_question": "major 스케일의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "secondary dominants",
-    "question": "secondary dominants 관련 설명 부탁해.",
-    "improved_question": "secondary dominants 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "secondary dominants",
-    "question": "secondary dominants란 무엇인가요?",
-    "improved_question": "secondary dominants란 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1259,14 +835,6 @@
     "keyword": "도미넌트는",
     "question": "도미넌트는는 음악에서 어떻게 쓰이나요?",
     "improved_question": "도미넌트는 음악에서 어떻게 쓰이나요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "도미넌트는",
-    "question": "도미넌트는란 무엇인가요?",
-    "improved_question": "도미넌트란 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1360,35 +928,11 @@
     "feedback": ""
   },
   {
-    "keyword": "도미넌트 7화음은",
-    "question": "도미넌트 7화음은이 특징은 뭐야?",
-    "improved_question": "세컨더리 도미넌트 7화음의 특징이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "minor의 도미넌트는",
     "question": "minor의 도미넌트는란 무엇인가요?",
     "improved_question": "natural minor scale에서 도미넌트가 없는 이유는?",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "major",
-    "question": "major 개념이 뭐야?",
-    "improved_question": "major 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "major",
-    "question": "major의 역할을 알려줘.",
-    "improved_question": "major의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {
@@ -1416,22 +960,6 @@
     "feedback": ""
   },
   {
-    "keyword": "세컨더리 도미넌트를",
-    "question": "세컨더리 도미넌트를 개념이 뭐야?",
-    "improved_question": "세컨더리 도미넌트의 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드의 기능을",
-    "question": "코드의 기능을 개념이 뭐야?",
-    "improved_question": "코드의 기능에 대해서 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "코드의 기능을",
     "question": "코드의 기능을이 구조를 알려줘.",
     "improved_question": "코드의 기능의 종류에 대해 설명해줘.",
@@ -1442,17 +970,9 @@
   {
     "keyword": "서브도미넌트",
     "question": "서브도미넌트가 구조를 알려줘.",
-    "improved_question": "코드 기능에서 서브미넌트에 대해 설명해줘.",
+    "improved_question": "코드기능에서 서브도미넌트에 대해 설명해줘.",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "서브도미넌트",
-    "question": "서브도미넌트와 차이점은?",
-    "improved_question": "서브도미넌트와 도미넌트의 차이점은?",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {
@@ -1466,7 +986,7 @@
   {
     "keyword": "스케일을",
     "question": "스케일을과 차이점은?",
-    "improved_question": "하모닉마이너스케일과멜로딕마이너 스케일의 차이점은?",
+    "improved_question": "하모닉마이너스케일과 멜로딕마이너스케일의 차이점은?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1482,7 +1002,7 @@
   {
     "keyword": "세븐스 코드로",
     "question": "세븐스 코드로란 무엇인가요?",
-    "improved_question": "세븐스 코드란 무엇인가요?",
+    "improved_question": "세븐스코드란 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1512,14 +1032,6 @@
     "feedback": ""
   },
   {
-    "keyword": "세컨더리도미넌트",
-    "question": "세컨더리도미넌트가 대해 설명해줘.",
-    "improved_question": "세컨더리 도미넌트에 대해 자세히 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "코드의 전위",
     "question": "코드의 전위가 정의는 뭐야?",
     "improved_question": "코드의 전위가 뭐야?",
@@ -1530,23 +1042,7 @@
   {
     "keyword": "코드에서 8음의",
     "question": "코드에서 8음의 관련 설명 부탁해.",
-    "improved_question": "코드에서 7음에관한 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드에서 8음의",
-    "question": "코드에서 8음의에 대해 알려줘.",
-    "improved_question": "코드에서 7음에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이어드보다",
-    "question": "트라이어드보다에 대해 알려줘.",
-    "improved_question": "트라이어드에 대해 알려줘.",
+    "improved_question": "코드에서 7음에 관한 설명 부탁해.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1579,14 +1075,6 @@
     "keyword": "im7",
     "question": "im7가 정의는 뭐야?",
     "improved_question": "im7의 구성음은 어떻게 돼?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "im7",
-    "question": "im7와 비슷한 개념은 뭐가 있어?",
-    "improved_question": "iim7과 비슷한 코드기능은 뭐가 있어?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1625,14 +1113,6 @@
   },
   {
     "keyword": "화성적",
-    "question": "화성적이 구조를 알려줘.",
-    "improved_question": "화성적이라는 말은 어떤 말이야?",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "화성적",
     "question": "화성적는 음악에서 어떻게 쓰이나요?",
     "improved_question": "화성적인 해결은 어떻게 해야해?",
     "grade": 3,
@@ -1648,17 +1128,9 @@
     "feedback": ""
   },
   {
-    "keyword": "minor의",
-    "question": "minor의의 역할을 알려줘.",
-    "improved_question": "minor의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "intervals",
     "question": "intervals 개념이 뭐야?",
-    "improved_question": "intervals 개념이 뭐야?",
+    "improved_question": "interval 개념이 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1666,15 +1138,7 @@
   {
     "keyword": "intervals",
     "question": "intervals을 배워야 하는 이유는?",
-    "improved_question": "intervals을 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "화음의",
-    "question": "화음의 개념이 뭐야?",
-    "improved_question": "화음의 개념이 뭐야?",
+    "improved_question": "interval을 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1706,7 +1170,7 @@
   {
     "keyword": "선율(멜로디)",
     "question": "선율(멜로디)와 차이점은?",
-    "improved_question": "선율(멜로디)와박자(리듬)의 차이점은?",
+    "improved_question": "선율(멜로디)과 박자(리듬)의 차이점은?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1730,7 +1194,7 @@
   {
     "keyword": "펜타토닉",
     "question": "펜타토닉란 무엇인가요?",
-    "improved_question": "펜타토닉란 무엇인가요?",
+    "improved_question": "펜타토닉이란 무엇인가요?",
     "grade": 2,
     "grade_label": "hold",
     "feedback": ""
@@ -1741,14 +1205,6 @@
     "improved_question": "4/4박자는 몇박이야?",
     "grade": 1,
     "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "4박자는",
-    "question": "4박자는의 역할을 알려줘.",
-    "improved_question": "가 자주 등장하는 장르는 뭐야?",
-    "grade": 3,
-    "grade_label": "advanced",
     "feedback": ""
   },
   {
@@ -1769,14 +1225,6 @@
   },
   {
     "keyword": "토닉",
-    "question": "토닉을 배워야 하는 이유는?",
-    "improved_question": "토닉을 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "토닉",
     "question": "토닉란 무엇인가요?",
     "improved_question": "토닉이란 무엇인가요?",
     "grade": 1,
@@ -1785,32 +1233,8 @@
   },
   {
     "keyword": "마이너 코드는",
-    "question": "마이너 코드는이 특징은 뭐야?",
-    "improved_question": "마이너 코드의이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "마이너 코드는",
     "question": "마이너 코드는과 비슷한 개념은 뭐가 있어?",
     "improved_question": "마이너 코드와 비슷한 개념은 뭐가 있어?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "조성의",
-    "question": "조성의가 특징은 뭐야?",
-    "improved_question": "조성의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "조성의",
-    "question": "조성의 관련 설명 부탁해.",
-    "improved_question": "조성 관련 설명 부탁해.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1833,16 +1257,8 @@
   },
   {
     "keyword": "세븐스",
-    "question": "세븐스와 비슷한 개념은 뭐가 있어?",
-    "improved_question": "세븐스 코드를 확장시키면 어떻게 돼?",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "세븐스",
     "question": "세븐스가 특징은 뭐야?",
-    "improved_question": "세븐스 코드의 확장된 코드는 뭐야?",
+    "improved_question": "세븐스 코드에서 사용할 수 있는 텐션은 뭐야?",
     "grade": 3,
     "grade_label": "advanced",
     "feedback": ""
@@ -1859,14 +1275,6 @@
     "keyword": "박자",
     "question": "박자와 차이점은?",
     "improved_question": "박자와 멜로디의 차이점은?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "major의",
-    "question": "major의 개념이 뭐야?",
-    "improved_question": "major chord가 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1897,14 +1305,6 @@
   },
   {
     "keyword": "리하모나이제이션",
-    "question": "리하모나이제이션과 비슷한 개념은 뭐가 있어?",
-    "improved_question": "리하모나이제이션과 비슷한 개념은 뭐가 있어?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "리하모나이제이션",
     "question": "리하모나이제이션이 대해 설명해줘.",
     "improved_question": "리하모나이제이션에 대해 설명해줘.",
     "grade": 1,
@@ -1915,30 +1315,6 @@
     "keyword": "major scale",
     "question": "major scale는 음악에서 어떻게 쓰이나요?",
     "improved_question": "major scale는 음악에서 어떻게 쓰이나요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "major scale",
-    "question": "major scale를 배워야 하는 이유는?",
-    "improved_question": "major scale를 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드가",
-    "question": "코드가에 대해 알려줘.",
-    "improved_question": "코드에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드가",
-    "question": "코드가를 배워야 하는 이유는?",
-    "improved_question": "코드를 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1961,24 +1337,8 @@
   },
   {
     "keyword": "기능",
-    "question": "기능의 역할을 알려줘.",
-    "improved_question": "코드 기능에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "기능",
     "question": "기능란 무엇인가요?",
-    "improved_question": "코드의 기능란 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "메이저 코드",
-    "question": "메이저 코드에 대해 알려줘.",
-    "improved_question": "메이저 코드에 대해 알려줘.",
+    "improved_question": "코드의 기능이란 무엇인가요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -1987,14 +1347,6 @@
     "keyword": "메이저 코드",
     "question": "메이저 코드는 음악에서 어떻게 쓰이나요?",
     "improved_question": "메이저 코드는 음악에서 어떻게 쓰이나요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "chord",
-    "question": "chord을 배워야 하는 이유는?",
-    "improved_question": "chord를 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2025,14 +1377,6 @@
   },
   {
     "keyword": "sound character",
-    "question": "sound character에 대해 알려줘.",
-    "improved_question": "모드의 캐릭터노트에 대해 알려줘.",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "sound character",
     "question": "sound character과 차이점은?",
     "improved_question": "모드의 캐릭터노트는 어떤게 있어?",
     "grade": 3,
@@ -2043,14 +1387,6 @@
     "keyword": "em7",
     "question": "em7가 대해 설명해줘.",
     "improved_question": "Em7는 C major key에서 몇번째 다이아토닉이야?",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "em7",
-    "question": "em7란 무엇인가요?",
-    "improved_question": "Em7는 C major key에서 무슨 코드기능이야?",
     "grade": 3,
     "grade_label": "advanced",
     "feedback": ""
@@ -2096,14 +1432,6 @@
     "feedback": ""
   },
   {
-    "keyword": "다이아토닉",
-    "question": "다이아토닉에 대해 알려줘.",
-    "improved_question": "논 다이아토닉에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "얼터레이션",
     "question": "얼터레이션에 대해 알려줘.",
     "improved_question": "얼터드 코드에 대해 알려줘.",
@@ -2121,24 +1449,8 @@
   },
   {
     "keyword": "음정",
-    "question": "음정는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "음정은 음악에서 어떻게 사용되나요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "음정",
     "question": "음정과 비슷한 개념은 뭐가 있어?",
     "improved_question": "감음정과 비슷한 개념은 뭐가 있어?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "화음",
-    "question": "화음 관련 설명 부탁해.",
-    "improved_question": "단화음 관련 설명 부탁해.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2163,14 +1475,6 @@
     "keyword": "강진행",
     "question": "강진행이 특징은 뭐야?",
     "improved_question": "강진행의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "논다이아토닉의 간단한 응용",
-    "question": "논다이아토닉의 간단한 응용 개념이 뭐야?",
-    "improved_question": "논다이아토닉의 응용에 대해서 설명해줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2216,33 +1520,9 @@
     "feedback": ""
   },
   {
-    "keyword": "코드",
-    "question": "코드의 역할을 알려줘.",
-    "improved_question": "코드의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "앞서 강진행에 대한 개념을 배웠습니다. 코드 진행감이 명확하게 느껴지는 진행을 말합니다.",
-    "question": "앞서 강진행에 대한 개념을 배웠습니다. 코드 진행감이 명확하게 느껴지는 진행을 말합니다.는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "코드 진행감이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "트라이어드에 단7도를",
     "question": "트라이어드에 단7도를 관련 설명 부탁해.",
-    "improved_question": "트라이어드에 단7도를 추가하면 코드야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이어드에 단7도를",
-    "question": "트라이어드에 단7도를이 대해 설명해줘.",
-    "improved_question": "트라이어드에 단7도를 추가하면 어떻게돼?",
+    "improved_question": "트라이어드에 단7도를 추가하면 어떤 코드야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2250,15 +1530,7 @@
   {
     "keyword": "트라이어드에",
     "question": "트라이어드에 개념이 뭐야?",
-    "improved_question": "트라이어드 코드의 종류를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이어드에",
-    "question": "트라이어드에가 특징은 뭐야?",
-    "improved_question": "트라이어드 특징이 뭐야?",
+    "improved_question": "트라이어드코드의 종류를 알려줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2290,7 +1562,7 @@
   {
     "keyword": "코드 펑션을 활용한 기초 코드 작곡",
     "question": "코드 펑션을 활용한 기초 코드 작곡을 배워야 하는 이유는?",
-    "improved_question": "코드 펑션을 활용한 기초 코드 작곡을 배워야 하는 이유는?",
+    "improved_question": "코드 펑션을 활용한 코드 작곡을 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2304,14 +1576,6 @@
     "feedback": ""
   },
   {
-    "keyword": "vi",
-    "question": "vi가 구조를 알려줘.",
-    "improved_question": "vim7의 구조를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "조성",
     "question": "조성을 배워야 하는 이유는?",
     "improved_question": "조성을 배워야 하는 이유는?",
@@ -2320,57 +1584,9 @@
     "feedback": ""
   },
   {
-    "keyword": "도미넌트를",
-    "question": "도미넌트를이 구조를 알려줘.",
-    "improved_question": "도미넌트의 활용법에 대해 알려줘",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "도미넌트를",
-    "question": "도미넌트를 개념이 뭐야?",
-    "improved_question": "도미넌트의 개념이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "7화음으로",
     "question": "7화음으로가 정의는 뭐야?",
-    "improved_question": "화음의 종류를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "7화음으로",
-    "question": "7화음으로란 무엇인가요?",
-    "improved_question": "7화음의 종류가 어떻게 되니?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이톤서브스티튜션",
-    "question": "트라이톤서브스티튜션이 정의는 뭐야?",
-    "improved_question": "트라이톤 서브스티튜션의 정의가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "트라이톤서브스티튜션",
-    "question": "트라이톤서브스티튜션 관련 설명 부탁해.",
-    "improved_question": "트라이톤 서브스티튜션 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "ivm7",
-    "question": "ivm7를 배워야 하는 이유는?",
-    "improved_question": "IVM7을 배워야 하는 이유는?",
+    "improved_question": "7화음의 종류를 알려줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2418,7 +1634,7 @@
   {
     "keyword": "모드",
     "question": "모드가 정의는 뭐야?",
-    "improved_question": "모드케일의 정의가 뭐야?",
+    "improved_question": "모드스케일의 정의가 뭐야?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2440,81 +1656,9 @@
     "feedback": ""
   },
   {
-    "keyword": "서브도미넌트 도미넌트",
-    "question": "서브도미넌트 도미넌트가 특징은 뭐야?",
-    "improved_question": "서브도미넌트와 도미넌트의 특징이 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "코드는",
     "question": "코드는의 역할을 알려줘.",
-    "improved_question": "경과코드의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "코드는",
-    "question": "코드는이 구조를 알려줘.",
-    "improved_question": "경과코드의 구조를 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "roman numeral",
-    "question": "roman numeral이 정의는 뭐야?",
-    "improved_question": "roman numeral이 정의는 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "순차진행",
-    "question": "순차진행이 대해 설명해줘.",
-    "improved_question": "코드의 순차진행에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "순차진행",
-    "question": "순차진행란 무엇인가요?",
-    "improved_question": "코드의 순차진행이란 무엇인가요?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "스케일(음계)",
-    "question": "스케일(음계)가 구조를 알려줘.",
-    "improved_question": "다양한 스케일의 구조를 알려줘.",
-    "grade": 3,
-    "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "스케일(음계)",
-    "question": "스케일(음계) 관련 설명 부탁해.",
-    "improved_question": "다양한 스케일에 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "도미넌트의",
-    "question": "도미넌트의가 대해 설명해줘.",
-    "improved_question": "도미넌트의 기능에 대해 설명해줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "도미넌트의",
-    "question": "도미넌트의를 배워야 하는 이유는?",
-    "improved_question": "도미넌트를 배워야하는 이유는?",
+    "improved_question": "경과코드를 알려줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2523,14 +1667,6 @@
     "keyword": "ii 진행",
     "question": "ii 진행에 대해 알려줘.",
     "improved_question": "iim7 - V7 진행에 대해 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "ii 진행",
-    "question": "ii 진행을 배워야 하는 이유는?",
-    "improved_question": "iim7 - V7 진행을 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2546,7 +1682,7 @@
   {
     "keyword": "가이드톤",
     "question": "가이드톤는 음악에서 어떻게 쓰이나요?",
-    "improved_question": "가이드톤는 음악에서 어떻게 쓰이나요?",
+    "improved_question": "가이드톤은 음악에서 어떻게 쓰이나요?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2554,7 +1690,7 @@
   {
     "keyword": "블루스",
     "question": "블루스가 구조를 알려줘.",
-    "improved_question": "블루스 스케일대해 알려줘.",
+    "improved_question": "블루스 스케일 대해 알려줘.",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2562,55 +1698,15 @@
   {
     "keyword": "블루스",
     "question": "블루스에 대해 알려줘.",
-    "improved_question": "블루스 코드진행에 대 알려줘.",
+    "improved_question": "블루스 코드진행에 대해 알려줘.",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "iv",
-    "question": "iv이 특징은 뭐야?",
-    "improved_question": "IVM7의 특징은 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "iv",
-    "question": "iv을 배워야 하는 이유는?",
-    "improved_question": "IVM7을 배워야 하는 이유는?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "가이드",
-    "question": "가이드와 비슷한 개념은 뭐가 있어?",
-    "improved_question": "가이드톤은 어디에 활용돼?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "가이드",
-    "question": "가이드와 차이점은?",
-    "improved_question": "가이드톤과 톤의차이점은?",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {
     "keyword": "모듈레이션",
     "question": "모듈레이션 관련 설명 부탁해.",
     "improved_question": "모듈레이션 관련 설명 부탁해.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "모듈레이션",
-    "question": "모듈레이션을 배워야 하는 이유는?",
-    "improved_question": "모듈레이션을 배워야 하는 이유는?",
     "grade": 1,
     "grade_label": "pass",
     "feedback": ""
@@ -2632,14 +1728,6 @@
     "feedback": ""
   },
   {
-    "keyword": "서스펜디드",
-    "question": "서스펜디드의 역할을 알려줘.",
-    "improved_question": "서스펜디드 코드의 역할을 알려줘.",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
     "keyword": "g7",
     "question": "g7가 구조를 알려줘.",
     "improved_question": "G7의 구성음이 뭐야?",
@@ -2653,22 +1741,6 @@
     "improved_question": "G7은 어느 key의 프라이머리 도미넌트야?",
     "grade": 3,
     "grade_label": "advanced",
-    "feedback": ""
-  },
-  {
-    "keyword": "전위",
-    "question": "전위 개념이 뭐야?",
-    "improved_question": "전위가 뭐야?",
-    "grade": 1,
-    "grade_label": "pass",
-    "feedback": ""
-  },
-  {
-    "keyword": "전위",
-    "question": "전위와 차이점은?",
-    "improved_question": "inversion과 interval의 차이점은?",
-    "grade": 1,
-    "grade_label": "pass",
     "feedback": ""
   },
   {

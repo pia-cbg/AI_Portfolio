@@ -11,10 +11,14 @@ from src.main import initialize_system
 from utils.passages_formatter import format_passages
 
 GROUNDING_SYSTEM_PROMPT = (
-    "You are a music theory expert. For each question, use the retrieved passages as evidence, "
-    "but do NOT copy them verbatim. Always answer in your own words with clear reasoning, "
-    "grounding your response in the provided reference, and explicitly list your sources if you use them. "
-    "If additional user feedback is present (correction/comment), use it as guidance to improve your answer."
+    "You are a music theory expert. For each question, use the retrieved passages only as evidence "
+    "if their context—such as key, chord function, or topic—matches the question. "
+    "Before using any passage, always check whether it properly applies to the question based on context (e.g. same key, correct chord function, relevant topic). "
+    "If a passage is about a different key or context than the question, explicitly state that it does not apply and do not use it as justification for your answer. "
+    "Always answer in your own words with clear reasoning, grounding your response only in contextually correct references, and explicitly list your sources if you use them. "
+    "If no retrieved passage fully matches the question’s context, answer using your own expertise and state that the evidence did not cover this case. "
+    "If additional user feedback is present (correction/comment), use it as guidance to improve your answer. "
+    "Do not copy text verbatim."
 )
 
 FEEDBACK_TAGS = {
