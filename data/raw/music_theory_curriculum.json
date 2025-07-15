@@ -45,6 +45,102 @@
         "9": "A",
         "10": "Bb",
         "11": "B"
+      },
+      "Tensions": {
+        "b9": 1,
+        "9": 2,
+        "#9": 3,
+        "11": 5,
+        "#11": 6,
+        "b13": 8,
+        "13": 9
+      },
+      "Chords": {
+        "triads": [
+          {"name": "", "intervals": [0, 4, 7], "description": "major triad"},
+          {"name": "m", "intervals": [0, 3, 7], "description": "minor triad"},
+          {"name": "+", "intervals": [0, 4, 8], "description": "augmented"},
+          {"name": "dim", "intervals": [0, 3, 6], "description": "diminished"},
+          {"name": "add2", "intervals": [0, 2, 4, 7], "description": "add2"},
+          {"name": "madd2", "intervals": [0, 2, 3, 7], "description": "minor add2"},
+          {"name": "madd4", "intervals": [0, 3, 5, 7], "description": "minor add4"},
+          {"name": "6", "intervals": [0, 4, 7, 9], "description": "major 6th"},
+          {"name": "m6", "intervals": [0, 3, 7, 9], "description": "minor 6th"}
+        ],
+        "suspended": [
+          {"name": "sus2", "intervals": [0, 2, 7], "description": "suspended 2nd"},
+          {"name": "sus4", "intervals": [0, 5, 7], "description": "suspended 4th"},
+          {"name": "7sus4", "intervals": [0, 5, 7, 10], "description": "dominant 7th suspended 4th"}
+        ],
+        "seventh": [
+          {"name": "maj7", "intervals": [0, 4, 7, 11], "description": "major 7th"},
+          {"name": "m7", "intervals": [0, 3, 7, 10], "description": "minor 7th"},
+          {"name": "mM7", "intervals": [0, 3, 7, 11], "description": "minor major 7th"},
+          {"name": "7", "intervals": [0, 4, 7, 10], "description": "dominant 7th"},
+          {"name": "m7b5", "intervals": [0, 3, 6, 10], "description": "half diminished"},
+          {"name": "dim7", "intervals": [0, 3, 6, 9], "description": "diminished 7th"},
+          {"name": "+7", "intervals": [0, 4, 8, 10], "description": "augmented dominant 7th"}
+        ]
+      },
+      "SCALE": {
+        "major_modes": [
+          {"name": "major", "intervals": [0,2,4,5,7,9,11], "description": "Ionian mode"},
+          {"name": "ionian", "intervals": [0,2,4,5,7,9,11], "description": ""},
+          {"name": "dorian", "intervals": [0,2,3,5,7,9,10], "description": ""},
+          {"name": "phrygian", "intervals": [0,1,3,5,7,8,10], "description": ""},
+          {"name": "lydian", "intervals": [0,2,4,6,7,9,11], "description": ""},
+          {"name": "mixolydian", "intervals": [0,2,4,5,7,9,10], "description": ""},
+          {"name": "aeolian", "intervals": [0,2,3,5,7,8,10], "description": ""},
+          {"name": "locrian", "intervals": [0,1,3,5,6,8,10], "description": ""}
+        ],
+        "harmonic_major_modes": [
+          {"name": "harmonic_major", "intervals":[0,2,4,5,7,8,11],"description":""},
+          {"name": "dorian_#4", "intervals":[0,2,3,6,7,9,10], "description": ""},
+          {"name": "phrygian_b4", "intervals":[0,1,3,4,7,8,10], "description": ""},
+          {"name": "lydian_b3", "intervals":[0,2,3,6,7,9,11], "description": ""},
+          {"name": "mixolydian_b9", "intervals":[0,1,4,5,7,9,10], "description": ""},
+          {"name": "lydian_augmented_#2", "intervals":[0,3,4,6,7,9,11], "description": ""},
+          {"name": "locrian_bb2", "intervals":[0,1,3,5,6,8,10], "description": ""}
+        ],
+        "natural_minor_modes": [
+          {"name": "natural_minor", "intervals": [0,2,3,5,7,8,10], "description": "Aeolian mode"},
+          {"name": "aeolian", "intervals": [0,2,3,5,7,8,10], "description": ""},
+          {"name": "locrian", "intervals": [0,1,3,5,6,8,10], "description": ""},
+          {"name": "ionian", "intervals": [0,2,4,5,7,9,11], "description": ""},
+          {"name": "dorian", "intervals": [0,2,3,5,7,9,10], "description": ""},
+          {"name": "phrygian", "intervals": [0,1,3,5,7,8,10], "description": ""},
+          {"name": "lydian", "intervals": [0,2,4,6,7,9,11], "description": ""},
+          {"name": "mixolydian", "intervals": [0,2,4,5,7,9,10], "description": ""}
+        ],
+        "harmonic_minor_modes": [
+          {"name": "harmonic_minor", "intervals": [0,2,3,5,7,8,11], "description": ""},
+          {"name": "locrian_natural_6", "intervals": [0,1,3,5,6,9,10], "description": ""},
+          {"name": "ionian_augmented", "intervals": [0,2,4,5,8,9,11], "description": ""},
+          {"name": "dorian_#4", "intervals": [0,2,3,6,7,9,10], "description": ""},
+          {"name": "phrygian_dominant", "intervals": [0,1,4,5,7,8,10], "description": "mixolydian_b9_b13"},
+          {"name": "mixolydian_b9_b13", "intervals": [0,1,4,5,7,8,10], "description": ""},
+          {"name": "lydian_#2", "intervals": [0,3,4,6,7,9,11], "description": ""},
+          {"name": "superlocrian_bb7", "intervals": [0,1,3,4,6,8,9], "description": ""}
+        ],
+        "melodic_minor_modes": [
+          {"name": "melodic_minor", "intervals": [0,2,3,5,7,9,11], "description": "jazz minor"},
+          {"name": "dorian_b2_scale", "intervals": [0,1,3,5,7,9,10], "description": "phrygian #6"},
+          {"name": "lydian_augmented", "intervals": [0,2,4,6,8,9,10], "description": ""},
+          {"name": "lydian_b7", "intervals": [0,2,4,6,7,9,10], "description": "mixolydian #4, lydian dominant"},
+          {"name": "mixolydian_b13", "intervals": [0,2,4,5,7,8,10], "description": "major-minor, mixolydian b13"},
+          {"name": "locrian_natural_2", "intervals": [0,2,3,5,6,8,10], "description": "half-diminished, minor locrian"},
+          {"name": "superlocrian", "intervals": [0,1,3,4,6,8,10], "description": "altered, altered dominant"},
+          {"name": "altered", "intervals": [0,1,3,4,6,8,10], "description": ""}
+        ],
+        "special_scales": [
+          {"name": "major_pentatonic", "intervals": [0,2,4,7,9], "description": ""},
+          {"name": "minor_pentatonic", "intervals": [0,3,5,7,10], "description": ""},
+          {"name": "blues", "intervals": [0,3,5,6,7,10], "description": ""},
+          {"name": "whole_tone", "intervals": [0,2,4,6,8,10], "description": ""},
+          {"name": "whole_half_diminished", "intervals": [0,2,3,5,6,8,9,11], "description": ""},
+          {"name": "half_whole_diminished", "intervals": [0,1,3,4,6,7,9,10], "description": ""},
+          {"name": "mixolydian_b9_#9", "intervals": [0,1,3,4,5,7,9,10], "description": "dom7(#9,13), dom7(b9,13)"}
+        ]
       }
     },
     "curriculum": {
@@ -696,6 +792,5 @@
         }
       }
     }
-  },
-  "improved_explanation": "viim7b5 는 1- b3 - b5 -b7 음으로 구성으며 하프디미말합니다."
+  }
 }

@@ -4,81 +4,54 @@ import json
 import random
 from datetime import datetime
 
-# project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# sys.path.insert(0, project_root)
-
 from src.main import initialize_system
 from utils.passages_formatter import format_passages
-
-GROUNDING_SYSTEM_PROMPT = (
-    "You are a music theory expert. For each question, use the retrieved passages only as evidence "
-    "if their context—such as key, chord function, or topic—matches the question. "
-    "Before using any passage, always check whether it properly applies to the question based on context (e.g. same key, correct chord function, relevant topic). "
-    "If a passage is about a different key or context than the question, explicitly state that it does not apply and do not use it as justification for your answer. "
-    "Always answer in your own words with clear reasoning, grounding your response only in contextually correct references, and explicitly list your sources if you use them. "
-    "If no retrieved passage fully matches the question’s context, answer using your own expertise and state that the evidence did not cover this case. "
-    "If additional user feedback is present (correction/comment), use it as guidance to improve your answer. "
-    "Do not copy text verbatim."
-)
+from src.prompts.prompts import GROUNDING_SYSTEM_PROMPT
+# print(GROUNDING_SYSTEM_PROMPT)
 
 FEEDBACK_TAGS = {
     "0": {"name": "통과", "for_training": True},
     "1": {"name": "정정", "for_training": True},
-    "2": {"name": "불합격", "for_training": False},
-    "3": {"name": "보류", "for_training": False},
+    "2": {"name": "불합격", "for_training": True}, # <- 파인튜닝에도 사용
+    "3": {"name": "보류", "for_training": True},   # <- 필요시 파인튜닝에도 사용
     "4": {"name": "추가", "for_training": True},
     "5": {"name": "기타", "for_training": False}
 }
-_FEEDBACK_KEYS_FOR_EXCLUDE = {k for k, v in FEEDBACK_TAGS.items() if not v["for_training"]}
+
+FINAL_JUDGEMENTS = {
+    "0": "합격",
+    "1": "불합격",
+    "2": "보완"
+}
+PASS_JUDGEMENT_FOR_TRAINING = {"0", "1", "2"}  # 모두 파인튜닝에 사용, 필요시 subset으로 수정
 
 class ModelTrainer:
     def __init__(self):
         self.FT_BASE = 'data/fine_tuning'
-        self.MODEL_LOG_FILE = 'models/fine_tuned/version_log.json'
-        self.MODEL_BASE_DIR = 'models/fine_tuned'
         self.questions_file = os.path.join(self.FT_BASE, 'questions', 'question_evaluations.json')
-        self.finetune_data_dir = os.path.join(self.FT_BASE, 'finetune_data')
         self.session_log_dir = os.path.join(self.FT_BASE, 'training_logs')
-        os.makedirs(self.finetune_data_dir, exist_ok=True)
+        self.finetune_dir = os.path.join(self.FT_BASE, 'finetune_data')
         os.makedirs(self.session_log_dir, exist_ok=True)
-        os.makedirs(self.MODEL_BASE_DIR, exist_ok=True)
+        os.makedirs(self.finetune_dir, exist_ok=True)
         self.rag_model = None
         self.session_data = {
             'start_time': datetime.now().isoformat(),
             'results': []
         }
-        self.version_id = None
-        self.model_path = None
-        self.finetune_path = None
-        self.stats = {}
 
     def run(self):
-        print("="*60 + "\n[RAG Grounded QA 파인튜닝 세션]\n" + "="*60)
-        print(f"initialize_system() 반환값: {self.rag_model}")  # 추가
+        print("="*60 + "\n[RAG Grounded QA 평가 세션]\n" + "="*60)
         self._initialize_rag_model()
         questions = self._load_questions()
         if not questions:
             print("❌ 사용할 질문이 없습니다.")
             return
         self._interactive_loop(questions)
-        self.finetune_path, self.stats = self._save_finetune_dataset()
-        # 아래 부분에서 실제 파인튜닝 실행 및 가중치 저장하면 self.model_path 경로 반환!
-        self.version_id = f"music_rag_ft_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-        self.model_path = os.path.join(self.MODEL_BASE_DIR, self.version_id)
-        # 실제 파인튜닝 저장 코드 필요시 여기에!
-        os.makedirs(self.model_path, exist_ok=True)
-        self._save_session_log()
-        self._append_version_log(
-            model_version=self.version_id,
-            model_path=self.model_path,
-            finetune_data_path=self.finetune_path,
-            feedback_stats=self.stats,
-            status="draft",  # 항상 draft로 기록!
-            approved_by="",
-            comment=""
-        )
-        print(f"\n✅ 파인튜닝 데이터/로그/모델 버전 기록 저장 완료! [version: {self.version_id}]")
-        print("\n⚠️ 승인된(approved) 모델만 실제 서비스/배포에 사용해야 합니다. (추후 승인해야 함)")
+        session_path = self._save_session_log()
+        jsonl_path = self._save_finetune_jsonl()
+        print("\n✅ 세션 평가 및 파인튜닝 데이터 모두 저장 완료!")
+        print(f"📝 세션 평가: {session_path}")
+        print(f"🔑 파인튜닝 데이터: {jsonl_path}")
 
     def _initialize_rag_model(self):
         try:
@@ -125,6 +98,15 @@ class ModelTrainer:
             detail = input("구체적 설명/정정/보강 (간단히): ").strip()
         return tag, FEEDBACK_TAGS[tag]["name"], detail
 
+    def _input_final_judgement(self):
+        print("\n[최종 평가 코드 선택]")
+        for code, label in FINAL_JUDGEMENTS.items():
+            print(f"{code}: {label}")
+        ans = input("최종 평가번호 (0-합격/1-불합격/2-보완, 기본:0): ").strip()
+        ans = ans if ans in FINAL_JUDGEMENTS else "0"
+        comment = input("최종 평가 코멘트/의견 (옵션): ").strip()
+        return ans, FINAL_JUDGEMENTS[ans], comment
+
     def _interactive_loop(self, questions):
         random.shuffle(questions)
         default_limit = 10
@@ -133,51 +115,51 @@ class ModelTrainer:
             target_questions = questions
         else:
             target_questions = questions[:int(ans) if ans else default_limit]
+
         for idx, q_text in enumerate(target_questions, 1):
             print(f"\n{'='*80}\nQ{idx:02d}: {q_text}")
-            answer, passages = self._get_model_answer(q_text)
-            print("\n[모델 답변]\n" + answer)
-            
-            # 🔽🔽🔽 여기부터 교체! 🔽🔽🔽
+
+            # 1차 답변
+            answer1, passages = self._get_model_answer(q_text)
+            print("\n[모델 1차 답변]\n" + answer1)
             print("\n[참고자료 전체 Passage (구조화)]")
             print(format_passages(passages, max_keys=7, maxlen=120, max_passages=4))
-            # 🔼🔼🔼 여기까지 한 줄로!
-            
-            tag, tag_name, detail = self._input_feedback()
-            self.session_data['results'].append({
-                "question": q_text, "retrieved_passages": passages,
-                "model_answer": answer, "feedback_tag": tag, "feedback_label": tag_name, "feedback_detail": detail
-            })
 
-    def _save_finetune_dataset(self):
-        finetune_records = []
-        stat = {"train_samples": 0, "excluded": 0, "by_tag": {}}
-        for entry in self.session_data['results']:
-            tag = entry.get("feedback_tag") or "0"
-            tag_name = entry.get("feedback_label") or FEEDBACK_TAGS.get(tag, {}).get("name", "")
-            stat["by_tag"][tag_name] = stat["by_tag"].get(tag_name, 0) + 1
-            if tag in _FEEDBACK_KEYS_FOR_EXCLUDE:
-                stat["excluded"] += 1
-                continue
-            messages = [
-                {"role": "system", "content": GROUNDING_SYSTEM_PROMPT},
-                {"role": "user", "content": f"{entry['question']}\n\n참고자료:\n" + "\n---\n".join(entry["retrieved_passages"])}
-            ]
-            if tag != "0" and entry.get("feedback_detail"):
-                messages.append({"role": "user", "content": f"운영자 피드백({tag_name}): {entry['feedback_detail']}"})
-            messages.append({"role": "assistant", "content": entry["model_answer"]})
-            finetune_records.append({"messages": messages, "feedback_tag": tag, "feedback_label": tag_name, "feedback_detail": entry.get("feedback_detail")})
-            stat["train_samples"] += 1
-        if not finetune_records:
-            print("⚠️ 남은 파인튜닝 샘플이 없습니다.")
-            return None, stat
-        save_path = os.path.join(self.finetune_data_dir, f"finetune_messages_{datetime.now().strftime('%Y%m%d_%H%M%S')}.jsonl")
-        with open(save_path, "w", encoding="utf-8") as wf:
-            for record in finetune_records:
-                wf.write(json.dumps(record, ensure_ascii=False) + "\n")
-        print(f"✅ 파인튜닝 messages 데이터 저장: {save_path}")
-        print(f"샘플 수: {stat['train_samples']}, 제외: {stat['excluded']}, 태그별: {stat['by_tag']}")
-        return save_path, stat
+            tag, tag_name, detail = self._input_feedback()
+            answer2 = None
+
+            # 2차 재생성 (정정/추가 등 수정 있으면)
+            if tag in ("1", "2", "3", "4"):
+                composite_input = q_text
+                if passages:
+                    composite_input += "\n\n참고자료:\n" + "\n---\n".join([p.strip() for p in passages if p.strip()])
+                if tag == "1":  # 정정
+                    composite_input += "\n정정: " + detail
+                elif tag == "4":  # 추가
+                    composite_input += "\n추가: " + detail
+                elif tag == "2":  # 불합격
+                    composite_input += "\n불합격: " + detail
+                elif tag == "3":  # 보류
+                    composite_input += "\n보류: " + detail
+                print("\n[피드백 반영 후 모델 2차 답변 생성 중...]")
+                answer2, _ = self._get_model_answer(composite_input)
+                print("\n[모델 2차 답변]\n" + answer2)
+
+            final_judgement_code, final_judgement_label, final_comment = self._input_final_judgement()
+
+            # 세션 정보 전체 기록
+            self.session_data['results'].append({
+                "question": q_text,
+                "retrieved_passages": passages,
+                "model_answer_1": answer1,
+                "feedback_tag": tag,
+                "feedback_label": tag_name,
+                "feedback_detail": detail,
+                "model_answer_2": answer2,
+                "final_judgement_code": final_judgement_code,
+                "final_judgement_label": final_judgement_label,
+                "final_comment": final_comment
+            })
 
     def _save_session_log(self):
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -185,30 +167,62 @@ class ModelTrainer:
         with open(save_path, "w", encoding="utf-8") as wf:
             json.dump(self.session_data, wf, ensure_ascii=False, indent=2)
         print(f"✅ 세션 로그 저장: {save_path}")
+        return save_path
 
-    def _append_version_log(self, model_version, model_path, finetune_data_path, feedback_stats, status="draft", approved_by="", comment=""):
-        log_data = []
-        if os.path.exists(self.MODEL_LOG_FILE):
-            with open(self.MODEL_LOG_FILE, encoding='utf-8') as f:
-                try:
-                    log_data = json.load(f)
-                except Exception:
-                    log_data = []
-        record = {
-            "timestamp": datetime.now().isoformat(),
-            "model_version": model_version,
-            "model_path": model_path,
-            "finetune_data_path": finetune_data_path,
-            "base_model": "music_rag_base_v1.1",  # 필요시 동적 적용
-            "feedback_stats": feedback_stats,
-            "status": status,             # draft/approved/rejected/deleted
-            "approved_by": approved_by,   # admin 등
-            "comments": comment
-        }
-        log_data.append(record)
-        with open(self.MODEL_LOG_FILE, "w", encoding="utf-8") as f:
-            json.dump(log_data, f, ensure_ascii=False, indent=2)
-        print(f"✅ 버전 로그(임시 draft) 갱신: {self.MODEL_LOG_FILE}")
+    def _save_finetune_jsonl(self):
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        save_path = os.path.join(self.finetune_dir, f"finetune_messages_{ts}.jsonl")
+        records = []
+        stat = {"total": 0, "excluded": 0, "train_samples": 0, "by_judgement": {}}
+
+        for entry in self.session_data["results"]:
+            final_judgement_code = entry.get("final_judgement_code", "0")
+            final_judgement_label = entry.get("final_judgement_label", "")
+            stat["by_judgement"][final_judgement_label] = stat["by_judgement"].get(final_judgement_label, 0) + 1
+            stat["total"] += 1
+
+            # 필요한 judgement 코드만 파인튜닝 데이터로 추출
+            if final_judgement_code not in PASS_JUDGEMENT_FOR_TRAINING:
+                stat["excluded"] += 1
+                continue
+
+            tag = entry.get("feedback_tag")
+            user_content = entry.get("question", "").strip()
+            passages = entry.get("retrieved_passages", [])
+            if passages:
+                user_content += "\n\n참고자료:\n" + "\n---\n".join([p.strip() for p in passages if p.strip()])
+            # Feedback 있으면 user 메시지 추가
+            if tag in ("1", "2", "3", "4") and entry.get("feedback_detail", ""):
+                ftype = FEEDBACK_TAGS[tag]["name"]
+                user_content += f"\n{ftype}: " + entry.get("feedback_detail","").strip()
+
+            messages = [
+                {"role": "system", "content": GROUNDING_SYSTEM_PROMPT},
+                {"role": "user", "content": user_content}
+            ]
+
+            # 답변: 불합격/보류는 항상 2차(피드백 반영 결과) 저장, 통과는 1차/2차 중 실제 답변 우선
+            assistant_content = ""
+            if tag in ("1", "2", "3", "4") and entry.get("model_answer_2"):
+                assistant_content = entry.get("model_answer_2").strip()
+            else:
+                assistant_content = entry.get("model_answer_1", "").strip()
+
+            messages.append({"role": "assistant", "content": assistant_content})
+
+            records.append({"messages": messages})
+            stat["train_samples"] += 1
+
+        if not records:
+            print("⚠️ 추출된 파인튜닝 샘플이 없습니다.")
+            return None
+        with open(save_path, "w", encoding="utf-8") as wf:
+            for rec in records:
+                wf.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+        print(f"✅ 파인튜닝 jsonl 저장: {save_path}")
+        print(json.dumps(stat, indent=2, ensure_ascii=False))
+        return save_path
 
 def main():
     trainer = ModelTrainer()

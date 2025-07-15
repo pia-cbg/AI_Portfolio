@@ -3,143 +3,82 @@ import sys
 import json
 from typing import Dict, List
 from datetime import datetime
-from dotenv import load_dotenv
 import openai
+from dotenv import load_dotenv, find_dotenv
 
-# 프로젝트 루트 경로 및 .env 설정
-project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, project_root)
-env_path = os.path.join(project_root, '.env')
-load_dotenv(env_path)
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# .env 파일을 상위 폴더에서 자동 탐색해서 로드
+load_dotenv(find_dotenv())
 DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-from utils.music_utils import extract_musical_terms, format_chord_name
+from utils.music_utils import extract_musical_terms
+
+# system prompt import
+from src.prompts.prompts import GROUNDING_SYSTEM_PROMPT
 
 class RAGModel:
     def __init__(self, retriever, model_name: str = DEFAULT_MODEL, min_similarity_score: float = 0.7):
         self.retriever = retriever
         self.model_name = model_name
         self.min_similarity_score = min_similarity_score
-        self.session_gaps = []
+        self.gap_logs = []  # gap 케이스 기록
         self.stats = {
             'total_queries': 0,
-            'successful_answers': 0,
-            'partial_answers': 0,
-            'no_data_answers': 0
+            'response_errors': 0,
+            'gap_cases': 0
         }
+        self.client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
     def get_conversation_response(self, query: str) -> Dict:
+        """모든 답변을 LLM이 reasoning. 필요시 gap 로그도 남김."""
         self.stats['total_queries'] += 1
         musical_terms = extract_musical_terms(query)
 
         try:
             sources = self.retriever.search(query, top_k=5) if self.retriever else []
 
-            high_quality = [s for s in sources if s.get('score', 0) >= self.min_similarity_score]
-            medium_quality = [s for s in sources if 0.5 <= s.get('score', 0) < self.min_similarity_score]
+            # gap(자료 없음) 여부 기록
+            is_gap = len(sources) == 0 or all(s.get("score", 0) < self.min_similarity_score for s in sources)
+            if is_gap:
+                self.stats['gap_cases'] += 1
+                self._log_gap_case(query, musical_terms)
 
-            if high_quality:
-                return self._generate_complete_response(query, high_quality, musical_terms)
-            elif medium_quality:
-                return self._generate_partial_response(query, medium_quality, musical_terms)
-            else:
-                return self._generate_no_data_response(query, musical_terms)
-
+            # 항상 LLM이 extrapolation/reasoning하게 넘김
+            return self._generate_llm_response(query, sources, musical_terms)
         except Exception as e:
+            self.stats['response_errors'] += 1
             return self._create_error_response(f"오류: {e}")
-        
-    def _generate_complete_response(self, query: str, sources: List[Dict], musical_terms: List[str]) -> Dict:
-        """충분한 데이터가 있을 때 응답 생성"""
-        sources_text = self._format_sources_for_prompt(sources)
 
-        prompt = f"""
-당신은 음악 이론 교육 시스템의 AI 어시스턴트입니다.
-
-사용자 질문: {query}
-
-참고자료:
-{sources_text}
-
-위 참고자료만을 사용하여 질문에 답변하세요.
-각 정보마다 [참고자료 번호]를 표시하세요.
-참고자료에 없는 내용은 절대 추가하지 마세요.
-        """
-
+    def _generate_llm_response(self, query: str, sources: List[Dict], musical_terms: List[str]) -> Dict:
+        """항상 LLM이 자료충분/불일치/부족/자료 없음 등 모두 reasoning하게 유도."""
+        user_content = self._format_user_message(query, sources)
         try:
-            response = openai.ChatCompletion.create(
+            chat = self.client.chat.completions.create(
                 model=self.model_name,
                 messages=[
-                    {"role": "system", "content": "You are an AI assistant."},
-                    {"role": "user", "content": prompt}
+                    {"role": "system", "content": GROUNDING_SYSTEM_PROMPT},
+                    {"role": "user", "content": user_content}
                 ],
                 max_tokens=1000,
                 temperature=0.7
             )
-
-            answer = response.choices[0].message.content.strip()
-
-            self.stats['successful_answers'] += 1
-
+            answer = chat.choices[0].message.content.strip()
             return {
                 'answer': answer,
                 'sources': sources,
                 'model': self.model_name,
                 'musical_terms': musical_terms,
-                'confidence': 'high',
-                'data_coverage': 'complete'
+                'timestamp': datetime.now().isoformat(),
+                'used_grounding_prompt': True
             }
         except Exception as e:
-            return self._create_error_response(f"API 호출 중 오류가 발생했습니다: {e}")
-
-    def _generate_partial_response(self, query: str, sources: List[Dict], musical_terms: List[str]) -> Dict:
-        """부분적 데이터가 있을 때 응답 생성"""
-        answer = "참고자료에 일부 관련 정보가 있습니다. 그러나 충분한 데이터가 아닙니다.\n"
-        answer += self._format_sources_for_prompt(sources)
-        self.stats['partial_answers'] += 1
-
-        return {
-            'answer': answer,
-            'sources': sources,
-            'model': self.model_name,
-            'musical_terms': musical_terms,
-            'confidence': 'medium',
-            'data_coverage': 'partial'
-        }
-
-    def _generate_no_data_response(self, query: str, musical_terms: List[str]) -> Dict:
-        """데이터가 없을 때 응답 생성"""
-        gap = {
-            'query': query,
-            'type': 'no_coverage',
-            'musical_terms': musical_terms,
-            'timestamp': datetime.now().isoformat()
-        }
-        self.session_gaps.append(gap)
-        self.stats['no_data_answers'] += 1
-
-        answer = f"""
-죄송합니다. 현재 데이터셋에 "{query}"에 대한 정보가 없습니다.
-
-🔍 감지된 음악 용어: {', '.join(musical_terms) if musical_terms else '없음'}
-
-이 주제는 향후 데이터셋 확장 시 추가될 예정입니다.
-다른 음악 이론 관련 질문을 해주시면 답변 가능 여부를 확인하겠습니다.
-        """
-
-        return {
-            'answer': answer,
-            'sources': [],
-            'model': self.model_name,
-            'musical_terms': musical_terms,
-            'confidence': 'none',
-            'data_coverage': 'none',
-            'gap_recorded': True
-        }
+            self.stats['response_errors'] += 1
+            return self._create_error_response(f"API 오류: {e}")
 
     def _format_sources_for_prompt(self, sources: List[Dict]) -> str:
-        """프롬프트용 소스 포맷팅"""
+        """여러 passage를 프롬프트 passage블록으로 포맷."""
+        if not sources:
+            return ""
         formatted = ""
         for idx, source in enumerate(sources, 1):
             title = source.get('title', '제목 없음')
@@ -151,11 +90,41 @@ class RAGModel:
             formatted += f"제목: {title}\n"
             formatted += f"내용: {content}\n"
             formatted += f"관련도: {score:.3f}\n"
-            formatted += "-" * 40
+            formatted += "-" * 32
         return formatted
 
+    def _format_user_message(self, query: str, sources: List[Dict]) -> str:
+        """질문 + 참고 passage를 묶어 user 프롬프트화"""
+        sources_text = self._format_sources_for_prompt(sources)
+        if sources_text.strip():
+            return f"{query}\n\n참고자료:\n{sources_text}"
+        else:
+            return query
+
+    def _log_gap_case(self, query: str, musical_terms: List[str]):
+        """gap(근거 없음/불충분) 상황 기록(통계, DB 보강 용도)"""
+        self.gap_logs.append({
+            "query": query,
+            "musical_terms": musical_terms,
+            "timestamp": datetime.now().isoformat()
+        })
+
+    def save_gap_report(self, filename: str = None):
+        """gap 케이스 리포트 저장(데이터셋 보강/운영진 피드백 용)"""
+        if not self.gap_logs:
+            print("gap 케이스가 없습니다.")
+            return
+
+        if filename is None:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f'data/fine_tuning/gaps/gap_report_{timestamp}.json'
+
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(self.gap_logs, f, ensure_ascii=False, indent=2)
+        print(f"✅ gap 리포트 저장: {filename} (총 {len(self.gap_logs)}건)")
+
     def _create_error_response(self, error_message: str) -> Dict:
-        """에러 응답 생성"""
         return {
             'answer': f"시스템 오류: {error_message}",
             'sources': [],
@@ -166,43 +135,13 @@ class RAGModel:
         }
 
     def get_session_stats(self) -> Dict:
-        """현재 세션 통계 반환"""
         return {
             'statistics': self.stats,
-            'gaps_identified': len(self.session_gaps),
-            'gap_details': self.session_gaps
-        }
-        
-    def save_gaps_report(self, filename: str = None):
-        """데이터 갭 리포트 저장"""
-        if not self.session_gaps:
-            print("기록된 갭이 없습니다.")
-            return
-
-        if filename is None:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f'data/fine_tuning/gaps/gap_report_{timestamp}.json'
-
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
-
-        report = {
-            'session_date': datetime.now().isoformat(),
-            'statistics': self.stats,
-            'total_gaps': len(self.session_gaps),
-            'gaps': self.session_gaps
+            'gaps_logged': len(self.gap_logs)
         }
 
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(report, f, ensure_ascii=False, indent=2)
-
-        print(f"✅ 갭 리포트 저장: {filename}")
-        print(f"   - 총 질문: {self.stats['total_queries']}")
-        print(f"   - 완전 답변: {self.stats['successful_answers']}")
-        print(f"   - 부분 답변: {self.stats['partial_answers']}")
-        print(f"   - 답변 불가: {self.stats['no_data_answers']}")
 
 def main():
-    """RAG 모델 테스트"""
     try:
         from src.models.retriever import VectorRetriever
         retriever = VectorRetriever()
@@ -213,11 +152,12 @@ def main():
 
         rag_model = RAGModel(retriever)
 
-        # 테스트 질문들
+        # 다양한 테스트 질문
         test_queries = [
             "세컨더리 도미넌트란?",
             "12 equal temperament에 대해 설명해줘",
-            "평균율과 순정률의 차이는?"
+            "평균율과 순정률의 차이는?",
+            "Abm7(b5)는 어떻게 표기하는거야?"  # 일부러 자료 없을법한 질의
         ]
 
         for query in test_queries:
@@ -227,18 +167,17 @@ def main():
 
             response = rag_model.get_conversation_response(query)
 
-            print("\n답변:")
+            print("\n[답변]")
             print(response['answer'])
-            print(f"\n신뢰도: {response['confidence']}")
-            print(f"데이터 커버리지: {response['data_coverage']}")
+            print(f"\n[참고 passage 개수]: {len(response['sources'])}")
+            print(f"[모델]: {response['model']}")
+            print(f"[타임스탬프]: {response['timestamp']}")
 
-        # 세션 통계 및 갭 리포트
-        print("\n📊 세션 통계:")
+        # 세션 통계 및 gap 리포트 저장
+        print("\n📊 세션 통계 및 gap 로그:")
         stats = rag_model.get_session_stats()
-        print(json.dumps(stats['statistics'], indent=2))
-
-        # 갭 리포트 저장
-        rag_model.save_gaps_report()
+        print(json.dumps(stats, indent=2))
+        rag_model.save_gap_report()
 
     except Exception as e:
         print(f"❌ 테스트 실패: {e}")
