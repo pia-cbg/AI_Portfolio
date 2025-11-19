@@ -12,8 +12,6 @@ DEFAULT_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 from utils.music_utils import extract_musical_terms
-
-# system prompt import
 from src.prompts.prompts import GROUNDING_SYSTEM_PROMPT
 
 class RAGModel:
@@ -21,36 +19,34 @@ class RAGModel:
         self.retriever = retriever
         self.model_name = model_name
         self.min_similarity_score = min_similarity_score
-        self.gap_logs = []  # gap 케이스 기록
-        self.stats = {
-            'total_queries': 0,
-            'response_errors': 0,
-            'gap_cases': 0
-        }
+        # self.gap_logs = []  # gap 케이스 기록 (gap 기능 제거)
+        # self.stats = {
+        #     'total_queries': 0,
+        #     'response_errors': 0,
+        #     'gap_cases': 0
+        # }
         self.client = openai.OpenAI(api_key=OPENAI_API_KEY)
 
     def get_conversation_response(self, query: str) -> Dict:
-        """모든 답변을 LLM이 reasoning. 필요시 gap 로그도 남김."""
-        self.stats['total_queries'] += 1
+        """LLM이 reasoning, 필요시 error만 리턴(gap 기능 제거)."""
+        # self.stats['total_queries'] += 1
         musical_terms = extract_musical_terms(query)
 
         try:
-            sources = self.retriever.search(query, top_k=5) if self.retriever else []
+            sources = self.retriever.search(query, top_k=2) if self.retriever else []
 
-            # gap(자료 없음) 여부 기록
-            is_gap = len(sources) == 0 or all(s.get("score", 0) < self.min_similarity_score for s in sources)
-            if is_gap:
-                self.stats['gap_cases'] += 1
-                self._log_gap_case(query, musical_terms)
+            # gap(자료 없음) 관련 코드 완전 삭제
+            # is_gap = len(sources) == 0 or all(s.get("score", 0) < self.min_similarity_score for s in sources)
+            # if is_gap:
+            #     self.stats['gap_cases'] += 1
+            #     self._log_gap_case(query, musical_terms)
 
-            # 항상 LLM이 extrapolation/reasoning하게 넘김
             return self._generate_llm_response(query, sources, musical_terms)
         except Exception as e:
-            self.stats['response_errors'] += 1
+            # self.stats['response_errors'] += 1
             return self._create_error_response(f"오류: {e}")
 
     def _generate_llm_response(self, query: str, sources: List[Dict], musical_terms: List[str]) -> Dict:
-        """항상 LLM이 자료충분/불일치/부족/자료 없음 등 모두 reasoning하게 유도."""
         user_content = self._format_user_message(query, sources)
         try:
             chat = self.client.chat.completions.create(
@@ -72,57 +68,69 @@ class RAGModel:
                 'used_grounding_prompt': True
             }
         except Exception as e:
-            self.stats['response_errors'] += 1
+            # self.stats['response_errors'] += 1
             return self._create_error_response(f"API 오류: {e}")
 
     def _format_sources_for_prompt(self, sources: List[Dict]) -> str:
-        """여러 passage를 프롬프트 passage블록으로 포맷."""
         if not sources:
             return ""
         formatted = ""
-        for idx, source in enumerate(sources, 1):
-            title = source.get('title', '제목 없음')
-            content = source.get('content', '내용 없음')
-            score = source.get('score', 0)
-            if len(content) > 500:
-                content = content[:500] + "..."
-            formatted += f"\n[참고자료 {idx}]\n"
-            formatted += f"제목: {title}\n"
-            formatted += f"내용: {content}\n"
-            formatted += f"관련도: {score:.3f}\n"
-            formatted += "-" * 32
+        max_passage = 2
+        max_length = 300     # 정의, 원리, 예시까지 감당할 수 있게 더 확대
+        for idx, source in enumerate(sources[:max_passage], 1):
+            concept_ko = source.get('concept.ko', '')
+            concept_en = source.get('concept.en', '')
+            aliases = source.get('aliases', '')
+            definition = source.get('definition', '')
+            logic = source.get('logic', '')
+            example_name = source.get('examples.name', '')
+            example_desc = source.get('examples.description', '')
+            tips = source.get('tips', '')
+
+            definition = (definition[:max_length] + "...") if len(definition) > max_length else definition
+            logic = (logic[:max_length] + "...") if len(logic) > max_length else logic
+
+            formatted += (
+                f"\n[참고자료 {idx}]\n"
+                f"용어(한글): {concept_ko}\n"
+                f"용어(영문): {concept_en}\n"
+                f"동의어·유사 표기: {aliases}\n"
+                f"[정의]: {definition}\n"
+                f"[원리]: {logic}\n"
+            )
+            if example_name:
+                formatted += f"예시: {example_name}\n"
+                if example_desc:
+                    formatted += f"예시 설명: {example_desc}\n"
+            if tips:
+                formatted += f"[팁]: {tips}\n"
+            formatted += "-"*28
         return formatted
 
     def _format_user_message(self, query: str, sources: List[Dict]) -> str:
-        """질문 + 참고 passage를 묶어 user 프롬프트화"""
         sources_text = self._format_sources_for_prompt(sources)
+        # 디버깅용 print 모두 제거 (실서비스에선 비추)
         if sources_text.strip():
-            return f"{query}\n\n참고자료:\n{sources_text}"
+            return (
+                f"질문: {query}\n\n"
+                "아래 참고자료의 [정의]와 [원리]를 반드시 포함해서 답하세요. "
+                "참고자료에 없는 용어나 잘못된 정보를 임의로 생성하지 마세요. "
+                "정의/원리가 제대로 없는 경우에만 '자료 부족'임을 밝혀주세요.\n"
+                f"{sources_text}"
+            )
         else:
-            return query
+            return (
+                f"질문: {query}\n"
+                "참고자료가 없어 자세한 정보를 제공하지 못할 수 있습니다."
+            )
 
-    def _log_gap_case(self, query: str, musical_terms: List[str]):
-        """gap(근거 없음/불충분) 상황 기록(통계, DB 보강 용도)"""
-        self.gap_logs.append({
-            "query": query,
-            "musical_terms": musical_terms,
-            "timestamp": datetime.now().isoformat()
-        })
-
-    def save_gap_report(self, filename: str = None):
-        """gap 케이스 리포트 저장(데이터셋 보강/운영진 피드백 용)"""
-        if not self.gap_logs:
-            print("gap 케이스가 없습니다.")
-            return
-
-        if filename is None:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f'data/fine_tuning/gaps/gap_report_{timestamp}.json'
-
-        os.makedirs(os.path.dirname(filename), exist_ok=True)
-        with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(self.gap_logs, f, ensure_ascii=False, indent=2)
-        print(f"✅ gap 리포트 저장: {filename} (총 {len(self.gap_logs)}건)")
+    # gap 관련 모든 함수/메소드 완전 제거(주석)
+    # def _log_gap_case(self, query: str, musical_terms: List[str]):
+    #     pass
+    # def save_gap_report(self, filename: str = None):
+    #     pass
+    # def get_session_stats(self) -> Dict:
+    #     return {}
 
     def _create_error_response(self, error_message: str) -> Dict:
         return {
@@ -134,13 +142,6 @@ class RAGModel:
             'data_coverage': 'error'
         }
 
-    def get_session_stats(self) -> Dict:
-        return {
-            'statistics': self.stats,
-            'gaps_logged': len(self.gap_logs)
-        }
-
-
 def main():
     try:
         from src.models.retriever import VectorRetriever
@@ -151,38 +152,43 @@ def main():
         retriever.build_index()
 
         rag_model = RAGModel(retriever)
-
-        # 다양한 테스트 질문
-        test_queries = [
-            "세컨더리 도미넌트란?",
-            "12 equal temperament에 대해 설명해줘",
-            "평균율과 순정률의 차이는?",
-            "Abm7(b5)는 어떻게 표기하는거야?"  # 일부러 자료 없을법한 질의
-        ]
-
-        for query in test_queries:
-            print(f"\n{'='*60}")
-            print(f"질문: {query}")
-            print('='*60)
-
+        while True:
+            query = input("\n질문을 입력하세요 (종료: exit): ")
+            if query.lower() in ["exit", "quit"]:
+                break
             response = rag_model.get_conversation_response(query)
-
             print("\n[답변]")
             print(response['answer'])
             print(f"\n[참고 passage 개수]: {len(response['sources'])}")
-            print(f"[모델]: {response['model']}")
-            print(f"[타임스탬프]: {response['timestamp']}")
+        # # 다양한 테스트 질문
+        # test_queries = [
+        #     "세컨더리 도미넌트에 대해서 알려줘"
+        # ]
 
-        # 세션 통계 및 gap 리포트 저장
-        print("\n📊 세션 통계 및 gap 로그:")
-        stats = rag_model.get_session_stats()
-        print(json.dumps(stats, indent=2))
-        rag_model.save_gap_report()
+        # for query in test_queries:
+        #     print(f"\n{'='*60}")
+        #     print(f"질문: {query}")
+        #     print('='*60)
+
+        #     response = rag_model.get_conversation_response(query)
+
+        #     print("\n[답변]")
+        #     print(response['answer'])
+        #     print(f"\n[참고 passage 개수]: {len(response['sources'])}")
+        #     print(f"[모델]: {response['model']}")
+        #     print(f"[타임스탬프]: {response['timestamp']}")
+
+        # # 세션 통계 및 gap 리포트 저장
+        # print("\n📊 세션 통계 및 gap 로그:")
+        # stats = rag_model.get_session_stats()
+        # print(json.dumps(stats, indent=2))
+        # rag_model.save_gap_report()
 
     except Exception as e:
         print(f"❌ 테스트 실패: {e}")
         import traceback
         traceback.print_exc()
+    pass
 
 if __name__ == "__main__":
     main()
