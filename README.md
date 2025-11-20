@@ -17,7 +17,7 @@
 - **데이터셋 기반 답변**: 외부 검색이나 서드파티 지식이 아닌, 직접 구축한 DB 정보만을 활용
 - **지능형 파인튜닝 시스템**: 질문/답변 품질을 지속 평가 및 개선 (리팩토링중)
 - **자동 질문 생성**: 음악 이론 용어 분석 및 질문 템플릿 기반 학습용 데이터 자동 생성
-- **갭 분석 시스템**: 답변 불가능한 질문 추적 및 데이터셋 확장 가이드 제공
+- **갭 분석 시스템**: 답변 불가능한 질문 추적 및 데이터셋 확장 가이드 제공 (리팩토링중)
 - **웹 인터페이스**: 사용자 친화적 데모/운영용 UI (리팩토링중)
 
 ---
@@ -57,10 +57,10 @@ OPENAI_API_KEY=your_openai_key_here
 ```
 ```
 # 임베딩 생성 (최초 1회)
-python src/data_processing/embedding_generator.py
+python -m src.data_processing.embedding_generator
 
 # main 및 웹 인터페이스
-python src/main.py
+python -m src.main
 streamlit run app.py
 ```
 
@@ -70,14 +70,14 @@ Phase 1: 데이터 처리
 음악이론.json → 텍스트 청크 분할 → 벡터 임베딩 → FAISS 인덱스
 
 Phase 2: 질의응답
-사용자 질문 → 벡터 검색 → 음악 용어 추출 → OpenAI AI → 답변 생성
+사용자 질문 → 벡터 검색 → 음악 용어 추출 → OpenAI AI GPT 기반 LLM → 답변 생성
 
 Phase 3: 파인튜닝 (선택사항) - (리팩토링중)
 # 질문 품질 개선 및 화이트리스트 생성
-python src/fine_tuning/question_improver.py
+python -m src.fine_tuning.question_improver
 
 # 답변 품질 개선
-python src/fine_tuning/model_training.py
+python -m src.fine_tuning.model_training
 ```
 ### 4. 폴더 트리 - 현재까지 진행상황)
 ```
@@ -152,7 +152,7 @@ OpenAI GPT를 통한 전문적 답변 생성
 
 **개발자**: Choi Bo Gyeong
 
-**프로젝트 기간**: 2025.06 - 2025.~~
+**프로젝트 기간**: 2025.06 - 2025.~~ (진행중)
 
 **핵심 구현 기술**:
 - RAG (Retrieval-Augmented Generation) 아키텍처 설계 및 구현
@@ -166,7 +166,7 @@ OpenAI GPT를 통한 전문적 답변 생성
 - GitHub: [@bogyeongchoi](https://github.com/bogyeongchoi)
 
 **Tech Stack**:
-`Python` `RAG` `FAISS` `Claude AI` `Streamlit` `Sentence-Transformers` `Fine-tuning`
+`Python` `RAG` `FAISS` `OpenAI` `Streamlit` `Sentence-Transformers` `Fine-tuning`
 
 ## 📄 라이센스
 MIT License
