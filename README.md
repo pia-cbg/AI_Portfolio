@@ -53,9 +53,8 @@ OPENAI_API_KEY=your_openai_key_here
 # 임베딩 생성 (최초 1회)
 python -m src.data_processing.embedding_generator
 
-# main 및 웹 인터페이스
+# main
 python -m src.main
-streamlit run app.py
 ```
 
 ### 3. 시스템 파이프라인
