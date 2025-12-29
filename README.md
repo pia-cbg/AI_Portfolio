@@ -56,9 +56,16 @@ OPENAI_API_KEY=your_openai_key_here
 # 임베딩 생성 (최초 1회)
 python -m src.data_processing.embedding_generator
 
-# main (질의 응답)
+# main (질의 응답 RAG 실행)
 python main.py
-```
+
+--- 평가 시스템 ---
+
+# 평가/분석을 위한 질문 데이터 생성 (RAW 데이터 변경시 재생성)
+python -m src.data_processing.auto_question_generator
+
+# 평가 시스템 실행 (고정 질문 세트 기준)
+python -m src.run_experiment
 
 ### 3. 시스템 파이프라인
 ```
