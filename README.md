@@ -10,9 +10,11 @@
 ## 🚀 주요 기능
 
 - **RAG 기반 Q&A**: 자체 구축 음악 이론 데이터베이스에서 유사 정보를 검색, 근거 기반 답변 생성
-
 - **데이터셋 기반 답변**: 외부 검색이나 서드파티 지식이 아닌, 직접 구축한 DB 정보만을 활용
 - **자동 질문 생성**: 음악 이론 용어 분석 및 질문 템플릿 기반 학습용 데이터 자동 생성
+- **자동 평가 시스템**: 자동 생성 질문 기반으로 RAG 응답을 평가하고, 성공/부분 성공/실패로 분류
+- **평가 데이터 관리**: 평가 결과를 데이터셋(JSON) 형태로 저장하여 분석 및 비교 가능
+- **실험 기반 비교**: 동일 질문 세트를 기준으로 설정/모델 간 성능 비교 가능
 - **웹 인터페이스**: 사용자 친화적 데모/운영용 UI (디스코드 API 연계 준비중)
 
 ---
@@ -24,6 +26,7 @@
 - **RAG**: Sentence Transformers + FAISS
 - **ML/AI**: scikit-learn, numpy
 - **Vector DB**: FAISS (Facebook AI Similarity Search)
+- **Evaluation**: Automated Q&A Evaluation Pipeline
 
 ---
 
@@ -53,26 +56,35 @@ OPENAI_API_KEY=your_openai_key_here
 # 임베딩 생성 (최초 1회)
 python -m src.data_processing.embedding_generator
 
-# main
-python -m src.main
+# main (질의 응답)
+python main.py
 ```
 
 ### 3. 시스템 파이프라인
 ```
 Phase 1: 데이터 처리
 음악이론.json → 텍스트 청크 분할 → 벡터 임베딩 → FAISS 인덱스
+(담당: src/data_processing)
 
 Phase 2: 질의응답
 사용자 질문 → 벡터 검색 → 음악 용어 추출 → OpenAI AI GPT 기반 LLM → 답변 생성
+(담당: src/models, src/prompts)
 
-Phase 3: 파인튜닝 (선택사항) - (리팩토링중)
-# 질문 품질 개선 및 화이트리스트 생성
-python -m src.fine_tuning.question_improver
+Phase 3: 자동 질문 생성
+음악 이론 커리큘럼 → 개념 단위 분해 → 자동 질문 생성 → 평가용 질문 세트
+(담당: src/data_processing/auto_question_generator.py)
 
-# 답변 품질 개선
-python -m src.fine_tuning.model_training
-```
-### 4. 폴더 트리 - 현재까지 진행상황)
+Phase 4: 평가 시스템
+평가용 질문 → RAG 응답 생성 → 응답 평가 로직
+→ 성공 / 부분 실패 / 실패 분류 → 평가 데이터(JSON)
+(평가 결과는 자동으로 data/logs에 저장됩니다.)
+(담당: src/run_experiment.py)
+
+Phase 5: 개선 사이클
+data/logs 평가 데이터 확인 → 실패 케이스 분석 → 데이터/프롬프트 보강 방향 결정
+(자동 평가 결과가 저장된 data/logs를 기반으로 사람이 직접 개선 방향을 판단합니다.)
+
+### 3. 폴더 트리 - 현재까지 진행상황)
 ```
 AI_Portfolio/
 ├── LICENSE
@@ -179,14 +191,13 @@ OpenAI GPT를 통한 전문적 답변 생성
 - FAISS 벡터 데이터베이스를 활용한 효율적인 검색 시스템
 - Open AI API 연동 및 프롬프트 엔지니어링
 - 자동 질문 생성 및 품질 평가 시스템 구축
-- Streamlit 기반 웹 인터페이스 개발
 
 **Contact**:
 - Email: cbg1704@gmail.com
 - GitHub: [@bogyeongchoi](https://github.com/bogyeongchoi)
 
 **Tech Stack**:
-`Python` `RAG` `FAISS` `OpenAI` `Streamlit` `Sentence-Transformers` `Fine-tuning`
+`Python` `RAG` `FAISS` `OpenAI` `Sentence-Transformers` `Evaluation-driven Pipeline` `Prompt Engineering`
 
 ## 📄 라이센스
 MIT License
