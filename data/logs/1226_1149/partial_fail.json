@@ -1,0 +1,368 @@
+[
+  {
+    "question": "2분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "intent_node_id": 9,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      21
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8555026292800904,
+      0.8333649039268494
+    ],
+    "answer": "2분음표를 이해하기 위해서는 먼저 '음표'와 '쉼표'에 대한 개념을 숙지하는 것이 중요합니다.\n\n**음표(Note)**는 소리의 길이(지속시간)를 나타내는 음악 기호입니다. 음표는 음악에서 연주할 때 소리가 나오는 시간을 표현하며, 다양한 길이와 박자로 구분됩니다. 예를 들어, 4분음표는 한 박자짜리 음표를 나타내며, 2분음표는 두 박자짜리 음표를 나타냅니다. 이러한 음표들은 음악의 리듬과 지속시간을 결정하는 중요한 역할을 합니다.\n\n**쉼표(Rest)**는 소리의 쉼(지속시간)을 나타내는 음악 기호입니다. 쉼표는 음표와 마찬가지로 시간의 흐름을 나타내며, 연주자가 해당 길이만큼 쉬어야 합니다. 음표와 쉼표는 함께 사용되어 음악의 리듬을 완성하고 구성합니다. 예를 들어, 4분쉼표는 한 박자짜리 쉼표를 나타내며, 2분쉼표는 두 박자짜리 쉼표를 나타냅니다.\n\n따라서, 2분음표를 학습하기 전에 음표와 쉼표의 역할과 기능을 이해하고, 각각의 지속시간과 음악적 의미를 파악하는 것이 좋습니다. 이러한 기본적인 지식을 토대로 2분음표의 특징과 활용에 대해 더 깊이 학습할 수 있을 것입니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8555026292800904,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8555026292800904,
+        "rank": 1
+      },
+      {
+        "node_id": 21,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "쉼표",
+        "concept.en": "Rest",
+        "aliases": "",
+        "definition": "쉼표는 소리의 쉼(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "쉼표와 음표는 동일한 시간 값을 가집니다; 연주자가 해당 길이만큼 쉬어야합니다.; 음표와 짝을 이루며 리듬을 구성합니다.",
+        "examples.name": "4분쉼표; 2분쉼표; 점4분쉼표",
+        "examples.description": "한 박자짜리 쉼표; 두 박자짜리 쉼표; 한 박자 반짜리 쉼표",
+        "tips": "‘온쉼표→2분쉼표→4분쉼표→8분쉼표→16분쉼표→32분쉼표’ 순서로 반씩 줄어듭니다; 점쉼표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.8333649039268494,
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "question": "4분음표란?",
+    "intent_node_id": 10,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      17
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8709069728851319,
+      0.8448168039321899
+    ],
+    "answer": "4분음표는 음악에서 소리의 길이(지속시간)를 나타내는 음표 중 하나입니다. 4분음표는 한 박자의 길이를 가지며, 음표의 종류 중에서는 중간 정도의 길이를 가지고 있습니다. 일반적으로 음표가 음악에서 차지하는 시간을 박자로 표현할 때, 4분음표는 한 박자를 나타냅니다.\n\n온음표(전음표)부터 시작하여 2분음표, 4분음표, 8분음표, 16분음표, 32분음표와 같이 음표의 길이는 반으로 줄어들며 표현됩니다. 또한, 음표 끝에 점이 찍힌 경우에는 해당 음표의 길이에 1/2을 추가하여 표현됩니다. 따라서, 점4분음표는 4분음표(1박)에 0.5박(4분음표의 절반)을 추가한 1.5박자 동안 지속되는 음표입니다. \n\n즉, 4분음표는 음악에서 중요한 시간 단위 중 하나이며, 음표의 길이와 음악의 템포를 정확히 표현하는 데 사용됩니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8709069728851319,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8709069728851319,
+        "rank": 1
+      },
+      {
+        "node_id": 17,
+        "concept_type": "symbol_concept",
+        "parent_id": 7,
+        "concept.ko": "점4분음표",
+        "concept.en": "Dotted-Quarter-note",
+        "aliases": "",
+        "definition": "1.5박자 동안 지속되는 음표입니다.",
+        "logic": "4분음표(1박) + 0.5박(4분음표의 절반) 길이로 1.5박자 동안 지속됩니다.",
+        "examples.name": "",
+        "examples.description": "",
+        "tips": "",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.8448168039321899,
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "question": "4분음표의 정의는?",
+    "intent_node_id": 10,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      17
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8690929055213928,
+      0.847161591053009
+    ],
+    "answer": "4분음표는 음표의 한 종류이며, 소리의 길이(지속시간)를 나타내는 음악 기호입니다. 4분음표는 한 박자의 길이를 가지며, 박자의 길이는 음악에서의 기본적인 시간 단위입니다. \n\n예를 들어, 4분음표는 4분의 1박자의 길이를 갖고 있습니다. 이는 음악에서 가장 흔하게 사용되는 음표 중 하나로, 박자의 길이를 나타내는 다른 음표들과 함께 음악의 리듬을 구성하는 데 중요한 역할을 합니다.\n\n따라서, 4분음표는 음악에서 시간적인 구조를 이해하고 연주하는 데 핵심적인 역할을 하는 음표 중 하나입니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8690929055213928,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8690929055213928,
+        "rank": 1
+      },
+      {
+        "node_id": 17,
+        "concept_type": "symbol_concept",
+        "parent_id": 7,
+        "concept.ko": "점4분음표",
+        "concept.en": "Dotted-Quarter-note",
+        "aliases": "",
+        "definition": "1.5박자 동안 지속되는 음표입니다.",
+        "logic": "4분음표(1박) + 0.5박(4분음표의 절반) 길이로 1.5박자 동안 지속됩니다.",
+        "examples.name": "",
+        "examples.description": "",
+        "tips": "",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.847161591053009,
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "question": "4분음표의 역할은?",
+    "intent_node_id": 10,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      17
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8648953676223755,
+      0.8381538391113281
+    ],
+    "answer": "4분음표는 음악에서 소리의 길이(지속시간)을 나타내는 음표 중 하나입니다. 4분음표는 한 박자의 시간 동안 지속되며, 음표의 길이에 따라 다른 음표들과 비교할 때 중간 정도의 지속시간을 가집니다. 이는 보통 다른 음표들과 함께 조합되어 박자를 구성하거나 리듬을 형성하는 데 사용됩니다.\n\n예를 들어, 4분음표는 2분음표의 절반의 길이를 가지며, 8분음표의 두 배의 길이를 가집니다. 따라서 음악 악보 상에서 4분음표는 한 박자를 나타내는데 사용되며, 음악의 흐름과 리듬을 구성하는 데 중요한 역할을 합니다. \n\n또한, 4분음표의 변형인 '점4분음표'는 1.5박자 동안 지속되는 음표로, 4분음표의 길이에 0.5박(4분음표의 절반)을 더한 형태입니다. 이러한 특징으로 인해 점4분음표는 4분음표보다 조금 더 긴 지속시간을 가지게 됩니다. \n\n따라서, 4분음표는 음악에서 중요한 역할을 하는데, 박자의 구성과 리듬의 다양성을 풍부하게 만들어주는 요소로 활용됩니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8648953676223755,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8648953676223755,
+        "rank": 1
+      },
+      {
+        "node_id": 17,
+        "concept_type": "symbol_concept",
+        "parent_id": 7,
+        "concept.ko": "점4분음표",
+        "concept.en": "Dotted-Quarter-note",
+        "aliases": "",
+        "definition": "1.5박자 동안 지속되는 음표입니다.",
+        "logic": "4분음표(1박) + 0.5박(4분음표의 절반) 길이로 1.5박자 동안 지속됩니다.",
+        "examples.name": "",
+        "examples.description": "",
+        "tips": "",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.8381538391113281,
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "question": "4분음표의 원리(원칙)는?",
+    "intent_node_id": 10,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      17
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8628125429153443,
+      0.8395850658416748
+    ],
+    "answer": "4분음표의 원리는 음표의 길이를 나타내는 중요한 요소입니다. 참고 자료에 따르면 4분음표는 1박(Beat)의 길이를 갖는 음표이며, 음표의 길이는 음악에서의 리듬과 템포를 결정하는 데 중요한 역할을 합니다. \n\n4분음표는 음표의 길이를 나타내는데 사용되며, 다른 음표와 비교하여 더 짧은 시간 동안 소리가 지속됩니다. 일반적으로 '온음표 → 2분음표 → 4분음표 → 8분음표 → 16분음표 → 32분음표'와 같이 음표가 반씩 줄어드는 순서를 따릅니다. 또한, 점음표를 사용하면 해당 음표의 길이에 1/2을 추가할 수 있습니다.\n\n따라서, 4분음표는 음악에서 일정한 박자를 가지며, 다른 음표와의 상대적인 길이에 따라 음악 작품의 리듬과 템포를 구성하는데 중요한 역할을 합니다. 이를 통해 음악의 구조와 흐름을 이해하고 연주하는 데 도움이 됩니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8628125429153443,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8628125429153443,
+        "rank": 1
+      },
+      {
+        "node_id": 17,
+        "concept_type": "symbol_concept",
+        "parent_id": 7,
+        "concept.ko": "점4분음표",
+        "concept.en": "Dotted-Quarter-note",
+        "aliases": "",
+        "definition": "1.5박자 동안 지속되는 음표입니다.",
+        "logic": "4분음표(1박) + 0.5박(4분음표의 절반) 길이로 1.5박자 동안 지속됩니다.",
+        "examples.name": "",
+        "examples.description": "",
+        "tips": "",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.8395850658416748,
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "question": "4분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "intent_node_id": 10,
+    "concept_type": "symbol_concept",
+    "topk_node_ids": [
+      7,
+      21
+    ],
+    "topk_concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ],
+    "topk_scores": [
+      0.8565730094909668,
+      0.8342230319976807
+    ],
+    "answer": "4분음표를 배우기 전에 알아두면 좋은 선수 지식은 **음표(Note)**와 **쉼표(Rest)**입니다.\n\n음표는 소리의 길이(지속시간)을 나타내는 음악 기호로, 음악에서 얼마나 오래 소리를 내야 하는지를 표시합니다. 음표는 음악의 리듬과 길이를 결정하는 중요한 역할을 합니다. 예를 들어, 4분음표는 한 박자짜리 음표를 나타내며, 2분음표는 두 박자짜리 음표를 나타냅니다. 또한, 점음표는 해당 음표의 길이에 1/2을 추가하여 표기됩니다.\n\n쉼표는 음표와 마찬가지로 소리의 쉼(지속시간)을 나타내는 음악 기호입니다. 쉼표는 연주자가 소리를 내지 않고 조용히 쉬어야 하는 시간을 나타내며, 음표와 짝을 이루어 음악의 리듬을 완성합니다. 예를 들어, 4분쉼표는 한 박자짜리 쉼표를 나타내며, 2분쉼표는 두 박자짜리 쉼표를 나타냅니다. 마찬가지로, 점쉼표는 해당 쉼표의 길이에 1/2을 추가하여 표기됩니다.\n\n따라서, 음표와 쉼표를 이해하고 그들 간의 관계를 파악하는 것은 음악에서 리듬을 이해하고 연주하는 데 매우 중요한 선행 지식입니다.",
+    "eval_result": {
+      "outcome_status": "partial",
+      "match_node": 7,
+      "depth": null,
+      "top1_score": 0.8565730094909668,
+      "top1_node": 7
+    },
+    "topk_sources_full": [
+      {
+        "node_id": 7,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "음표",
+        "concept.en": "Note",
+        "aliases": "노트",
+        "definition": "음표는 소리의 길이(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "",
+        "examples.name": "4분음표; 2분음표; 점4분음표",
+        "examples.description": "한 박자짜리 음표; 두 박자짜리 음표; 한 박자 반짜리 음표",
+        "tips": "‘온음표→2분음표→4분음표→8분음표→16분음표→32분음표’ 순서로 반씩 줄어듭니다; 점음표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "",
+        "prerequisites.en": "",
+        "score": 0.8565730094909668,
+        "rank": 1
+      },
+      {
+        "node_id": 21,
+        "concept_type": "symbol_concept",
+        "parent_id": 1,
+        "concept.ko": "쉼표",
+        "concept.en": "Rest",
+        "aliases": "",
+        "definition": "쉼표는 소리의 쉼(지속시간)을 나타내는 음악 기호입니다.",
+        "logic": "쉼표와 음표는 동일한 시간 값을 가집니다; 연주자가 해당 길이만큼 쉬어야합니다.; 음표와 짝을 이루며 리듬을 구성합니다.",
+        "examples.name": "4분쉼표; 2분쉼표; 점4분쉼표",
+        "examples.description": "한 박자짜리 쉼표; 두 박자짜리 쉼표; 한 박자 반짜리 쉼표",
+        "tips": "‘온쉼표→2분쉼표→4분쉼표→8분쉼표→16분쉼표→32분쉼표’ 순서로 반씩 줄어듭니다; 점쉼표는 길이에 1/2을 더합니다.",
+        "prerequisites.ko": "박자",
+        "prerequisites.en": "Beat",
+        "score": 0.8342230319976807,
+        "rank": 2
+      }
+    ]
+  }
+]
