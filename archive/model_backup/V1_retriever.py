@@ -4,34 +4,11 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import faiss
 
-def normalize(text):
-    if not text: return ""
-    text = text.lower().replace(" ", "").replace("-", "").replace("_", "").replace("/", "").strip()
-    return text
-
-def rerank_by_alias(query, results, alias_boost=0.05, partial_weight=0.5):
-    nq = normalize(query)
-    for r in results:
-        base_score = r['score']
-        candidates = [
-            normalize(r.get('concept.ko', '')),
-            normalize(r.get('concept.en', ''))
-        ] + [normalize(a) for a in (r.get('aliases') or '').split(';') if a]
-        for c in candidates:
-            if nq == c:  # 정확 일치
-                r['score'] = base_score + alias_boost
-                break
-            elif nq in c or c in nq:  # 부분/포함 일치
-                r['score'] = base_score + (alias_boost * partial_weight)
-                break
-    results = sorted(results, key=lambda x: x['score'], reverse=True)
-    # rank 필드 다시 업데이트 (정렬 후)
-    for i, r in enumerate(results, 1):
-        r['rank'] = i
-    return results
-
 class VectorRetriever:
-    def __init__(self, embedding_path: str = 'data/embeddings/music_theory_embeddings.pkl'):
+    def __init__(
+        self,
+        embedding_path: str = 'data/embeddings/music_theory_embeddings.pkl'
+    ):
         self.embedding_path = embedding_path
         self.embeddings = None
         self.chunks = None
@@ -39,9 +16,11 @@ class VectorRetriever:
         self.model_name = None
         self.index = None
 
+        # ---- 임베딩 파일에서 embeddings, chunks, model_name 자동 로드 ----
         if os.path.exists(self.embedding_path):
             with open(self.embedding_path, 'rb') as f:
                 obj = pickle.load(f)
+            # embeddings는 np.array로 강제 변환
             arr = obj.get('embeddings', None)
             if arr is not None and not isinstance(arr, np.ndarray):
                 arr = np.array(arr)
@@ -51,9 +30,14 @@ class VectorRetriever:
         else:
             raise FileNotFoundError(f"임베딩 파일이 존재하지 않습니다: {self.embedding_path}")
 
+        # ---- 모델 자동 로딩 ----
+        print(f"[VectorRetriever] 임베딩 모델 로딩: {self.model_name}")
         self.model = SentenceTransformer(self.model_name)
 
     def load_embeddings(self) -> bool:
+        """
+        임베딩, 청크, 모델명을 재로드 (필요시)
+        """
         try:
             with open(self.embedding_path, 'rb') as f:
                 obj = pickle.load(f)
@@ -63,6 +47,7 @@ class VectorRetriever:
             self.embeddings = arr
             self.chunks = obj.get('chunks', None)
             self.model_name = obj.get('model_name', self.model_name)
+            print(f"[VectorRetriever] 임베딩 재로드 완료, shape: {self.embeddings.shape}, 모델: {self.model_name}")
             return self.embeddings is not None and self.chunks is not None
         except Exception as e:
             print(f"[VectorRetriever][ERROR] 임베딩 로드 실패: {e}")
@@ -71,12 +56,17 @@ class VectorRetriever:
             return False
 
     def build_index(self) -> bool:
+        """
+        FAISS 인덱스 구축
+        """
         try:
             if self.embeddings is None:
+                print("[VectorRetriever][ERROR] build_index: 임베딩 미존재")
                 return False
             dim = self.embeddings.shape[1]
             self.index = faiss.IndexFlatIP(dim)
             self.index.add(self.embeddings.astype(np.float32))
+            print(f"[VectorRetriever] FAISS 인덱스 구축 성공 ({self.index.ntotal}개, dim={dim})")
             return True
         except Exception as e:
             print(f"[VectorRetriever][ERROR] build_index 실패: {e}")
@@ -84,17 +74,13 @@ class VectorRetriever:
 
     def search(self, query: str, top_k: int = 5, min_score: float = 0.0):
         """
-        쿼리(query) 관련 music chunk Top-K 검색.
-        반환 passage에는 node_id, concept_type, parent_id 등 평가/로그에 필요한 메타 정보가 포함됨.
+        FAISS+임베딩 기반 질의 검색 + passage 전처리 (긴/비문자열 content 방지)
         """
         if self.index is None:
             self.build_index()
             if self.index is None:
                 print("[VectorRetriever][ERROR] 인덱스 구축 실패")
                 return []
-
-        query_orig = query
-        query = query.lower().strip()
 
         # 쿼리 임베딩
         query_emb = self.model.encode(
@@ -103,33 +89,36 @@ class VectorRetriever:
             convert_to_numpy=True
         ).astype('float32').reshape(1, -1)
 
-        # FAISS 유사도 검색
+        # 유사도 검색
         scores, indices = self.index.search(query_emb, top_k)
         results = []
         for i, (score, idx) in enumerate(zip(scores[0], indices[0])):
             if score >= min_score and idx < len(self.chunks):
                 chunk = self.chunks[idx]
-                # 반드시 node_id, concept_type, parent_id 등 메타 정보 포함
+                # ---- 강제 전처리: content가 dict 등 비문자열이면 description 또는 str로 변환 ----
+                content = chunk.get('content', '')
+                # ① object면 description/summary/first string field만 우선 사용
+                if not isinstance(content, str):
+                    if isinstance(content, dict):
+                        # 원하는 필드(설명, 핵심요약 등)만 추출, 우선순위: description → summary → 기타
+                        content = (
+                            content.get('description')
+                            or content.get('summary')
+                            or content.get('concept')
+                            or str(content)
+                        )
+                    else:
+                        content = str(content)
+                # ② 길이 제한 (너무 긴 passage 방지)
+                max_len = 180  # 적절히 100~200자에서 조정
+                if content and len(content) > max_len:
+                    content = content[:max_len] + "..."
                 results.append({
-                    'node_id': chunk.get('node_id'),
-                    'concept_type': chunk.get('concept_type'),
-                    'parent_id': chunk.get('parent_id'),
-                    'concept.ko': chunk.get('concept.ko', '') or '',
-                    'concept.en': chunk.get('concept.en', '') or '',
-                    'aliases': chunk.get('aliases', '') or '',
-                    'definition': chunk.get('definition', '') or '',
-                    'logic': chunk.get('logic', '') or '',
-                    'examples.name': chunk.get('examples.name', '') or '',
-                    'examples.description': chunk.get('examples.description', '') or '',
-                    'tips': chunk.get('tips', '') or '',
-                    'prerequisites.ko': chunk.get('prerequisites.ko', '') or '',
-                    'prerequisites.en': chunk.get('prerequisites.en', '') or '',
+                    'title': chunk.get('title', ''),
+                    'content': content,
                     'score': float(score),
                     'rank': i + 1
                 })
-
-        # === re-ranking by alias/concept match ===
-        results = rerank_by_alias(query_orig, results)
         return results
 
     def get_stats(self):
@@ -138,23 +127,3 @@ class VectorRetriever:
             'num_embeddings': len(self.embeddings) if self.embeddings is not None else 0,
             'embedding_dim': int(self.embeddings.shape[1]) if self.embeddings is not None else None
         }
-
-# if __name__ == "__main__":
-#     retriever = VectorRetriever()
-#     retriever.load_embeddings()
-#     retriever.build_index()
-
-#     query = "음표는 어떤 기호야?"
-#     print(f"\n[실험 쿼리]: '{query}'")
-
-#     results = retriever.search(query, top_k=5, min_score=0.0)
-#     print("[Top-K 후보]:")
-#     if not results:
-#         print(" (0건) ➡️ 검색 miss!")
-#     else:
-#         for i, r in enumerate(results):
-#             print(
-#                 f" {i+1}. {r.get('concept.ko', r.get('concept.en'))} "
-#                 f"| node_id={r.get('node_id')} | type={r.get('concept_type')} "
-#                 f"| score={r.get('score', 0):.4f} | rank={r.get('rank', '-')}"
-#             )

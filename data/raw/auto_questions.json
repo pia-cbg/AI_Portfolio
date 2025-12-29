@@ -1,0 +1,6492 @@
+[
+  {
+    "question": "기초악전란?",
+    "target_node_id": 1,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "기초악전의 정의는?",
+    "target_node_id": 1,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "기초악전의 역할은?",
+    "target_node_id": 1,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "기초악전의 원리(원칙)는?",
+    "target_node_id": 1,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "기초악전 학습/활용 팁이 있다면?",
+    "target_node_id": 1,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "음악의 3요소란?",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "음악의 3요소의 정의는?",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "음악의 3요소의 역할은?",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "음악의 3요소의 원리(원칙)는?",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "음악의 3요소 학습/활용 팁이 있다면?",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "음악의 3요소의 예시를 알려줘",
+    "target_node_id": 2,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로디란?",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로디의 정의는?",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로디의 역할은?",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로디의 원리(원칙)는?",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로디 학습/활용 팁이 있다면?",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로디의 예시를 알려줘",
+    "target_node_id": 3,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬란?",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬의 정의는?",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬의 역할은?",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬의 원리(원칙)는?",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬 학습/활용 팁이 있다면?",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "리듬의 예시를 알려줘",
+    "target_node_id": 4,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "화성란?",
+    "target_node_id": 5,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "화성의 정의는?",
+    "target_node_id": 5,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "화성의 역할은?",
+    "target_node_id": 5,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "화성의 원리(원칙)는?",
+    "target_node_id": 5,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "화성의 예시를 알려줘",
+    "target_node_id": 5,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름란?",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름의 정의는?",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름의 역할은?",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름의 원리(원칙)는?",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름 학습/활용 팁이 있다면?",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음이름의 예시를 알려줘",
+    "target_node_id": 6,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음표란?",
+    "target_node_id": 7,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음표의 정의는?",
+    "target_node_id": 7,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음표의 역할은?",
+    "target_node_id": 7,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음표 학습/활용 팁이 있다면?",
+    "target_node_id": 7,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음표의 예시를 알려줘",
+    "target_node_id": 7,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온음표란?",
+    "target_node_id": 8,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온음표의 정의는?",
+    "target_node_id": 8,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온음표의 역할은?",
+    "target_node_id": 8,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온음표의 원리(원칙)는?",
+    "target_node_id": 8,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 8,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분음표란?",
+    "target_node_id": 9,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분음표의 정의는?",
+    "target_node_id": 9,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분음표의 역할은?",
+    "target_node_id": 9,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분음표의 원리(원칙)는?",
+    "target_node_id": 9,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 9,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분음표란?",
+    "target_node_id": 10,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분음표의 정의는?",
+    "target_node_id": 10,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분음표의 역할은?",
+    "target_node_id": 10,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분음표의 원리(원칙)는?",
+    "target_node_id": 10,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 10,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분음표란?",
+    "target_node_id": 11,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분음표의 정의는?",
+    "target_node_id": 11,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분음표의 역할은?",
+    "target_node_id": 11,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분음표의 원리(원칙)는?",
+    "target_node_id": 11,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 11,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분음표란?",
+    "target_node_id": 12,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분음표의 정의는?",
+    "target_node_id": 12,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분음표의 역할은?",
+    "target_node_id": 12,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분음표의 원리(원칙)는?",
+    "target_node_id": 12,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 12,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분음표란?",
+    "target_node_id": 13,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분음표의 정의는?",
+    "target_node_id": 13,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분음표의 역할은?",
+    "target_node_id": 13,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분음표의 원리(원칙)는?",
+    "target_node_id": 13,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 13,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점음표란?",
+    "target_node_id": 14,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점음표의 정의는?",
+    "target_node_id": 14,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점음표의 역할은?",
+    "target_node_id": 14,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점음표 학습/활용 팁이 있다면?",
+    "target_node_id": 14,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 14,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온음표란?",
+    "target_node_id": 15,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온음표의 정의는?",
+    "target_node_id": 15,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온음표의 역할은?",
+    "target_node_id": 15,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온음표의 원리(원칙)는?",
+    "target_node_id": 15,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 15,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분음표란?",
+    "target_node_id": 16,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분음표의 정의는?",
+    "target_node_id": 16,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분음표의 역할은?",
+    "target_node_id": 16,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분음표의 원리(원칙)는?",
+    "target_node_id": 16,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 16,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분음표란?",
+    "target_node_id": 17,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분음표의 정의는?",
+    "target_node_id": 17,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분음표의 역할은?",
+    "target_node_id": 17,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분음표의 원리(원칙)는?",
+    "target_node_id": 17,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 17,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분음표란?",
+    "target_node_id": 18,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분음표의 정의는?",
+    "target_node_id": 18,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분음표의 역할은?",
+    "target_node_id": 18,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분음표의 원리(원칙)는?",
+    "target_node_id": 18,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 18,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분음표란?",
+    "target_node_id": 19,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분음표의 정의는?",
+    "target_node_id": 19,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분음표의 역할은?",
+    "target_node_id": 19,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분음표의 원리(원칙)는?",
+    "target_node_id": 19,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 19,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분음표란?",
+    "target_node_id": 20,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분음표의 정의는?",
+    "target_node_id": 20,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분음표의 역할은?",
+    "target_node_id": 20,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분음표의 원리(원칙)는?",
+    "target_node_id": 20,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 20,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표란?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표의 정의는?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표의 역할은?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표의 원리(원칙)는?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표 학습/활용 팁이 있다면?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표의 예시를 알려줘",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 21,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온쉼표란?",
+    "target_node_id": 22,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온쉼표의 정의는?",
+    "target_node_id": 22,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온쉼표의 역할은?",
+    "target_node_id": 22,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온쉼표의 원리(원칙)는?",
+    "target_node_id": 22,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "온쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 22,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분쉼표란?",
+    "target_node_id": 23,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분쉼표의 정의는?",
+    "target_node_id": 23,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분쉼표의 역할은?",
+    "target_node_id": 23,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분쉼표의 원리(원칙)는?",
+    "target_node_id": 23,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "2분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 23,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분쉼표란?",
+    "target_node_id": 24,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분쉼표의 정의는?",
+    "target_node_id": 24,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분쉼표의 역할은?",
+    "target_node_id": 24,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분쉼표의 원리(원칙)는?",
+    "target_node_id": 24,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "4분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 24,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분쉼표란?",
+    "target_node_id": 25,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분쉼표의 정의는?",
+    "target_node_id": 25,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분쉼표의 역할은?",
+    "target_node_id": 25,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분쉼표의 원리(원칙)는?",
+    "target_node_id": 25,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "8분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 25,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분쉼표란?",
+    "target_node_id": 26,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분쉼표의 정의는?",
+    "target_node_id": 26,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분쉼표의 역할은?",
+    "target_node_id": 26,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분쉼표의 원리(원칙)는?",
+    "target_node_id": 26,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "16분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 26,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분쉼표란?",
+    "target_node_id": 27,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분쉼표의 정의는?",
+    "target_node_id": 27,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분쉼표의 역할은?",
+    "target_node_id": 27,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분쉼표의 원리(원칙)는?",
+    "target_node_id": 27,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "32분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 27,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점쉼표란?",
+    "target_node_id": 28,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점쉼표의 정의는?",
+    "target_node_id": 28,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점쉼표의 역할은?",
+    "target_node_id": 28,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점쉼표 학습/활용 팁이 있다면?",
+    "target_node_id": 28,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 28,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온쉼표란?",
+    "target_node_id": 29,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온쉼표의 정의는?",
+    "target_node_id": 29,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온쉼표의 역할은?",
+    "target_node_id": 29,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온쉼표의 원리(원칙)는?",
+    "target_node_id": 29,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점온쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 29,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분쉼표란?",
+    "target_node_id": 30,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분쉼표의 정의는?",
+    "target_node_id": 30,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분쉼표의 역할은?",
+    "target_node_id": 30,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분쉼표의 원리(원칙)는?",
+    "target_node_id": 30,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점2분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 30,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분쉼표란?",
+    "target_node_id": 31,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분쉼표의 정의는?",
+    "target_node_id": 31,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분쉼표의 역할은?",
+    "target_node_id": 31,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분쉼표의 원리(원칙)는?",
+    "target_node_id": 31,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점4분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 31,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분쉼표란?",
+    "target_node_id": 32,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분쉼표의 정의는?",
+    "target_node_id": 32,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분쉼표의 역할은?",
+    "target_node_id": 32,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분쉼표의 원리(원칙)는?",
+    "target_node_id": 32,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점8분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 32,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분쉼표란?",
+    "target_node_id": 33,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분쉼표의 정의는?",
+    "target_node_id": 33,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분쉼표의 역할은?",
+    "target_node_id": 33,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분쉼표의 원리(원칙)는?",
+    "target_node_id": 33,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점16분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 33,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분쉼표란?",
+    "target_node_id": 34,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분쉼표의 정의는?",
+    "target_node_id": 34,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분쉼표의 역할은?",
+    "target_node_id": 34,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분쉼표의 원리(원칙)는?",
+    "target_node_id": 34,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "점32분쉼표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 34,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표란?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표의 정의는?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표의 역할은?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표의 원리(원칙)는?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표 학습/활용 팁이 있다면?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표의 예시를 알려줘",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "임시표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 35,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표란?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표의 정의는?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표의 역할은?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표의 원리(원칙)는?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표 학습/활용 팁이 있다면?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표의 예시를 알려줘",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "음자리표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 36,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표란?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표의 정의는?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표의 역할은?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표의 원리(원칙)는?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표 학습/활용 팁이 있다면?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표의 예시를 알려줘",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "박자표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 37,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조표란?",
+    "target_node_id": 38,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조표의 정의는?",
+    "target_node_id": 38,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조표의 역할은?",
+    "target_node_id": 38,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조표의 원리(원칙)는?",
+    "target_node_id": 38,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조표 학습/활용 팁이 있다면?",
+    "target_node_id": 38,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "조성(샾)란?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾)의 정의는?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾)의 역할은?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾)의 원리(원칙)는?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾) 학습/활용 팁이 있다면?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾)의 예시를 알려줘",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(샾)를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 39,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)란?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)의 정의는?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)의 역할은?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)의 원리(원칙)는?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫) 학습/활용 팁이 있다면?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)의 예시를 알려줘",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "조성(플랫)를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 40,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일란?",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일의 정의는?",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일의 역할은?",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일의 원리(원칙)는?",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "스케일의 예시를 알려줘",
+    "target_node_id": 41,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일란?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일의 정의는?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일의 역할은?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일의 원리(원칙)는?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일의 예시를 알려줘",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 42,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일란?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일의 정의는?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일의 역할은?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일의 원리(원칙)는?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일의 예시를 알려줘",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 43,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일란?",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일의 정의는?",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일의 역할은?",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일의 원리(원칙)는?",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일의 예시를 알려줘",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "내추럴 마이너 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 44,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일란?",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일의 정의는?",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일의 역할은?",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일의 원리(원칙)는?",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일의 예시를 알려줘",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하모닉 마이너 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 45,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일란?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일의 정의는?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일의 역할은?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일의 원리(원칙)는?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일의 예시를 알려줘",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "멜로딕 마이너 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 46,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정란?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정의 정의는?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정의 역할은?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정의 원리(원칙)는?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정 학습/활용 팁이 있다면?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정의 예시를 알려줘",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 47,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "반음란?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음의 정의는?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음의 역할은?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음의 원리(원칙)는?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음 학습/활용 팁이 있다면?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음의 예시를 알려줘",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "반음를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 48,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음란?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음의 정의는?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음의 역할은?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음의 원리(원칙)는?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음 학습/활용 팁이 있다면?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음의 예시를 알려줘",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "온음를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 49,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "완전음정란?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정의 정의는?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정의 역할은?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정의 원리(원칙)는?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정 학습/활용 팁이 있다면?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정의 예시를 알려줘",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "완전음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 50,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정란?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정의 정의는?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정의 역할은?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정의 원리(원칙)는?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정 학습/활용 팁이 있다면?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정의 예시를 알려줘",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "장음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 51,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정란?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정의 정의는?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정의 역할은?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정의 원리(원칙)는?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정 학습/활용 팁이 있다면?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정의 예시를 알려줘",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "단음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 52,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정란?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정의 정의는?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정의 역할은?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정의 원리(원칙)는?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정 학습/활용 팁이 있다면?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정의 예시를 알려줘",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "증음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 53,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정란?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정의 정의는?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정의 역할은?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정의 원리(원칙)는?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정 학습/활용 팁이 있다면?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정의 예시를 알려줘",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "감음정를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 54,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권란?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권의 정의는?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권의 역할은?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권의 원리(원칙)는?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권 학습/활용 팁이 있다면?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권의 예시를 알려줘",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "5도권를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 55,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음란?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음의 정의는?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음의 역할은?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음의 원리(원칙)는?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음 학습/활용 팁이 있다면?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음의 예시를 알려줘",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이명동음를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 56,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "반복란?",
+    "target_node_id": 57,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "반복의 정의는?",
+    "target_node_id": 57,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "반복의 역할은?",
+    "target_node_id": 57,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "반복의 원리(원칙)는?",
+    "target_node_id": 57,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도돌이표란?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "도돌이표의 정의는?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "도돌이표의 역할은?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "도돌이표의 원리(원칙)는?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "도돌이표 학습/활용 팁이 있다면?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "도돌이표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 58,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "다카포란?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "다카포의 정의는?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "다카포의 역할은?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "다카포의 원리(원칙)는?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "다카포 학습/활용 팁이 있다면?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "다카포를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 59,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨란?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨의 정의는?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨의 역할은?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨의 원리(원칙)는?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨 학습/활용 팁이 있다면?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "달세뇨를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 60,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨란?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨의 정의는?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨의 역할은?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨의 원리(원칙)는?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨 학습/활용 팁이 있다면?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "세뇨를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 61,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다란?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다의 정의는?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다의 역할은?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다의 원리(원칙)는?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다 학습/활용 팁이 있다면?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코다를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 62,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네란?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네의 정의는?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네의 역할은?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네의 원리(원칙)는?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네 학습/활용 팁이 있다면?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "피네를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 63,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "마디란?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디의 정의는?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디의 역할은?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디의 원리(원칙)는?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디 학습/활용 팁이 있다면?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디의 예시를 알려줘",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마디를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 64,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼란?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼의 정의는?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼의 역할은?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼의 원리(원칙)는?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼 학습/활용 팁이 있다면?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼의 예시를 알려줘",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "송폼를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 65,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "잇단음표란?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표의 정의는?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표의 역할은?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표의 원리(원칙)는?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표 학습/활용 팁이 있다면?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표의 예시를 알려줘",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "잇단음표를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 66,
+    "concept_type": "symbol_concept"
+  },
+  {
+    "question": "비피엠란?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠의 정의는?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠의 역할은?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠의 원리(원칙)는?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠 학습/활용 팁이 있다면?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠의 예시를 알려줘",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "비피엠를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 67,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법란?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법의 정의는?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법의 역할은?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법의 원리(원칙)는?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법 학습/활용 팁이 있다면?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법의 예시를 알려줘",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "상대적 접근법를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 68,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드란?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드의 정의는?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드의 역할은?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드의 원리(원칙)는?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드 학습/활용 팁이 있다면?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드의 예시를 알려줘",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 69,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "트라이어드란?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드의 정의는?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드의 역할은?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드의 원리(원칙)는?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드 학습/활용 팁이 있다면?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드의 예시를 알려줘",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이어드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 70,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드란?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드의 정의는?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드의 역할은?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드의 원리(원칙)는?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드 학습/활용 팁이 있다면?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드의 예시를 알려줘",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 71,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드란?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드의 정의는?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드의 역할은?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드의 원리(원칙)는?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드 학습/활용 팁이 있다면?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드의 예시를 알려줘",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 72,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드란?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드의 정의는?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드의 역할은?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드의 원리(원칙)는?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드 학습/활용 팁이 있다면?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드의 예시를 알려줘",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 73,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드란?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드의 정의는?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드의 역할은?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드의 원리(원칙)는?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드 학습/활용 팁이 있다면?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드의 예시를 알려줘",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 74,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드란?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드의 정의는?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드의 역할은?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드의 원리(원칙)는?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드 학습/활용 팁이 있다면?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드의 예시를 알려줘",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스2코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 75,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드란?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드의 정의는?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드의 역할은?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드의 원리(원칙)는?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드 학습/활용 팁이 있다면?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드의 예시를 알려줘",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "서스4코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 76,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티란?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티의 정의는?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티의 역할은?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티의 원리(원칙)는?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티 학습/활용 팁이 있다면?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티의 예시를 알려줘",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 퀄리티를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 77,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "코드의 구조란?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조의 정의는?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조의 역할은?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조의 원리(원칙)는?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조 학습/활용 팁이 있다면?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조의 예시를 알려줘",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드의 구조를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 78,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "세븐스 코드란?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드의 정의는?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드의 역할은?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드의 원리(원칙)는?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드 학습/활용 팁이 있다면?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드의 예시를 알려줘",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세븐스 코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 79,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드란?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드의 정의는?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드의 역할은?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드의 원리(원칙)는?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드의 예시를 알려줘",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 80,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드란?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드의 정의는?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드의 역할은?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드의 원리(원칙)는?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드의 예시를 알려줘",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 81,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드란?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드의 정의는?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드의 역할은?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드의 원리(원칙)는?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드의 예시를 알려줘",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 82,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드란?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드의 정의는?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드의 역할은?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드의 원리(원칙)는?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드의 예시를 알려줘",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너메이저세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 83,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드란?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드의 정의는?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드의 역할은?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드의 원리(원칙)는?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드의 예시를 알려줘",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프디미니시드세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 84,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드란?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드의 정의는?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드의 역할은?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드의 원리(원칙)는?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드의 예시를 알려줘",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "디미니시드세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 85,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드란?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드의 정의는?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드의 역할은?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드의 원리(원칙)는?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드 학습/활용 팁이 있다면?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드의 예시를 알려줘",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드세븐코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 86,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드란?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드의 정의는?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드의 역할은?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드의 원리(원칙)는?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드 학습/활용 팁이 있다면?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드의 예시를 알려줘",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐서스포코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 87,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드란?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드의 정의는?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드의 역할은?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드의 원리(원칙)는?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드 학습/활용 팁이 있다면?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드의 예시를 알려줘",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐샾파이브코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 88,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "전위란?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위의 정의는?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위의 역할은?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위의 원리(원칙)는?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위 학습/활용 팁이 있다면?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위의 예시를 알려줘",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "전위를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 89,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "분수코드란?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드의 정의는?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드의 역할은?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드의 원리(원칙)는?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드 학습/활용 팁이 있다면?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드의 예시를 알려줘",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "분수코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 90,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드란?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드의 정의는?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드의 역할은?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드의 원리(원칙)는?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드 학습/활용 팁이 있다면?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드의 예시를 알려줘",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하이브리드코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 91,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "아르페지오란?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오의 정의는?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오의 역할은?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오의 원리(원칙)는?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오 학습/활용 팁이 있다면?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오의 예시를 알려줘",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "아르페지오를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 92,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "이끈음란?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음의 정의는?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음의 역할은?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음의 원리(원칙)는?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음 학습/활용 팁이 있다면?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음의 예시를 알려줘",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "이끈음를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 93,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드란?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드의 정의는?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드의 역할은?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드의 원리(원칙)는?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드 학습/활용 팁이 있다면?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드의 예시를 알려줘",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "파워코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 94,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드란?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드의 정의는?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드의 역할은?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드의 원리(원칙)는?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드 학습/활용 팁이 있다면?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드의 예시를 알려줘",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "애드코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 95,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드란?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드의 정의는?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드의 역할은?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드의 원리(원칙)는?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드 학습/활용 팁이 있다면?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드의 예시를 알려줘",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "6코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 96,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드란?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드의 정의는?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드의 역할은?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드의 원리(원칙)는?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드 학습/활용 팁이 있다면?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드의 예시를 알려줘",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저6코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 97,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드란?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드의 정의는?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드의 역할은?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드의 원리(원칙)는?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드 학습/활용 팁이 있다면?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드의 예시를 알려줘",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너6코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 98,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "초급 화성학란?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학의 정의는?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학의 역할은?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학의 원리(원칙)는?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학 학습/활용 팁이 있다면?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학의 예시를 알려줘",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "초급 화성학를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 99,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "다이아토닉란?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉의 정의는?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉의 역할은?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉의 원리(원칙)는?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉의 예시를 알려줘",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "다이아토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 100,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션란?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션의 정의는?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션의 역할은?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션의 원리(원칙)는?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션 학습/활용 팁이 있다면?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션의 예시를 알려줘",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 101,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉란?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉의 정의는?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉의 역할은?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉의 원리(원칙)는?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉의 예시를 알려줘",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 102,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉란?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉의 정의는?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉의 역할은?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉의 원리(원칙)는?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉의 예시를 알려줘",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 103,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트란?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트의 정의는?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트의 역할은?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트의 원리(원칙)는?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트 학습/활용 팁이 있다면?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트의 예시를 알려줘",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "미디언트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 104,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트란?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트의 정의는?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트의 역할은?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트의 원리(원칙)는?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트 학습/활용 팁이 있다면?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트의 예시를 알려줘",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브도미넌트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 105,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트란?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트의 정의는?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트의 역할은?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트의 원리(원칙)는?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트 학습/활용 팁이 있다면?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트의 예시를 알려줘",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도미넌트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 106,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트란?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트의 정의는?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트의 역할은?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트의 원리(원칙)는?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트 학습/활용 팁이 있다면?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트의 예시를 알려줘",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "서브미디언트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 107,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤란?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤의 정의는?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤의 역할은?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤의 원리(원칙)는?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤 학습/활용 팁이 있다면?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤의 예시를 알려줘",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리딩톤를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 108,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡란?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡의 정의는?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡의 역할은?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡의 원리(원칙)는?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡 학습/활용 팁이 있다면?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡의 예시를 알려줘",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "코드펑션을 활용한 작곡를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 109,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드란?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드의 정의는?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드의 역할은?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드의 원리(원칙)는?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드 학습/활용 팁이 있다면?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드의 예시를 알려줘",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "토닉 계열 코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 110,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드란?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드의 정의는?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드의 역할은?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드의 원리(원칙)는?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드 학습/활용 팁이 있다면?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드의 예시를 알려줘",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "서브도미넌트 계열 코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 111,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드란?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드의 정의는?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드의 역할은?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드의 원리(원칙)는?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드 학습/활용 팁이 있다면?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드의 예시를 알려줘",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도미넌트 계열 코드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 112,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "가이드톤란?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤의 정의는?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤의 역할은?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤의 원리(원칙)는?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤 학습/활용 팁이 있다면?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤의 예시를 알려줘",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "가이드톤를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 113,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트란?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트의 정의는?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트의 역할은?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트의 원리(원칙)는?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트 학습/활용 팁이 있다면?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트의 예시를 알려줘",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "프라이머리 도미넌트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 114,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "중급 화성학란?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학의 정의는?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학의 역할은?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학의 원리(원칙)는?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학 학습/활용 팁이 있다면?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학의 예시를 알려줘",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "중급 화성학를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 115,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트란?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트의 정의는?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트의 역할은?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트의 원리(원칙)는?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트 학습/활용 팁이 있다면?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트의 예시를 알려줘",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "세컨더리 도미넌트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 116,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너란?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너의 정의는?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너의 역할은?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너의 원리(원칙)는?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너 학습/활용 팁이 있다면?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너의 예시를 알려줘",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "릴레이티드 투 마이너를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 117,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션란?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션의 정의는?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션의 역할은?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션의 원리(원칙)는?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션 학습/활용 팁이 있다면?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션의 예시를 알려줘",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "트라이톤 서브스티튜션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 118,
+    "concept_type": "technique_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트란?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트의 정의는?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트의 역할은?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트의 원리(원칙)는?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트 학습/활용 팁이 있다면?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트의 예시를 알려줘",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "익스텐디드 도미넌트를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 119,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션란?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션의 정의는?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션의 역할은?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션의 원리(원칙)는?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션 학습/활용 팁이 있다면?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션의 예시를 알려줘",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "텐션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 120,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션란?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션의 정의는?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션의 역할은?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션의 원리(원칙)는?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션 학습/활용 팁이 있다면?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션의 예시를 알려줘",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저세븐코드에서 사용 가능한 텐션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 121,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션란?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션의 정의는?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션의 역할은?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션의 원리(원칙)는?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션 학습/활용 팁이 있다면?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션의 예시를 알려줘",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너세븐코드에서 사용 가능한 텐션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 122,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션란?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션의 정의는?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션의 역할은?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션의 원리(원칙)는?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션 학습/활용 팁이 있다면?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션의 예시를 알려줘",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트세븐코드에서 사용 가능한 텐션를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 123,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 화성학란?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학의 정의는?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학의 역할은?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학의 원리(원칙)는?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학 학습/활용 팁이 있다면?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학의 예시를 알려줘",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 화성학를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 124,
+    "concept_type": "foundation_concept"
+  },
+  {
+    "question": "고급 스케일란?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일의 정의는?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일의 역할은?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일의 원리(원칙)는?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일의 예시를 알려줘",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "고급 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 125,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일란?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일의 정의는?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일의 역할은?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일의 원리(원칙)는?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일의 예시를 알려줘",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 블루스 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 126,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일란?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일의 정의는?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일의 역할은?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일의 원리(원칙)는?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일의 예시를 알려줘",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 블루스 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 127,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일란?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일의 정의는?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일의 역할은?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일의 원리(원칙)는?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일의 예시를 알려줘",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 펜타토닉 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 128,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일란?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일의 정의는?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일의 역할은?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일의 원리(원칙)는?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일의 예시를 알려줘",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 펜타토닉 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 129,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일란?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일의 정의는?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일의 역할은?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일의 원리(원칙)는?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일의 예시를 알려줘",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 130,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일란?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일의 정의는?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일의 역할은?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일의 원리(원칙)는?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일의 예시를 알려줘",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀-하프 디미니시드 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 131,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일란?",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일의 정의는?",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일의 역할은?",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일의 원리(원칙)는?",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "홀톤 스케일의 예시를 알려줘",
+    "target_node_id": 132,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일란?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일의 정의는?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일의 역할은?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일의 원리(원칙)는?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일의 예시를 알려줘",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "어그멘티드 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 133,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일란?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일의 정의는?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일의 역할은?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일의 원리(원칙)는?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일의 예시를 알려줘",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "메이저 비밥 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 134,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일란?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일의 정의는?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일의 역할은?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일의 원리(원칙)는?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일의 예시를 알려줘",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "마이너 비밥 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 135,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일란?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일의 정의는?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일의 역할은?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일의 원리(원칙)는?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일의 예시를 알려줘",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "도미넌트 비밥 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 136,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "모드란?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드의 정의는?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드의 역할은?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드의 원리(원칙)는?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드 학습/활용 팁이 있다면?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드의 예시를 알려줘",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "모드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 137,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "아이오니안란?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안의 정의는?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안의 역할은?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안의 원리(원칙)는?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 학습/활용 팁이 있다면?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안의 예시를 알려줘",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 138,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안란?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안의 정의는?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안의 역할은?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안의 원리(원칙)는?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 학습/활용 팁이 있다면?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안의 예시를 알려줘",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 139,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안란?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안의 정의는?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안의 역할은?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안의 원리(원칙)는?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안 학습/활용 팁이 있다면?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안의 예시를 알려줘",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "프리지안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 140,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안란?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안의 정의는?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안의 역할은?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안의 원리(원칙)는?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 학습/활용 팁이 있다면?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안의 예시를 알려줘",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 141,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안란?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안의 정의는?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안의 역할은?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안의 원리(원칙)는?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 학습/활용 팁이 있다면?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안의 예시를 알려줘",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 142,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안란?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안의 정의는?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안의 역할은?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안의 원리(원칙)는?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안 학습/활용 팁이 있다면?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안의 예시를 알려줘",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "에올리안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 143,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안란?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안의 정의는?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안의 역할은?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안의 원리(원칙)는?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 학습/활용 팁이 있다면?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안의 예시를 알려줘",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 144,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "마이너 다이아토닉란?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉의 정의는?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉의 역할은?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉의 원리(원칙)는?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉의 예시를 알려줘",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 다이아토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 145,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉란?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉의 정의는?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉의 역할은?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉의 원리(원칙)는?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉의 예시를 알려줘",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 146,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉란?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉의 정의는?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉의 역할은?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉의 원리(원칙)는?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉 학습/활용 팁이 있다면?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉의 예시를 알려줘",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 다이아토닉를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 147,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드란?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드의 정의는?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드의 역할은?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드의 원리(원칙)는?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드 학습/활용 팁이 있다면?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드의 예시를 알려줘",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "마이너 모드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 148,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일란?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일의 정의는?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일의 역할은?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일의 원리(원칙)는?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일의 예시를 알려줘",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉 마이너 모드 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 149,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드란?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드의 정의는?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드의 역할은?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드의 원리(원칙)는?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드 학습/활용 팁이 있다면?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드의 예시를 알려줘",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "하모닉마이너 모드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 150,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스란?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스의 정의는?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스의 역할은?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스의 원리(원칙)는?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스 학습/활용 팁이 있다면?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스의 예시를 알려줘",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 식스를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 151,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브란?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브의 정의는?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브의 역할은?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브의 원리(원칙)는?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브 학습/활용 팁이 있다면?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브의 예시를 알려줘",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "아이오니안 샾 파이브를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 152,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐란?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐의 정의는?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐의 역할은?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐의 원리(원칙)는?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐 학습/활용 팁이 있다면?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐의 예시를 알려줘",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 샾 일레븐를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 153,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴란?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴의 정의는?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴의 역할은?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴의 원리(원칙)는?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴 학습/활용 팁이 있다면?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴의 예시를 알려줘",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 154,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인란?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인의 정의는?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인의 역할은?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인의 원리(원칙)는?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인 학습/활용 팁이 있다면?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인의 예시를 알려줘",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 나인를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 155,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐란?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐의 정의는?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐의 역할은?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐의 원리(원칙)는?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐 학습/활용 팁이 있다면?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐의 예시를 알려줘",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 156,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일란?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일의 정의는?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일의 역할은?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일의 원리(원칙)는?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일의 예시를 알려줘",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕 마이너 모드 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 157,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드란?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드의 정의는?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드의 역할은?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드의 원리(원칙)는?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드 학습/활용 팁이 있다면?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드의 예시를 알려줘",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "멜로딕마이너 모드를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 158,
+    "concept_type": "categorical_concept"
+  },
+  {
+    "question": "도리안 플랫 나인란?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인의 정의는?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인의 역할은?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인의 원리(원칙)는?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인 학습/활용 팁이 있다면?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인의 예시를 알려줘",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "도리안 플랫 나인를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 159,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브란?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브의 정의는?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브의 역할은?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브의 원리(원칙)는?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브 학습/활용 팁이 있다면?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브의 예시를 알려줘",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 샾 파이브를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 160,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐란?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐의 정의는?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐의 역할은?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐의 원리(원칙)는?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐 학습/활용 팁이 있다면?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐의 예시를 알려줘",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "리디안 플랫 세븐를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 161,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴란?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴의 정의는?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴의 역할은?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴의 원리(원칙)는?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴 학습/활용 팁이 있다면?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴의 예시를 알려줘",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "믹솔리디안 플랫 서틴를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 162,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인란?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인의 정의는?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인의 역할은?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인의 원리(원칙)는?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인 학습/활용 팁이 있다면?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인의 예시를 알려줘",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "로크리안 내추럴 나인를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 163,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안란?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안의 정의는?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안의 역할은?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안의 원리(원칙)는?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안 학습/활용 팁이 있다면?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안의 예시를 알려줘",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "슈퍼로크리안를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 164,
+    "concept_type": "example_concept"
+  },
+  {
+    "question": "크로매틱 스케일란?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일의 정의는?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일의 역할은?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일의 원리(원칙)는?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일 학습/활용 팁이 있다면?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일의 예시를 알려줘",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "크로매틱 스케일를 배우기 전에 알아두면 좋은 선수 지식(개념)은?",
+    "target_node_id": 165,
+    "concept_type": "core_concept"
+  },
+  {
+    "question": "슈퍼로크리안와 점온쉼표의 차이점은?",
+    "target_node_ids": [
+      164,
+      29
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "음표와 메이저코드의 차이점은?",
+    "target_node_ids": [
+      7,
+      71
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "피네와 도돌이표의 차이점은?",
+    "target_node_ids": [
+      63,
+      58
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "음자리표와 32분쉼표의 차이점은?",
+    "target_node_ids": [
+      36,
+      27
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "프리지안와 2분쉼표의 차이점은?",
+    "target_node_ids": [
+      140,
+      23
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "아이오니안 샾 파이브와 코드펑션을 활용한 작곡의 차이점은?",
+    "target_node_ids": [
+      152,
+      109
+    ],
+    "concept_types": [
+      "example_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "2분음표와 온음표의 차이점은?",
+    "target_node_ids": [
+      9,
+      8
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "4분쉼표와 이명동음의 차이점은?",
+    "target_node_ids": [
+      24,
+      56
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "달세뇨와 하프-홀 디미니시드 스케일의 차이점은?",
+    "target_node_ids": [
+      60,
+      130
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "리디안 샾 나인와 음표의 차이점은?",
+    "target_node_ids": [
+      155,
+      7
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "로크리안와 장음정의 차이점은?",
+    "target_node_ids": [
+      144,
+      51
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "프리지안와 리딩톤의 차이점은?",
+    "target_node_ids": [
+      140,
+      108
+    ],
+    "concept_types": [
+      "example_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "반복와 중급 화성학의 차이점은?",
+    "target_node_ids": [
+      57,
+      115
+    ],
+    "concept_types": [
+      "core_concept",
+      "foundation_concept"
+    ]
+  },
+  {
+    "question": "로크리안 내추럴 식스와 마이너코드의 차이점은?",
+    "target_node_ids": [
+      151,
+      72
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "음악의 3요소와 스케일의 차이점은?",
+    "target_node_ids": [
+      2,
+      41
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "코드펑션을 활용한 작곡와 메이저세븐샾파이브코드의 차이점은?",
+    "target_node_ids": [
+      109,
+      88
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "마이너코드와 조성(플랫)의 차이점은?",
+    "target_node_ids": [
+      72,
+      40
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "이명동음와 도미넌트세븐서스포코드의 차이점은?",
+    "target_node_ids": [
+      56,
+      87
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "32분쉼표와 4분쉼표의 차이점은?",
+    "target_node_ids": [
+      27,
+      24
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "마이너6코드와 8분쉼표의 차이점은?",
+    "target_node_ids": [
+      98,
+      25
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "아르페지오와 전위의 차이점은?",
+    "target_node_ids": [
+      92,
+      89
+    ],
+    "concept_types": [
+      "technique_concept",
+      "technique_concept"
+    ]
+  },
+  {
+    "question": "리디안 샾 나인와 상대적 접근법의 차이점은?",
+    "target_node_ids": [
+      155,
+      68
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "16분음표와 트라이톤 서브스티튜션의 차이점은?",
+    "target_node_ids": [
+      12,
+      118
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "technique_concept"
+    ]
+  },
+  {
+    "question": "아이오니안와 점8분쉼표의 차이점은?",
+    "target_node_ids": [
+      138,
+      32
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "메이저6코드와 쉼표의 차이점은?",
+    "target_node_ids": [
+      97,
+      21
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "믹솔리디안와 서스4코드의 차이점은?",
+    "target_node_ids": [
+      142,
+      76
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "리디안 플랫 세븐와 도리안 플랫 나인의 차이점은?",
+    "target_node_ids": [
+      161,
+      159
+    ],
+    "concept_types": [
+      "example_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "이끈음와 마이너 모드의 차이점은?",
+    "target_node_ids": [
+      93,
+      148
+    ],
+    "concept_types": [
+      "core_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "완전음정와 점8분음표의 차이점은?",
+    "target_node_ids": [
+      50,
+      18
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "16분음표와 다카포의 차이점은?",
+    "target_node_ids": [
+      12,
+      59
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "서스2코드와 쉼표의 차이점은?",
+    "target_node_ids": [
+      75,
+      21
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "달세뇨와 16분쉼표의 차이점은?",
+    "target_node_ids": [
+      60,
+      26
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "마이너6코드와 마이너코드의 차이점은?",
+    "target_node_ids": [
+      98,
+      72
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "릴레이티드 투 마이너와 로크리안 내추럴 나인의 차이점은?",
+    "target_node_ids": [
+      117,
+      163
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "파워코드와 메이저 스케일의 차이점은?",
+    "target_node_ids": [
+      94,
+      42
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "애드코드와 하이브리드코드의 차이점은?",
+    "target_node_ids": [
+      95,
+      91
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "감음정와 코드의 차이점은?",
+    "target_node_ids": [
+      54,
+      69
+    ],
+    "concept_types": [
+      "core_concept",
+      "foundation_concept"
+    ]
+  },
+  {
+    "question": "점16분음표와 슈퍼로크리안 더블플랫 세븐의 차이점은?",
+    "target_node_ids": [
+      19,
+      156
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "로크리안 내추럴 나인와 내추럴 마이너 스케일의 차이점은?",
+    "target_node_ids": [
+      163,
+      44
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "모드와 피네의 차이점은?",
+    "target_node_ids": [
+      137,
+      63
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "메이저 스케일와 익스텐디드 도미넌트의 차이점은?",
+    "target_node_ids": [
+      42,
+      119
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "마이너6코드와 트라이어드의 차이점은?",
+    "target_node_ids": [
+      98,
+      70
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼로크리안와 에올리안의 차이점은?",
+    "target_node_ids": [
+      164,
+      143
+    ],
+    "concept_types": [
+      "example_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "반복와 하프디미니시드세븐코드의 차이점은?",
+    "target_node_ids": [
+      57,
+      84
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "점온음표와 다카포의 차이점은?",
+    "target_node_ids": [
+      15,
+      59
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "2분음표와 마이너세븐코드의 차이점은?",
+    "target_node_ids": [
+      9,
+      81
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼토닉와 코드의 차이점은?",
+    "target_node_ids": [
+      103,
+      69
+    ],
+    "concept_types": [
+      "example_concept",
+      "foundation_concept"
+    ]
+  },
+  {
+    "question": "점4분음표와 5도권의 차이점은?",
+    "target_node_ids": [
+      17,
+      55
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉와 마이너세븐코드의 차이점은?",
+    "target_node_ids": [
+      146,
+      81
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "5도권와 마이너 펜타토닉 스케일의 차이점은?",
+    "target_node_ids": [
+      55,
+      128
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "토닉와 크로매틱 스케일의 차이점은?",
+    "target_node_ids": [
+      102,
+      165
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "트라이톤 서브스티튜션와 박자표의 차이점은?",
+    "target_node_ids": [
+      118,
+      37
+    ],
+    "concept_types": [
+      "technique_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "상대적 접근법와 음자리표의 차이점은?",
+    "target_node_ids": [
+      68,
+      36
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "마디와 로크리안의 차이점은?",
+    "target_node_ids": [
+      64,
+      144
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "아이오니안와 상대적 접근법의 차이점은?",
+    "target_node_ids": [
+      138,
+      68
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "하모닉마이너 모드와 토닉 계열 코드의 차이점은?",
+    "target_node_ids": [
+      150,
+      110
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "하모닉마이너 모드와 슈퍼토닉의 차이점은?",
+    "target_node_ids": [
+      150,
+      103
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "이끈음와 반복의 차이점은?",
+    "target_node_ids": [
+      93,
+      57
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "음자리표와 홀-하프 디미니시드 스케일의 차이점은?",
+    "target_node_ids": [
+      36,
+      131
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "메이저 블루스 스케일와 4분쉼표의 차이점은?",
+    "target_node_ids": [
+      127,
+      24
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "32분음표와 점온쉼표의 차이점은?",
+    "target_node_ids": [
+      13,
+      29
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "조성(플랫)와 리디안 플랫 세븐의 차이점은?",
+    "target_node_ids": [
+      40,
+      161
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "스케일와 코드펑션을 활용한 작곡의 차이점은?",
+    "target_node_ids": [
+      41,
+      109
+    ],
+    "concept_types": [
+      "core_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "도리안 샾 일레븐와 점4분음표의 차이점은?",
+    "target_node_ids": [
+      153,
+      17
+    ],
+    "concept_types": [
+      "example_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "초급 화성학와 마이너6코드의 차이점은?",
+    "target_node_ids": [
+      99,
+      98
+    ],
+    "concept_types": [
+      "foundation_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "도리안 샾 일레븐와 텐션의 차이점은?",
+    "target_node_ids": [
+      153,
+      120
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "도미넌트 비밥 스케일와 송폼의 차이점은?",
+    "target_node_ids": [
+      136,
+      65
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "믹솔리디안와 멜로디의 차이점은?",
+    "target_node_ids": [
+      142,
+      3
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "점2분쉼표와 아이오니안의 차이점은?",
+    "target_node_ids": [
+      30,
+      138
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "코드와 크로매틱 스케일의 차이점은?",
+    "target_node_ids": [
+      69,
+      165
+    ],
+    "concept_types": [
+      "foundation_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "메이저세븐샾파이브코드와 점온쉼표의 차이점은?",
+    "target_node_ids": [
+      88,
+      29
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "서스4코드와 도미넌트 계열 코드의 차이점은?",
+    "target_node_ids": [
+      76,
+      112
+    ],
+    "concept_types": [
+      "core_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "스케일와 릴레이티드 투 마이너의 차이점은?",
+    "target_node_ids": [
+      41,
+      117
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "기초악전와 상대적 접근법의 차이점은?",
+    "target_node_ids": [
+      1,
+      68
+    ],
+    "concept_types": [
+      "foundation_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "메이저 펜타토닉 스케일와 멜로딕 마이너 스케일의 차이점은?",
+    "target_node_ids": [
+      129,
+      46
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "하프-홀 디미니시드 스케일와 점쉼표의 차이점은?",
+    "target_node_ids": [
+      130,
+      28
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "리디안 플랫 세븐와 코드의 퀄리티의 차이점은?",
+    "target_node_ids": [
+      161,
+      77
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼로크리안와 하프-홀 디미니시드 스케일의 차이점은?",
+    "target_node_ids": [
+      164,
+      130
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐와 장음정의 차이점은?",
+    "target_node_ids": [
+      156,
+      51
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "조성(플랫)와 6코드의 차이점은?",
+    "target_node_ids": [
+      40,
+      96
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "메이저 스케일와 도리안의 차이점은?",
+    "target_node_ids": [
+      42,
+      139
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "도미넌트 비밥 스케일와 기초악전의 차이점은?",
+    "target_node_ids": [
+      136,
+      1
+    ],
+    "concept_types": [
+      "core_concept",
+      "foundation_concept"
+    ]
+  },
+  {
+    "question": "믹솔리디안 플랫 나인 플랫 서틴와 마이너메이저세븐코드의 차이점은?",
+    "target_node_ids": [
+      154,
+      83
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "마이너 블루스 스케일와 화성의 차이점은?",
+    "target_node_ids": [
+      126,
+      5
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "점온쉼표와 이끈음의 차이점은?",
+    "target_node_ids": [
+      29,
+      93
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "세븐스 코드와 코다의 차이점은?",
+    "target_node_ids": [
+      79,
+      62
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "점온음표와 코다의 차이점은?",
+    "target_node_ids": [
+      15,
+      62
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "하모닉 마이너 다이아토닉와 쉼표의 차이점은?",
+    "target_node_ids": [
+      146,
+      21
+    ],
+    "concept_types": [
+      "categorical_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "온쉼표와 고급 스케일의 차이점은?",
+    "target_node_ids": [
+      22,
+      125
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "점8분음표와 모드의 차이점은?",
+    "target_node_ids": [
+      18,
+      137
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "점16분쉼표와 마이너세븐코드에서 사용 가능한 텐션의 차이점은?",
+    "target_node_ids": [
+      33,
+      122
+    ],
+    "concept_types": [
+      "symbol_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "리디안와 마이너 스케일의 차이점은?",
+    "target_node_ids": [
+      141,
+      43
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "상대적 접근법와 도미넌트 비밥 스케일의 차이점은?",
+    "target_node_ids": [
+      68,
+      136
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼로크리안 더블플랫 세븐와 코드펑션을 활용한 작곡의 차이점은?",
+    "target_node_ids": [
+      156,
+      109
+    ],
+    "concept_types": [
+      "example_concept",
+      "categorical_concept"
+    ]
+  },
+  {
+    "question": "5도권와 도리안의 차이점은?",
+    "target_node_ids": [
+      55,
+      139
+    ],
+    "concept_types": [
+      "core_concept",
+      "example_concept"
+    ]
+  },
+  {
+    "question": "단음정와 메이저세븐코드의 차이점은?",
+    "target_node_ids": [
+      52,
+      80
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "슈퍼토닉와 6코드의 차이점은?",
+    "target_node_ids": [
+      103,
+      96
+    ],
+    "concept_types": [
+      "example_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "가이드톤와 어그멘티드 스케일의 차이점은?",
+    "target_node_ids": [
+      113,
+      133
+    ],
+    "concept_types": [
+      "core_concept",
+      "core_concept"
+    ]
+  },
+  {
+    "question": "세컨더리 도미넌트와 점4분쉼표의 차이점은?",
+    "target_node_ids": [
+      116,
+      31
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  },
+  {
+    "question": "마디와 도돌이표의 차이점은?",
+    "target_node_ids": [
+      64,
+      58
+    ],
+    "concept_types": [
+      "core_concept",
+      "symbol_concept"
+    ]
+  }
+]
