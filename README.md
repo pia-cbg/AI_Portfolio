@@ -44,8 +44,8 @@ _자체 구축 데이터와 사전 임베딩(벡터DB)·자동 질문·자동 �
 ```bash
 git clone https://github.com/bogyeongchoi/AI_Portfolio.git
 cd AI_Portfolio
-python3.11 -m venv venv
-source venv/bin/activate     # (Windows: venv\Scripts\activate)
+conda create -n myenv python=3.11
+conda activate myenv
 pip install -r requirements.txt
 cp .env.example .env
 
