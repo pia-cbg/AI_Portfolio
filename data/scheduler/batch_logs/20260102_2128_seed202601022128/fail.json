@@ -1,0 +1,351 @@
+[
+  {
+    "input": "9월 29일 미용실 병원예약",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "점심 때 추가해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "오늘쯤 만날까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "도서관 스터디",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "10월 30일 피시방 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "10월 30일"
+      },
+      "end": {
+        "dateTime": "10월 30일"
+      },
+      "description": "피시방"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "4월 6일 회의실 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "4월 6일"
+      },
+      "end": {
+        "dateTime": "4월 6일"
+      },
+      "description": "회의실"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "빠른 시간에 회의해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "6월 8일 피시방 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "6월 8일"
+      },
+      "end": {
+        "dateTime": "6월 8일"
+      },
+      "description": "피시방"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "주말에 시간 돼?",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "8월 7일 회사 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "8월 7일"
+      },
+      "end": {
+        "dateTime": "8월 7일"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "2월 30일 14시 45분 세미나",
+    "event": {
+      "summary": "세미나",
+      "start": {
+        "dateTime": "2월 30일 14시 45분"
+      },
+      "end": {
+        "dateTime": "2월 30일 15시 45분"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "8월 3일 온라인 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "8월 3일"
+      },
+      "end": {
+        "dateTime": "8월 3일"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "적당한 시간에 회의 추가",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목"
+    ]
+  },
+  {
+    "input": "4월 31일 9시 0분 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "4월 31일 9시 0분"
+      },
+      "end": {
+        "dateTime": "4월 31일 10시 0분"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "오늘쯤 만날까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "2월 14일 회의실",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "6월 13일 회사 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "6월 13일"
+      },
+      "end": {
+        "dateTime": "6월 13일"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "주말에 시간 돼?",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "주말에 시간 돼?",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "6월 2일 미용실",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "1월 30일 도서관 동호회",
+    "event": {
+      "summary": "도서관 동호회",
+      "start": {
+        "dateTime": "1월 30일"
+      },
+      "end": {
+        "dateTime": "1월 30일"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "7월 8일 예약해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "언제든 미팅 잡아줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  }
+]

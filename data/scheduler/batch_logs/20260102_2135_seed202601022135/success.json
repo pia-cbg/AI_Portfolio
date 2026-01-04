@@ -1,0 +1,898 @@
+[
+  {
+    "input": "6월 28일 8시 30분 회사 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-06-28T08:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-28T09:30:00+09:00"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 11일 18시 15분 서울역 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-01-11T18:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-11T19:15:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "6월 2일 16시 0분 서울역 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-06-02T16:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-02T17:00:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 21일 21시 15분 미용실 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2026-09-21T21:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-21T22:15:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "12월 21일 9시 15분 피시방 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2026-12-21T09:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-21T10:15:00+09:00"
+      },
+      "description": "피시방"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 24일 11시 30분 서울역 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "2026-03-24T11:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-24T12:30:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2023년 7월 4일 18시 30분 강남 카페 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2023-07-04T18:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2023-07-04T19:30:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 26일 15시 온라인 회의",
+    "event": {
+      "summary": "온라인 회의",
+      "start": {
+        "dateTime": "2026-09-26T15:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-26T16:00:00+09:00"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "5월 11일 12시 도서관 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-05-11T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-11T13:00:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "10월 12일 21시 미용실 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "2026-10-12T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-12T22:00:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 26일 11시 30분 회사 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2026-02-26T11:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-26T12:30:00+09:00"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 19일 18시 미용실 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-09-19T18:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-19T19:00:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 8일 16시 서울역 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-02-08T16:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-08T17:00:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 4일 11시 0분 회의실 저녁식사",
+    "event": {
+      "summary": "회의실 저녁식사",
+      "start": {
+        "dateTime": "2026-02-04T11:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-04T12:00:00+09:00"
+      },
+      "description": "회의실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 10일 19시 0분 강남 카페 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-11-10T19:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-10T20:00:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "6월 25일 12시 피시방 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-06-25T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-25T13:00:00+09:00"
+      },
+      "description": "피시방"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "5월 9일 13시 15분 도서관 동호회",
+    "event": {
+      "summary": "도서관 동호회",
+      "start": {
+        "dateTime": "2026-05-09T13:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-09T14:15:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "6월 15일 10시 45분 미용실 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2026-06-15T10:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-15T11:45:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "4월 1일 13시 30분 온라인 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-04-01T13:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-01T14:30:00+09:00"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 8일 20시 30분 강남 카페 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-11-08T20:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-08T21:30:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "12월 9일 13시 45분 강남 카페 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2026-12-09T13:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-09T14:45:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 11일 13시 30분 서울역 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-11-11T13:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-11T14:30:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 22일 14시 집 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2026-03-22T14:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-22T15:00:00+09:00"
+      },
+      "description": "집"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 10일 14시 15분 강남 카페 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-09-10T14:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-10T15:15:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2024년 7월 30일 13시 15분 서울역 세미나",
+    "event": {
+      "summary": "세미나",
+      "start": {
+        "dateTime": "2024-07-30T13:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2024-07-30T14:15:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "5월 21일 10시 45분 미용실 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-05-21T10:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-21T11:45:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "4월 2일 10시 집 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-04-02T10:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-02T11:00:00+09:00"
+      },
+      "description": "집"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 1일 9시 30분 강남 카페 세미나",
+    "event": {
+      "summary": "세미나",
+      "start": {
+        "dateTime": "2026-09-01T09:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-01T10:30:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "7월 19일 8시 45분 강남 카페 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2026-07-19T08:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-07-19T09:45:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "8월 5일 14시 0분 강남 카페 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-08-05T14:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-08-05T15:00:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 19일 15시 15분 강남 카페 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-01-19T15:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-19T16:15:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 11일 11시 45분 미용실 상담",
+    "event": {
+      "summary": "미용실 상담",
+      "start": {
+        "dateTime": "2026-11-11T11:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-11T12:45:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 9일 21시 미용실 점심",
+    "event": {
+      "summary": "미용실",
+      "start": {
+        "dateTime": "2026-03-09T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-09T22:00:00+09:00"
+      },
+      "description": "점심"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2024년 3월 7일 21시 0분 서울역 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2024-03-07T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2024-03-07T22:00:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 18일 15시 45분 도서관 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "2026-11-18T15:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-18T16:45:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 7일 12시 강남 카페 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-01-07T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-07T13:00:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2026년 1월 9일 14시 45분 서울역 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-01-09T14:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-09T15:45:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "10월 28일 16시 강남 카페 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2026-10-28T16:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-28T17:00:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 18일 10시 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2026-02-18T10:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-18T11:00:00+09:00"
+      },
+      "description": "병원"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2023년 1월 7일 14시 45분 서울역 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2023-01-07T14:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2023-01-07T15:45:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 24일 9시 30분 서울역 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2026-02-24T09:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-24T10:30:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "4월 10일 8시 30분 강남 카페 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2026-04-10T08:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-10T09:30:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "12월 28일 18시 0분 도서관 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2026-12-28T18:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-28T19:00:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "2월 8일 11시 도서관 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-02-08T11:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-08T12:00:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 30일 18시 서울역 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-09-30T18:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-30T19:00:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 21일 20시 30분 도서관 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "2026-03-21T20:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-21T21:30:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "5월 26일 16시 0분 회의실 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-05-26T16:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-26T17:00:00+09:00"
+      },
+      "description": "회의실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 20일 11시 15분 온라인 면접",
+    "event": {
+      "summary": "온라인 면접",
+      "start": {
+        "dateTime": "2026-01-20T11:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-20T12:15:00+09:00"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "10월 26일 10시 30분 도서관 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2026-10-26T10:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-26T11:30:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 26일 16시 30분 회사 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2026-01-26T16:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-26T17:30:00+09:00"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "10월 24일 19시 미용실 점심",
+    "event": {
+      "summary": "미용실",
+      "start": {
+        "dateTime": "2026-10-24T19:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-24T20:00:00+09:00"
+      },
+      "description": "점심"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 26일 21시 피시방 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2026-03-26T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-26T22:00:00+09:00"
+      },
+      "description": "피시방"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "9월 27일 17시 0분 서울역 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-09-27T17:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-27T18:00:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "3월 31일 10시 30분 서울역 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2026-03-31T10:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-31T11:30:00+09:00"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "1월 28일 12시 0분 온라인 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-01-28T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-28T13:00:00+09:00"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "11월 3일 17시 45분 도서관 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "2026-11-03T17:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-03T18:45:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "input": "3월 13일 온라인 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "3월 13일 오후"
+      },
+      "end": {
+        "dateTime": "3월 13일 오후"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  }
+]

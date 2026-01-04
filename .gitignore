@@ -1,0 +1,110 @@
+# =============================================================================
+# 환경변수/비밀키/토큰 등
+.env
+.env.*
+.env.local
+.env.*.local
+!.env.example
+credentials.json
+*.credentials.json
+*.key
+*.pem
+token.json
+*.token.json
+
+# =============================================================================
+# Python 캐시/빌드
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# =============================================================================
+# Jupyter 캐시
+.ipynb_checkpoints/
+
+# =============================================================================
+# ML/딥러닝 모델, 체크포인트
+*.pth
+*.pt
+
+# =============================================================================
+# 로그/임시 파일
+data/musicqna/logs/
+data/scheduler/logs/
+*.log
+
+# =============================================================================
+# 아카이브, 백업, 이력 데이터
+archive/
+*/archive/
+backup/
+backups/
+*/backup/
+*/backups/
+*.bak
+*.backup
+
+# =============================================================================
+# IDE/OS/임시/가상환경
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+tmp/
+temp/
+*.tmp
+*.temp
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# 커버리지/테스트/분석
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# =============================================================================
+# 압축/임시 패키지
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 기타 필요한 추가 ignore 항목은 아래 작성

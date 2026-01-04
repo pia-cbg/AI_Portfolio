@@ -1,0 +1,50 @@
+[
+  {
+    "input": "5월 1일 10시 15분 도서관 회의",
+    "event": {
+      "summary": "도서관 회의",
+      "start": {
+        "dateTime": "2026-05-01T10:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-01T11:15:00+09:00"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "6월 3일 8시 15분 미용실 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-06-03T08:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-03T09:15:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  },
+  {
+    "input": "12월 11일 20시 45분 강남 카페 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "2026-12-11T20:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-11T21:45:00+09:00"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "success",
+    "missing": []
+  }
+]

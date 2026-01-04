@@ -1,0 +1,18 @@
+[
+  {
+    "input": "1월 10일 19시 0분 회의실 병원예약",
+    "event": {
+      "summary": "회의실 병원예약",
+      "start": {
+        "dateTime": "2026-01-10T19:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-10T20:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  }
+]

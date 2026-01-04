@@ -1,0 +1,234 @@
+[
+  {
+    "input": "8월 12일 도서관 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "8월 12일"
+      },
+      "end": {
+        "dateTime": "8월 12일"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "6월 5일 점심",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "7월 24일 온라인 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "7월 24일"
+      },
+      "end": {
+        "dateTime": "7월 24일"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "9월 29일 회사",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "11월 31일 10시 회의실 스터디",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "올바른 날짜"
+    ]
+  },
+  {
+    "input": "주말에 시간 돼?",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "추후 일정 추가",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "오늘쯤 만날까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "7월 10일 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "7월 10일"
+      },
+      "end": {
+        "dateTime": "7월 10일"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "약속 잡아줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "3월 16일 21시 0분",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-03-16T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-16T22:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "주말에 시간 돼?",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "2월 29일 13시 45분 집 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2월 29일 13시 45분"
+      },
+      "end": {
+        "dateTime": "2월 29일 14시 45분"
+      },
+      "description": "집"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": []
+  },
+  {
+    "input": "회사",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목"
+    ]
+  },
+  {
+    "input": "추후 일정 추가",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "오늘쯤 만날까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "회의 일정 잡아달라니까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  }
+]

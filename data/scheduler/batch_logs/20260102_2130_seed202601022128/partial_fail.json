@@ -1,0 +1,444 @@
+[
+  {
+    "input": "12월 15일 15시 45분 회의실 세미나",
+    "event": {
+      "summary": "회의실 세미나",
+      "start": {
+        "dateTime": "2026-12-15T15:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-15T16:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "8월 3일 18시 0분 회사 미팅",
+    "event": {
+      "summary": "회사 미팅",
+      "start": {
+        "dateTime": "2026-08-03T18:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-08-03T19:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "6월 12일 12시 회의실 점심",
+    "event": {
+      "summary": "회의실 점심",
+      "start": {
+        "dateTime": "2026-06-12T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-12T13:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "1월 2일 9시 미용실",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-01-02T09:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-01-02T10:00:00+09:00"
+      },
+      "description": "미용실"
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "11월 29일 16시 15분 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-11-29T16:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-29T17:15:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "10월 17일 8시 30분 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2026-10-17T08:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-17T09:30:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "11월 17일 21시 0분 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-11-17T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-17T22:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 5일 9시 15분 온라인",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-04-05T09:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-05T10:15:00+09:00"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "7월 20일 17시 0분 회사",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-07-20T17:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-07-20T18:00:00+09:00"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "6월 15일 13시 온라인 스터디",
+    "event": {
+      "summary": "온라인 스터디",
+      "start": {
+        "dateTime": "2026-06-15T13:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-06-15T14:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 26일 20시 45분 피시방 회의",
+    "event": {
+      "summary": "피시방 회의",
+      "start": {
+        "dateTime": "2026-04-26T20:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-26T21:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "10월 25일 11시 45분 피시방 회의",
+    "event": {
+      "summary": "피시방 회의",
+      "start": {
+        "dateTime": "2026-10-25T11:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-25T12:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 10일 18시 세미나",
+    "event": {
+      "summary": "세미나",
+      "start": {
+        "dateTime": "2026-04-10T18:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-10T19:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "10월 15일 17시 미용실 회의",
+    "event": {
+      "summary": "미용실 회의",
+      "start": {
+        "dateTime": "2026-10-15T17:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-15T18:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 28일 18시 15분 피시방 회의",
+    "event": {
+      "summary": "피시방 회의",
+      "start": {
+        "dateTime": "2026-04-28T18:15:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-28T19:15:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "2023년 3월 26일 18시 45분 미팅",
+    "event": {
+      "summary": "미팅",
+      "start": {
+        "dateTime": "2023-03-26T18:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2023-03-26T19:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "2024년 9월 1일 18시 45분 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2024-09-01T18:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2024-09-01T19:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 4일 11시 병원예약",
+    "event": {
+      "summary": "병원예약",
+      "start": {
+        "dateTime": "2026-04-04T11:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-04T12:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "9월 9일 18시 45분 집 스터디",
+    "event": {
+      "summary": "집 스터디",
+      "start": {
+        "dateTime": "2026-09-09T18:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-09-09T19:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "12월 23일 13시 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2026-12-23T13:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-23T14:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "3월 10일 15시 45분 회의실",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-03-10T15:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-10T16:45:00+09:00"
+      },
+      "description": "회의실"
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "12월 3일 9시 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2026-12-03T09:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-12-03T10:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "4월 17일 14시 회사",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-04-17T14:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-04-17T15:00:00+09:00"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "7월 16일 21시 45분 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-07-16T21:45:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-07-16T22:45:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "11월 5일 18시 30분 회의실 세미나",
+    "event": {
+      "summary": "회의실 세미나",
+      "start": {
+        "dateTime": "2026-11-05T18:30:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-05T19:30:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "11월 26일 13시 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "2026-11-26T13:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-11-26T14:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  },
+  {
+    "input": "2월 5일 10시 0분 집 스터디",
+    "event": {
+      "summary": "집 스터디",
+      "start": {
+        "dateTime": "2026-02-05T10:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-02-05T11:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "partial",
+    "missing": []
+  }
+]

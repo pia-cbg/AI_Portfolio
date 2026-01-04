@@ -1,0 +1,388 @@
+[
+  {
+    "input": "추후 일정 추가",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "오늘쯤 만날까",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "2024년 6월 31일 8시 0분 미용실 세미나",
+    "event": {
+      "summary": "미용실 세미나",
+      "start": {
+        "dateTime": "2024년 6월 31일 8시 0분"
+      },
+      "end": {
+        "dateTime": "2024년 6월 31일 9시 0분"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "9월 31일 미용실 상담",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "3월 16일 21시 0분",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-03-16T21:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-03-16T22:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "5월 1일 12시",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-05-01T12:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-05-01T13:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "추후 일정 추가",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "4월 26일 회의실 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "4월 26일"
+      },
+      "end": {
+        "dateTime": "4월 26일"
+      },
+      "description": "회의실"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "12월 20일 강남 카페 스터디",
+    "event": {
+      "summary": "스터디",
+      "start": {
+        "dateTime": "12월 20일"
+      },
+      "end": {
+        "dateTime": "12월 20일"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "11월 31일 10시 회의실 스터디",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "올바른 날짜"
+    ]
+  },
+  {
+    "input": "11월 9일 강남 카페 회의",
+    "event": {
+      "summary": "회의",
+      "start": {
+        "dateTime": "11월 9일"
+      },
+      "end": {
+        "dateTime": "11월 9일"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "빠른 시간에 회의해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "12월 2일 강남 카페 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "12월 2일"
+      },
+      "end": {
+        "dateTime": "12월 2일"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "오전 중에 예약해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  },
+  {
+    "input": "1월 5일 서울역 세미나",
+    "event": {
+      "summary": "세미나",
+      "start": {
+        "dateTime": "1월 5일"
+      },
+      "end": {
+        "dateTime": "1월 5일"
+      },
+      "description": "서울역"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "10월 7일 11시",
+    "event": {
+      "summary": "",
+      "start": {
+        "dateTime": "2026-10-07T11:00:00+09:00"
+      },
+      "end": {
+        "dateTime": "2026-10-07T12:00:00+09:00"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "제목"
+    ]
+  },
+  {
+    "input": "2월 17일 회사 면접",
+    "event": {
+      "summary": "면접",
+      "start": {
+        "dateTime": "2월 17일"
+      },
+      "end": {
+        "dateTime": "2월 17일"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "9월 16일 도서관 저녁식사",
+    "event": {
+      "summary": "저녁식사",
+      "start": {
+        "dateTime": "9월 16일"
+      },
+      "end": {
+        "dateTime": "9월 16일"
+      },
+      "description": "도서관"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "12월 19일 서울역",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "6월 19일 강남 카페 동호회",
+    "event": {
+      "summary": "동호회",
+      "start": {
+        "dateTime": "6월 19일"
+      },
+      "end": {
+        "dateTime": "6월 19일"
+      },
+      "description": "강남 카페"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "2월 27일 온라인 상담",
+    "event": {
+      "summary": "상담",
+      "start": {
+        "dateTime": "2월 27일"
+      },
+      "end": {
+        "dateTime": "2월 27일"
+      },
+      "description": "온라인"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "5월 6일 회사 미팅",
+    "event": {
+      "summary": "회사 미팅",
+      "start": {
+        "dateTime": "5월 6일"
+      },
+      "end": {
+        "dateTime": "5월 6일"
+      },
+      "description": "회사"
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "시간"
+    ]
+  },
+  {
+    "input": "2월 30일 21시 0분 점심",
+    "event": {
+      "summary": "점심",
+      "start": {
+        "dateTime": "2월 30일 21시 0분"
+      },
+      "end": {
+        "dateTime": "2월 30일 22시 0분"
+      },
+      "description": ""
+    },
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "9월 31일 12시 45분 상담",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜"
+    ]
+  },
+  {
+    "input": "도서관 스터디",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간"
+    ]
+  },
+  {
+    "input": "점심 때 추가해줘",
+    "event": null,
+    "llm_response": null,
+    "label": "fail",
+    "missing": [
+      "날짜",
+      "시간",
+      "제목",
+      "장소"
+    ]
+  }
+]
