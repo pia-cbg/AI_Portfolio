@@ -1,4 +1,15 @@
-# 🎵 AI 음악 이론 교육 시스템
+# [📦⚠️] Legacy Main Branch (AI_Portfolio)
+이 브랜치는 과거 개발 기록/아카이브 보존용 브랜치입니다.
+**이 프로젝트의 공식 최신 메인(main) 브랜치는 “main”입니다!**
+
+새로운 코드, 업데이트, 사용·포트폴리오 안내 등은 반드시 main을 참고해 주세요.  
+이 브랜치는 더 이상 관리/업데이트 되지 않습니다.
+
+👉 최신 버전: [main branch](https://github.com/pia-cbg/AI_Portfolio/tree/main)
+
+
+
+# 🎵 AI 음악 이론 교육 시스템 
 
 **RAG 기반 음악 이론 Q&A 시스템
 
