@@ -4,9 +4,7 @@ from src.bots.musicqna.data_processing.embedding_generator import EmbeddingGener
 from src.bots.musicqna.models.retriever import VectorRetriever
 from src.bots.musicqna.models.rag_model import RAGModel
 
-# os.environ["TOKENIZERS_PARALLELISM"] = "false"
-
-def initialize_system(force_regenerate: bool = False):
+def initialize_system():
     print("🎵 음악 이론 RAG 시스템 초기화...")
 
     # 1. 데이터 로드
@@ -19,18 +17,14 @@ def initialize_system(force_regenerate: bool = False):
     embedder = EmbeddingGenerator()
     embedding_dir = 'data/musicqna/embeddings'
     embedding_path = os.path.join(embedding_dir, 'music_theory_embeddings.pkl')
-    json_path = 'data/musicqna/processed/music_theory_curriculum.json'
 
-    need_regen = force_regenerate
-    if os.path.exists(embedding_path) and os.path.exists(json_path):
-        if os.path.getmtime(json_path) > os.path.getmtime(embedding_path):
-            need_regen = True
-    if need_regen or not embedder.load_embeddings():
-        print("   🔄 임베딩 생성 시작...")
+    # 임베딩 로드, 없으면 생성
+    if not embedder.load_embeddings():
+        print("   🔄 임베딩 로드 실패 또는 파일 없음! 임베딩 새로 생성 중...")
         chunks = loader.extract_text_chunks()
         embedder.generate_embeddings(chunks)
         embedder.save_embeddings()
-        print("   ✅ 임베딩 생성 완료!")
+        print("   ✅ 임베딩 생성 및 저장 완료!")
     else:
         print("   ✅ 임베딩 로드 완료!")
 
